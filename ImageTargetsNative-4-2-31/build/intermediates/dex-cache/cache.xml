@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc574f68d5776268181756e656458f20604240af">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-c436f769d32af1e67ce6bfbf5f693398ddb9d85d.jar" />
+    </item>
+
+</items>
