@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
 import android.widget.CheckBox;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -48,6 +49,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     // Focus mode constants:
     private static final int FOCUS_MODE_NORMAL = 0;
     private static final int FOCUS_MODE_CONTINUOUS_AUTO = 1;
+
+    // Camera buttons
+    private ImageButton listbutton;
+    private ImageButton freezebutton;
     
     // Application status constants:
     private static final int APPSTATUS_UNINITED = -1;
@@ -251,7 +256,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                 
                 // Log error:
                 DebugLog.LOGE("InitVuforiaTask::onPostExecute: " + logMessage
-                    + " Exiting.");
+                        + " Exiting.");
                 
                 // Show dialog box with error message:
                 dialogError.setMessage(logMessage);
@@ -783,6 +788,32 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         mRenderer = new ImageTargetsRenderer();
         mRenderer.mActivity = this;
         mGlView.setRenderer(mRenderer);
+
+        setContentView(R.layout.camera_overlay);
+
+        // Button connectors
+        freezebutton = (ImageButton) findViewById(R.id.Freezebutton);
+        listbutton = (ImageButton) findViewById(R.id.Listbutton);
+
+        //Button Listeners
+        freezebutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                //freezebutton.setVisibility(View.GONE);
+            }
+        });
+        listbutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                //listbutton.setVisibility(View.GONE);
+            }
+        });
+
+
         
         LayoutInflater inflater = LayoutInflater.from(this);
         mUILayout = (RelativeLayout) inflater.inflate(R.layout.camera_overlay,

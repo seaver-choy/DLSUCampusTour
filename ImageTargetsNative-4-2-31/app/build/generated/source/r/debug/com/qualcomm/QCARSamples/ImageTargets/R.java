@@ -32,22 +32,26 @@ public final class R {
         public static final int splash_title=0x7f040003;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int logo=0x7f020001;
-        public static final int vuforia_splash=0x7f020002;
+        public static final int freezeicon=0x7f020000;
+        public static final int icon=0x7f020001;
+        public static final int listicon=0x7f020002;
+        public static final int logo=0x7f020003;
+        public static final int vuforia_splash=0x7f020004;
     }
     public static final class id {
+        public static final int Freezebutton=0x7f080005;
+        public static final int Listbutton=0x7f080006;
         public static final int about_html_text=0x7f080002;
         public static final int about_text_title=0x7f080000;
         public static final int button_start=0x7f080001;
         public static final int camera_overlay_layout=0x7f080003;
         public static final int loading_indicator=0x7f080004;
-        public static final int logo_image=0x7f08000a;
-        public static final int menu_group_title=0x7f080005;
-        public static final int menu_group_title_divider=0x7f080006;
-        public static final int settings_menu=0x7f080007;
-        public static final int settings_menu_title=0x7f080008;
-        public static final int splash_image=0x7f080009;
+        public static final int logo_image=0x7f08000c;
+        public static final int menu_group_title=0x7f080007;
+        public static final int menu_group_title_divider=0x7f080008;
+        public static final int settings_menu=0x7f080009;
+        public static final int settings_menu_title=0x7f08000a;
+        public static final int splash_image=0x7f08000b;
     }
     public static final class layout {
         public static final int about_screen=0x7f030000;
