@@ -58,6 +58,9 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     private ImageButton listbutton;
     private ImageButton freezebutton;
 
+    // state flag
+    private boolean isPaused = false;
+
     // Application status constants:
     private static final int APPSTATUS_UNINITED = -1;
     private static final int APPSTATUS_INIT_APP = 0;
@@ -326,14 +329,12 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                     ImageTargets.this).create();
                 
                 dialogError.setButton(DialogInterface.BUTTON_POSITIVE, "Close",
-                    new DialogInterface.OnClickListener()
-                    {
-                        public void onClick(DialogInterface dialog, int which)
-                        {
-                            // Exiting application:
-                            System.exit(1);
-                        }
-                    });
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Exiting application:
+                                System.exit(1);
+                            }
+                        });
                 
                 // Show dialog box with error message:
                 dialogError.setMessage("Failed to load tracker data.");
@@ -391,7 +392,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         mTextures.add(Texture.loadTextureFromApk("Text.png",
             getAssets()));
         mTextures.add(Texture.loadTextureFromApk("TextureTeapotBlue.png",
-            getAssets()));
+                getAssets()));
         mTextures.add(Texture.loadTextureFromApk("TextureTeapotRed.png",
                 getAssets()));
         mTextures
@@ -470,10 +471,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
     }
 
-    protected void onUnfreeze()
-    {
-        mGlView.onResume();
-    }
+
     
     /**
      * Updates projection matrix and viewport after a screen rotation change was
@@ -554,10 +552,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         QCAR.onPause();
     }
     
-    protected void onFreeze()
-    {
-        mGlView.onPause();
-    }
+
     /** Native function to deinitialize the application. */
     private native void deinitApplicationNative();
     
@@ -828,25 +823,46 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         freezebutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View arg0) {
-                onFreeze();
-                Log.e("TAG", "FrozenButton Clicked!");
+            public void onClick(View v) {
 
-                //freezebutton.setVisibility(View.GONE);
+               if(!isPaused)
+               {
+                   freezebutton.setImageResource(R.drawable.unfreezeicon);
+                   onFreeze();
+                   Log.e("TAG", "FrozenButton Clicked!");
+               }
+                else if(isPaused)
+               {
+                   freezebutton.setImageResource(R.drawable.freezeicon);
+                   onUnfreeze();
+                   Log.e("TAG", "ListButton Clicked!");
+               }
+
             }
+
         });
+
         listbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View arg0) {
-                onUnfreeze();
-                Log.e("TAG", "ListButton Clicked!");
+            public void onClick(View v) {
+
                 //listbutton.setVisibility(View.GONE);
             }
         });
     }
-    
-    
+
+    protected void onFreeze()
+    {
+        mGlView.onPause();
+        isPaused = true;
+    }
+
+    protected void onUnfreeze()
+    {
+        mGlView.onResume();
+        isPaused = false;
+    }
     /** Tells native code to switch dataset as soon as possible */
     private native void switchDatasetAsap(int datasetId);
     
