@@ -37,61 +37,7 @@
     <favorites_list name="ImageTargetsNative-4-2-31" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="camera_overlay.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageTargets.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5925197">
-              <caret line="811" column="28" selection-start-line="811" selection-start-column="28" selection-end-line="811" selection-end-column="28" />
-              <folding>
-                <element signature="e#10371#10422#0" expanded="true" />
-                <element signature="e#10494#10541#0" expanded="true" />
-                <element signature="e#10622#10672#0" expanded="true" />
-                <element signature="e#10753#10803#0" expanded="true" />
-                <element signature="e#10893#10952#0" expanded="true" />
-                <element signature="e#11042#11101#0" expanded="true" />
-                <element signature="e#11183#11234#0" expanded="true" />
-                <element signature="e#11325#11385#0" expanded="true" />
-                <element signature="e#11429#11481#0" expanded="true" />
-                <element signature="e#28590#28765#0" expanded="true" />
-                <element signature="e#28764#28765#0" expanded="true" />
-                <element signature="e#28806#28979#0" expanded="true" />
-                <element signature="e#28978#28979#0" expanded="true" />
-                <element signature="e#32738#32767#0" expanded="true" />
-                <element signature="e#32865#32907#0" expanded="true" />
-                <element signature="e#32983#33021#0" expanded="true" />
-                <element signature="e#33130#33160#0" expanded="true" />
-                <element signature="e#33781#33812#0" expanded="true" />
-                <element signature="e#33868#33905#0" expanded="true" />
-                <element signature="e#33980#34016#0" expanded="true" />
-                <element signature="e#34130#34163#0" expanded="true" />
-                <element signature="e#34914#34943#0" expanded="true" />
-                <element signature="e#34970#34998#0" expanded="true" />
-                <element signature="e#35080#35109#0" expanded="true" />
-                <element signature="e#35140#35168#0" expanded="true" />
-                <element signature="e#35597#35645#0" expanded="true" />
-                <element signature="e#35715#35763#0" expanded="true" />
-                <element signature="e#36105#36152#0" expanded="true" />
-                <element signature="e#36222#36269#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -1354,6 +1300,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargetsRenderer.java" />
+        <option value="$PROJECT_DIR$/app/src/main/jni/ImageTargets.cpp" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java" />
       </list>
     </option>
@@ -1390,18 +1338,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ImageTargetsNative-4-2-31" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1564,6 +1500,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="jni" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageTargetsNative-4-2-31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageTargetsNative-4-2-31" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1652,6 +1614,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ImageTargetsNative-4-2-31" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1659,7 +1633,7 @@
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="216" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="E8AZCY24U870" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="YT910YCZEC" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
   </component>
   <component name="RecentsManager">
@@ -1873,7 +1847,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1882,25 +1856,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.50970876" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.50647247" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.50970876" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977462" sideWeight="0.4935275" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977462" sideWeight="0.49029127" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3050162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3050162" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928804" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1922,14 +1896,48 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="811" column="28" selection-start-line="811" selection-start-column="28" selection-end-line="811" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39253#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#9299#9607#0" expanded="true" />
+            <element signature="e#9606#9607#0" expanded="true" />
+            <element signature="e#12794#13102#0" expanded="true" />
+            <element signature="e#13101#13102#0" expanded="true" />
+            <element signature="e#17099#17100#0" expanded="true" />
+            <element signature="e#17133#17134#0" expanded="true" />
+            <element signature="e#19706#19707#0" expanded="true" />
+            <element signature="e#19739#19740#0" expanded="true" />
+            <element signature="e#29577#29838#0" expanded="true" />
+            <element signature="e#29837#29838#0" expanded="true" />
+            <element signature="e#29879#30137#0" expanded="true" />
+            <element signature="e#30136#30137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
@@ -1937,35 +1945,20 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="793" column="65" selection-start-line="793" selection-start-column="65" selection-end-line="793" selection-end-column="65" />
           <folding>
-            <element signature="e#10371#10422#0" expanded="true" />
-            <element signature="e#10494#10541#0" expanded="true" />
-            <element signature="e#10622#10672#0" expanded="true" />
-            <element signature="e#10753#10803#0" expanded="true" />
-            <element signature="e#10893#10952#0" expanded="true" />
-            <element signature="e#11042#11101#0" expanded="true" />
-            <element signature="e#11183#11234#0" expanded="true" />
-            <element signature="e#11325#11385#0" expanded="true" />
-            <element signature="e#11429#11481#0" expanded="true" />
-            <element signature="e#28590#28765#0" expanded="true" />
-            <element signature="e#28764#28765#0" expanded="true" />
-            <element signature="e#28806#28979#0" expanded="true" />
-            <element signature="e#28978#28979#0" expanded="true" />
-            <element signature="e#32738#32767#0" expanded="true" />
-            <element signature="e#32865#32907#0" expanded="true" />
-            <element signature="e#32983#33021#0" expanded="true" />
-            <element signature="e#33130#33160#0" expanded="true" />
-            <element signature="e#33781#33812#0" expanded="true" />
-            <element signature="e#33868#33905#0" expanded="true" />
-            <element signature="e#33980#34016#0" expanded="true" />
-            <element signature="e#34130#34163#0" expanded="true" />
-            <element signature="e#34914#34943#0" expanded="true" />
-            <element signature="e#34970#34998#0" expanded="true" />
-            <element signature="e#35080#35109#0" expanded="true" />
-            <element signature="e#35140#35168#0" expanded="true" />
-            <element signature="e#35597#35645#0" expanded="true" />
-            <element signature="e#35715#35763#0" expanded="true" />
-            <element signature="e#36105#36152#0" expanded="true" />
-            <element signature="e#36222#36269#0" expanded="true" />
+            <element signature="e#0#39253#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#9299#9607#0" expanded="true" />
+            <element signature="e#9606#9607#0" expanded="true" />
+            <element signature="e#12794#13102#0" expanded="true" />
+            <element signature="e#13101#13102#0" expanded="true" />
+            <element signature="e#17099#17100#0" expanded="true" />
+            <element signature="e#17133#17134#0" expanded="true" />
+            <element signature="e#19706#19707#0" expanded="true" />
+            <element signature="e#19739#19740#0" expanded="true" />
+            <element signature="e#29577#29838#0" expanded="true" />
+            <element signature="e#29837#29838#0" expanded="true" />
+            <element signature="e#29879#30137#0" expanded="true" />
+            <element signature="e#30136#30137#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1975,60 +1968,68 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/platforms/android-19/android.jar!/android/view/View.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34960938">
           <caret line="2230" column="13" selection-start-line="2230" selection-start-column="13" selection-end-line="2230" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargetsRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7467412">
+          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5925197">
-          <caret line="811" column="28" selection-start-line="811" selection-start-column="28" selection-end-line="811" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.43110237">
+          <caret line="351" column="43" selection-start-line="351" selection-start-column="43" selection-end-line="351" selection-end-column="43" />
           <folding>
-            <element signature="e#10371#10422#0" expanded="true" />
-            <element signature="e#10494#10541#0" expanded="true" />
-            <element signature="e#10622#10672#0" expanded="true" />
-            <element signature="e#10753#10803#0" expanded="true" />
-            <element signature="e#10893#10952#0" expanded="true" />
-            <element signature="e#11042#11101#0" expanded="true" />
-            <element signature="e#11183#11234#0" expanded="true" />
-            <element signature="e#11325#11385#0" expanded="true" />
-            <element signature="e#11429#11481#0" expanded="true" />
-            <element signature="e#28590#28765#0" expanded="true" />
-            <element signature="e#28764#28765#0" expanded="true" />
-            <element signature="e#28806#28979#0" expanded="true" />
-            <element signature="e#28978#28979#0" expanded="true" />
-            <element signature="e#32738#32767#0" expanded="true" />
-            <element signature="e#32865#32907#0" expanded="true" />
-            <element signature="e#32983#33021#0" expanded="true" />
-            <element signature="e#33130#33160#0" expanded="true" />
-            <element signature="e#33781#33812#0" expanded="true" />
-            <element signature="e#33868#33905#0" expanded="true" />
-            <element signature="e#33980#34016#0" expanded="true" />
-            <element signature="e#34130#34163#0" expanded="true" />
-            <element signature="e#34914#34943#0" expanded="true" />
-            <element signature="e#34970#34998#0" expanded="true" />
-            <element signature="e#35080#35109#0" expanded="true" />
-            <element signature="e#35140#35168#0" expanded="true" />
-            <element signature="e#35597#35645#0" expanded="true" />
-            <element signature="e#35715#35763#0" expanded="true" />
-            <element signature="e#36105#36152#0" expanded="true" />
-            <element signature="e#36222#36269#0" expanded="true" />
+            <element signature="e#0#39253#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#9299#9607#0" expanded="true" />
+            <element signature="e#9606#9607#0" expanded="true" />
+            <element signature="e#12794#13102#0" expanded="true" />
+            <element signature="e#13101#13102#0" expanded="true" />
+            <element signature="e#17099#17100#0" expanded="true" />
+            <element signature="e#17133#17134#0" expanded="true" />
+            <element signature="e#19706#19707#0" expanded="true" />
+            <element signature="e#19739#19740#0" expanded="true" />
+            <element signature="e#29577#29838#0" expanded="true" />
+            <element signature="e#29837#29838#0" expanded="true" />
+            <element signature="e#29879#30137#0" expanded="true" />
+            <element signature="e#30136#30137#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargetsRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26771653">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/jni/ImageTargets.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4980315">
+          <caret line="829" column="11" selection-start-line="829" selection-start-column="11" selection-end-line="829" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

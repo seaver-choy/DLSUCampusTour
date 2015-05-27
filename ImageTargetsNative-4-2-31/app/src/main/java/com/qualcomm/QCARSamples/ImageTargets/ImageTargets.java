@@ -18,12 +18,14 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
+import android.opengl.GLES20;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -40,6 +42,8 @@ import com.qualcomm.QCAR.QCAR;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenu;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuGroup;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuInterface;
+import com.qualcomm.vuforia.CameraDevice;
+import com.qualcomm.vuforia.State;
 import com.qualcomm.vuforia.Vuforia;
 
 
@@ -53,7 +57,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     // Camera buttons
     private ImageButton listbutton;
     private ImageButton freezebutton;
-    
+
     // Application status constants:
     private static final int APPSTATUS_UNINITED = -1;
     private static final int APPSTATUS_INIT_APP = 0;
@@ -389,7 +393,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         mTextures.add(Texture.loadTextureFromApk("TextureTeapotBlue.png",
             getAssets()));
         mTextures.add(Texture.loadTextureFromApk("TextureTeapotRed.png",
-            getAssets()));
+                getAssets()));
         mTextures
             .add(Texture.loadTextureFromApk("Buildings.jpeg", getAssets()));
     }
@@ -465,7 +469,11 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         }
         
     }
-    
+
+    protected void onUnfreeze()
+    {
+        mGlView.onResume();
+    }
     
     /**
      * Updates projection matrix and viewport after a screen rotation change was
@@ -546,7 +554,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         QCAR.onPause();
     }
     
-    
+    protected void onFreeze()
+    {
+        mGlView.onPause();
+    }
     /** Native function to deinitialize the application. */
     private native void deinitApplicationNative();
     
@@ -768,8 +779,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     /** Native function to initialize the application. */
     private native void initApplicationNative(int width, int height);
-    
-    
+
+    //method for freezeFrame
+    private native void stopRenderFrame();
+
     /** Initializes AR application components. */
     private void initApplicationAR()
     {
@@ -789,7 +802,23 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         mRenderer.mActivity = this;
         mGlView.setRenderer(mRenderer);
 
-        setContentView(R.layout.camera_overlay);
+        LayoutInflater inflater = LayoutInflater.from(this);
+        mUILayout = (RelativeLayout) inflater.inflate(R.layout.camera_overlay,
+                null, false);
+
+        mUILayout.setVisibility(View.VISIBLE);
+        mUILayout.setBackgroundColor(Color.BLACK);
+
+        // Gets a reference to the loading dialog
+        mLoadingDialogContainer = mUILayout
+                .findViewById(R.id.loading_indicator);
+
+        // Shows the loading indicator at start
+        loadingDialogHandler.sendEmptyMessage(SHOW_LOADING_DIALOG);
+
+        // Adds the inflated layout to the view
+        addContentView(mUILayout, new LayoutParams(LayoutParams.MATCH_PARENT,
+                LayoutParams.MATCH_PARENT));
 
         // Button connectors
         freezebutton = (ImageButton) findViewById(R.id.Freezebutton);
@@ -799,7 +828,9 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         freezebutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View v) {
+            public void onClick(View arg0) {
+                onFreeze();
+                Log.e("TAG", "FrozenButton Clicked!");
 
                 //freezebutton.setVisibility(View.GONE);
             }
@@ -807,32 +838,12 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         listbutton.setOnClickListener(new View.OnClickListener() {
 
             @Override
-            public void onClick(View v) {
-
+            public void onClick(View arg0) {
+                onUnfreeze();
+                Log.e("TAG", "ListButton Clicked!");
                 //listbutton.setVisibility(View.GONE);
             }
         });
-
-
-        
-        LayoutInflater inflater = LayoutInflater.from(this);
-        mUILayout = (RelativeLayout) inflater.inflate(R.layout.camera_overlay,
-            null, false);
-        
-        mUILayout.setVisibility(View.VISIBLE);
-        mUILayout.setBackgroundColor(Color.BLACK);
-        
-        // Gets a reference to the loading dialog
-        mLoadingDialogContainer = mUILayout
-            .findViewById(R.id.loading_indicator);
-        
-        // Shows the loading indicator at start
-        loadingDialogHandler.sendEmptyMessage(SHOW_LOADING_DIALOG);
-        
-        // Adds the inflated layout to the view
-        addContentView(mUILayout, new LayoutParams(LayoutParams.MATCH_PARENT,
-            LayoutParams.MATCH_PARENT));
-        
     }
     
     
@@ -1119,5 +1130,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
-    
+
+
 }

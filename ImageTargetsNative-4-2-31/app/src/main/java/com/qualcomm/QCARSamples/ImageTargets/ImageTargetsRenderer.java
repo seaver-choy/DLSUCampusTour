@@ -13,6 +13,7 @@ import javax.microedition.khronos.opengles.GL10;
 import android.opengl.GLSurfaceView;
 
 import com.qualcomm.QCAR.QCAR;
+import com.qualcomm.vuforia.State;
 
 
 /** The renderer class for the ImageTargets sample. */

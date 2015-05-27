@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values-small/dimens.xml -->
+    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values-small/dimens.xml -->
     <eat-comment/>
     <dimen name="splash_subtitle">15sp</dimen>
     <dimen name="splash_title">25sp</dimen>

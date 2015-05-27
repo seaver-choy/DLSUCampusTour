@@ -95,6 +95,8 @@ const int STONES_AND_CHIPS_DATASET_ID = 0;
 const int TARMAC_DATASET_ID = 1;
 int selectedDataset = STONES_AND_CHIPS_DATASET_ID;
 
+QCAR::State frozenState; // adding global variable
+
 // Object to receive update callbacks from QCAR SDK
 class ImageTargets_UpdateCallback : public QCAR::UpdateCallback
 {   
@@ -810,6 +812,37 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_updateRendering(
 
     // Reconfigure the video background
     configureVideoBackground();
+}
+
+JNIEXPORT void JNICALL
+Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_stopRenderFrame(JNIEnv* env, jobject obj, bool renderFrozenFrame, bool freezeCurrent)
+{
+//    // Clear color and depth buffer
+//        //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+//
+//        QCAR::State state;
+//        if ( renderFrozenFrame )
+//        {
+//            // Get the state from QCAR and mark the beginning of a rendering section
+           //QCAR::Renderer::getInstance().begin(frozenState);
+//        }
+//        else
+//        {
+            state = QCAR::Renderer::getInstance().begin();
+//            if ( freezeCurrent )
+//            {
+//                frozenState = state;
+//
+//                // Release camera
+                QCAR::CameraDevice::getInstance().stop();
+//                QCAR::CameraDevice::getInstance().deinit();
+//            }
+//        }
+//
+//        // Explicitly render the Video Background
+//        QCAR::Renderer::getInstance().drawVideoBackground();
+//
+//        QCAR::Renderer::getInstance().end();
 }
 
 
