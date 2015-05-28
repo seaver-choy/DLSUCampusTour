@@ -5,9 +5,6 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="b5e09a5a-71ef-4b2c-95b2-2114107b868b" name="Default" comment="" />
     <ignored path="ImageTargetsNative-4-2-31.iws" />
@@ -44,50 +41,71 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.310345">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="39" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageTargets.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageTargets.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.23622048">
-              <caret line="833" column="33" selection-start-line="833" selection-start-column="33" selection-end-line="833" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="834" column="0" selection-start-line="834" selection-start-column="0" selection-end-line="837" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#10556#10607#0" expanded="true" />
-                <element signature="e#10679#10726#0" expanded="true" />
-                <element signature="e#10807#10857#0" expanded="true" />
-                <element signature="e#10938#10988#0" expanded="true" />
-                <element signature="e#11078#11137#0" expanded="true" />
-                <element signature="e#11227#11286#0" expanded="true" />
-                <element signature="e#11368#11419#0" expanded="true" />
-                <element signature="e#11510#11570#0" expanded="true" />
-                <element signature="e#11614#11666#0" expanded="true" />
-                <element signature="e#29479#30056#0" expanded="true" />
-                <element signature="e#30055#30056#0" expanded="true" />
-                <element signature="e#30098#30271#0" expanded="true" />
-                <element signature="e#30270#30271#0" expanded="true" />
-                <element signature="e#33466#33495#0" expanded="true" />
-                <element signature="e#33593#33635#0" expanded="true" />
-                <element signature="e#33711#33749#0" expanded="true" />
-                <element signature="e#33858#33888#0" expanded="true" />
-                <element signature="e#34509#34540#0" expanded="true" />
-                <element signature="e#34596#34633#0" expanded="true" />
-                <element signature="e#34708#34744#0" expanded="true" />
-                <element signature="e#34858#34891#0" expanded="true" />
-                <element signature="e#35642#35671#0" expanded="true" />
-                <element signature="e#35698#35726#0" expanded="true" />
-                <element signature="e#35808#35837#0" expanded="true" />
-                <element signature="e#35868#35896#0" expanded="true" />
-                <element signature="e#36325#36373#0" expanded="true" />
-                <element signature="e#36443#36491#0" expanded="true" />
-                <element signature="e#36833#36880#0" expanded="true" />
-                <element signature="e#36950#36997#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ActivitySplashScreen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SampleAppMenuView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ui/SampleAppMenu/SampleAppMenuView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AboutScreen.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/AboutScreen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.86811024">
+              <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vuforia_splash.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/vuforia_splash.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="splash_screen.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1361,6 +1379,8 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/selection.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java" />
       </list>
     </option>
   </component>
@@ -1396,7 +1416,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -1703,8 +1722,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1715,13 +1733,15 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="216" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="E8AZCY24U870" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="YT910YCZEC" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus_5_API_22_x86" />
   </component>
   <component name="RecentsManager">
@@ -1938,7 +1958,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="1" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1992,6 +2012,27 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="833" column="33" selection-start-line="833" selection-start-column="33" selection-end-line="833" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/camera_overlay.xml">
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
@@ -2007,35 +2048,6 @@
           <caret line="811" column="28" selection-start-line="811" selection-start-column="28" selection-end-line="811" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10556#10607#0" expanded="true" />
-            <element signature="e#10679#10726#0" expanded="true" />
-            <element signature="e#10807#10857#0" expanded="true" />
-            <element signature="e#10938#10988#0" expanded="true" />
-            <element signature="e#11078#11137#0" expanded="true" />
-            <element signature="e#11227#11286#0" expanded="true" />
-            <element signature="e#11368#11419#0" expanded="true" />
-            <element signature="e#11510#11570#0" expanded="true" />
-            <element signature="e#11614#11666#0" expanded="true" />
-            <element signature="e#29479#30056#0" expanded="true" />
-            <element signature="e#30055#30056#0" expanded="true" />
-            <element signature="e#30098#30271#0" expanded="true" />
-            <element signature="e#30270#30271#0" expanded="true" />
-            <element signature="e#33466#33495#0" expanded="true" />
-            <element signature="e#33593#33635#0" expanded="true" />
-            <element signature="e#33711#33749#0" expanded="true" />
-            <element signature="e#33858#33888#0" expanded="true" />
-            <element signature="e#34509#34540#0" expanded="true" />
-            <element signature="e#34596#34633#0" expanded="true" />
-            <element signature="e#34708#34744#0" expanded="true" />
-            <element signature="e#34858#34891#0" expanded="true" />
-            <element signature="e#35642#35671#0" expanded="true" />
-            <element signature="e#35698#35726#0" expanded="true" />
-            <element signature="e#35808#35837#0" expanded="true" />
-            <element signature="e#35868#35896#0" expanded="true" />
-            <element signature="e#36325#36373#0" expanded="true" />
-            <element signature="e#36443#36491#0" expanded="true" />
-            <element signature="e#36833#36880#0" expanded="true" />
-            <element signature="e#36950#36997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2056,35 +2068,6 @@
           <caret line="793" column="65" selection-start-line="793" selection-start-column="65" selection-end-line="793" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10556#10607#0" expanded="true" />
-            <element signature="e#10679#10726#0" expanded="true" />
-            <element signature="e#10807#10857#0" expanded="true" />
-            <element signature="e#10938#10988#0" expanded="true" />
-            <element signature="e#11078#11137#0" expanded="true" />
-            <element signature="e#11227#11286#0" expanded="true" />
-            <element signature="e#11368#11419#0" expanded="true" />
-            <element signature="e#11510#11570#0" expanded="true" />
-            <element signature="e#11614#11666#0" expanded="true" />
-            <element signature="e#29479#30056#0" expanded="true" />
-            <element signature="e#30055#30056#0" expanded="true" />
-            <element signature="e#30098#30271#0" expanded="true" />
-            <element signature="e#30270#30271#0" expanded="true" />
-            <element signature="e#33466#33495#0" expanded="true" />
-            <element signature="e#33593#33635#0" expanded="true" />
-            <element signature="e#33711#33749#0" expanded="true" />
-            <element signature="e#33858#33888#0" expanded="true" />
-            <element signature="e#34509#34540#0" expanded="true" />
-            <element signature="e#34596#34633#0" expanded="true" />
-            <element signature="e#34708#34744#0" expanded="true" />
-            <element signature="e#34858#34891#0" expanded="true" />
-            <element signature="e#35642#35671#0" expanded="true" />
-            <element signature="e#35698#35726#0" expanded="true" />
-            <element signature="e#35808#35837#0" expanded="true" />
-            <element signature="e#35868#35896#0" expanded="true" />
-            <element signature="e#36325#36373#0" expanded="true" />
-            <element signature="e#36443#36491#0" expanded="true" />
-            <element signature="e#36833#36880#0" expanded="true" />
-            <element signature="e#36950#36997#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2129,7 +2112,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.310345">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="39" />
           <folding />
         </state>
@@ -2145,40 +2128,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23622048">
-          <caret line="833" column="33" selection-start-line="833" selection-start-column="33" selection-end-line="833" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="834" column="0" selection-start-line="834" selection-start-column="0" selection-end-line="837" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#10556#10607#0" expanded="true" />
-            <element signature="e#10679#10726#0" expanded="true" />
-            <element signature="e#10807#10857#0" expanded="true" />
-            <element signature="e#10938#10988#0" expanded="true" />
-            <element signature="e#11078#11137#0" expanded="true" />
-            <element signature="e#11227#11286#0" expanded="true" />
-            <element signature="e#11368#11419#0" expanded="true" />
-            <element signature="e#11510#11570#0" expanded="true" />
-            <element signature="e#11614#11666#0" expanded="true" />
-            <element signature="e#29479#30056#0" expanded="true" />
-            <element signature="e#30055#30056#0" expanded="true" />
-            <element signature="e#30098#30271#0" expanded="true" />
-            <element signature="e#30270#30271#0" expanded="true" />
-            <element signature="e#33466#33495#0" expanded="true" />
-            <element signature="e#33593#33635#0" expanded="true" />
-            <element signature="e#33711#33749#0" expanded="true" />
-            <element signature="e#33858#33888#0" expanded="true" />
-            <element signature="e#34509#34540#0" expanded="true" />
-            <element signature="e#34596#34633#0" expanded="true" />
-            <element signature="e#34708#34744#0" expanded="true" />
-            <element signature="e#34858#34891#0" expanded="true" />
-            <element signature="e#35642#35671#0" expanded="true" />
-            <element signature="e#35698#35726#0" expanded="true" />
-            <element signature="e#35808#35837#0" expanded="true" />
-            <element signature="e#35868#35896#0" expanded="true" />
-            <element signature="e#36325#36373#0" expanded="true" />
-            <element signature="e#36443#36491#0" expanded="true" />
-            <element signature="e#36833#36880#0" expanded="true" />
-            <element signature="e#36950#36997#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ui/SampleAppMenu/SampleAppMenuView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/vuforia_splash.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/splash_screen.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="49" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/AboutScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.86811024">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>

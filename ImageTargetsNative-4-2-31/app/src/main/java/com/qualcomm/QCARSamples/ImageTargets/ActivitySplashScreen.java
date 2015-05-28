@@ -21,8 +21,7 @@ import android.widget.RelativeLayout;
 public class ActivitySplashScreen extends Activity
 {
     
-    private static long SPLASH_MILLIS = 450;
-    
+    private static long SPLASH_MILLIS = 1000;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -39,7 +38,7 @@ public class ActivitySplashScreen extends Activity
         
         addContentView(layout, new LayoutParams(LayoutParams.MATCH_PARENT,
             LayoutParams.MATCH_PARENT));
-        
+
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable()
         {
@@ -49,10 +48,8 @@ public class ActivitySplashScreen extends Activity
             {
                 
                 Intent intent = new Intent(ActivitySplashScreen.this,
-                    AboutScreen.class);
-                intent.putExtra("ACTIVITY_TO_LAUNCH", "ImageTargets");
-                intent.putExtra("ABOUT_TEXT_TITLE", "Image Targets");
-                intent.putExtra("ABOUT_TEXT", "IT_about.html");// TODO
+                    ImageTargets.class);
+
                 startActivity(intent);
                 
             }
