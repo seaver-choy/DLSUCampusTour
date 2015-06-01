@@ -61,7 +61,7 @@
       would allow the activity to be launched multiple times.
     -->
     <application
-        android:icon="@drawable/icon"
+        android:icon="@drawable/appicon"
         android:label="Campus Tour"
         android:description="@string/app_description"
         android:launchMode="singleTask"
