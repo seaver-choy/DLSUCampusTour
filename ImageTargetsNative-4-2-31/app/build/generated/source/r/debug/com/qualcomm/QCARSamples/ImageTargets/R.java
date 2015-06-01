@@ -39,8 +39,9 @@ public final class R {
         public static final int logo=0x7f020004;
         public static final int pauseicon=0x7f020005;
         public static final int playicon=0x7f020006;
-        public static final int unfreezeicon=0x7f020007;
-        public static final int vuforia_splash=0x7f020008;
+        public static final int splashscreen=0x7f020007;
+        public static final int unfreezeicon=0x7f020008;
+        public static final int vuforia_splash=0x7f020009;
     }
     public static final class id {
         public static final int Freezebutton=0x7f080005;
@@ -50,7 +51,6 @@ public final class R {
         public static final int button_start=0x7f080001;
         public static final int camera_overlay_layout=0x7f080003;
         public static final int loading_indicator=0x7f080004;
-        public static final int logo_image=0x7f08000c;
         public static final int menu_group_title=0x7f080007;
         public static final int menu_group_title_divider=0x7f080008;
         public static final int settings_menu=0x7f080009;

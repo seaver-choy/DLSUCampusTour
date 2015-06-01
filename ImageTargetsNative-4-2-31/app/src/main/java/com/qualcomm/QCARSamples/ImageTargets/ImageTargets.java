@@ -858,13 +858,13 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
 
                if(!isPaused)
                {
-                   freezebutton.setImageResource(R.drawable.unfreezeicon);
+                   freezebutton.setImageResource(R.drawable.playicon);
                    onFreeze();
                    Log.e("TAG", "FrozenButton Clicked!");
                }
                 else if(isPaused)
                {
-                   freezebutton.setImageResource(R.drawable.freezeicon);
+                   freezebutton.setImageResource(R.drawable.pauseicon);
                    onUnfreeze();
                    Log.e("TAG", "ListButton Clicked!");
                }

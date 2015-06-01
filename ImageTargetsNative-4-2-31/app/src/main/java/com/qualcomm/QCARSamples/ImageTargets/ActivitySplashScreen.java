@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 public class ActivitySplashScreen extends Activity
 {
     
-    private static long SPLASH_MILLIS = 1000;
+    private static long SPLASH_MILLIS = 5000;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
