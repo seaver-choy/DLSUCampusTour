@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="black">#000000</color>
     <color name="gray">#575757</color>
@@ -8,7 +8,7 @@
     <color name="light_gray">#D3D3D3</color>
     <color name="semi_transparent_black">#C8000000</color>
     <color name="white">#FFFFFF</color>
-    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="menu_entries_sides_padding">10dp</dimen>
     <dimen name="menu_entries_text">20sp</dimen>
@@ -17,7 +17,7 @@
     <dimen name="menu_entries_top_down_radio_padding">7dp</dimen>
     <dimen name="menu_title">22sp</dimen>
     <dimen name="menu_title_padding">14dp</dimen>
-    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="INIT_ERROR">Error</string>
     <string name="INIT_ERROR_DEVICE_NOT_SUPPORTED">Failed to initialize Vuforia. This device is not supported.</string>
@@ -51,7 +51,7 @@
     <string name="menu_flash_error_off">Unable to turn off flash</string>
     <string name="menu_flash_error_on">Unable to turn on flash</string>
     <string name="splash_screen_description">Vuforia Splash</string>
-    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="SampleAppsTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
         <item name="android:windowNoTitle">true</item>
