@@ -46,6 +46,7 @@ LOCAL_MODULE := ImageTargetsNative
 OPENGLES_LIB  := -lGLESv2
 OPENGLES_DEF  := -DUSE_OPENGL_ES_2_0
 
+
 # An optional set of compiler flags that will be passed when building
 # C and C++ source files.
 #
@@ -61,7 +62,9 @@ LOCAL_CFLAGS := -Wno-write-strings -Wno-psabi $(OPENGLES_DEF)
 # link to your module.
 
 LOCAL_LDLIBS := \
-    -llog $(OPENGLES_LIB)
+    -llog $(OPENGLES_LIB) -llog
+LOCAL_LDLIBS += -landroid
+
 
 # The list of shared libraries this module depends on at runtime.
 # This information is used at link time to embed the corresponding information
@@ -76,7 +79,7 @@ LOCAL_SHARED_LIBRARIES := Vuforia-prebuilt
 # compute dependencies automatically for you, just list the source files
 # that will be passed directly to a compiler.
 
-LOCAL_SRC_FILES := ImageTargets.cpp SampleUtils.cpp Texture.cpp
+LOCAL_SRC_FILES := Targets.cpp ImageTargets.cpp SampleUtils.cpp Texture.cpp
 
 # By default, ARM target binaries will be generated in 'thumb' mode, where
 # each instruction is 16-bit wide. You can set this variable to 'arm' to

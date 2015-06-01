@@ -9,10 +9,11 @@
 # Build both ARMv5TE and ARMv7-A machine code.
 
 APP_ABI := armeabi-v7a
+APP_STL := stlport_static
 
 # Set target Android API level to the application's minimum SDK version.
 
-APP_PLATFORM := android-8
+APP_PLATFORM := android-9
 
 # This optional variable can be defined to either 'release' or
 # 'debug'. This is used to alter the optimization level when

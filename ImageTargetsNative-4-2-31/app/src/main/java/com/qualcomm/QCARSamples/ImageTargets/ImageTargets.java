@@ -14,6 +14,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
+import android.content.res.AssetManager;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.hardware.Camera;
@@ -87,7 +88,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     // Our renderer:
     private ImageTargetsRenderer mRenderer;
-    
+
+    //List of targets and their corresponding images
+    Targets targets;
+
     // Display size of the device:
     private int mScreenWidth = 0;
     private int mScreenHeight = 0;
@@ -387,16 +391,44 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
      * We want to load specific textures from the APK, which we will later use
      * for rendering.
      */
+    //gets targets from a text file.
+    private void loadTargets()
+    {
+        try
+        {
+            targets = new Targets(getAssets().open("TargetsTextures.txt"));
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+    //loads all textures
     private void loadTextures()
     {
-        mTextures.add(Texture.loadTextureFromApk("Text.png",
-            getAssets()));
-        mTextures.add(Texture.loadTextureFromApk("TextureTeapotBlue.png",
-                getAssets()));
-        mTextures.add(Texture.loadTextureFromApk("TextureTeapotRed.png",
-                getAssets()));
-        mTextures
-            .add(Texture.loadTextureFromApk("Buildings.jpeg", getAssets()));
+        String[] allTargets = null;
+        loadTargets();
+        //gets the targetImages only
+        allTargets = targets.getAllTargetImages();
+
+        if(allTargets != null)
+        {
+            for (int i = 0; i < allTargets.length; i++) {
+                //loads the textures
+                mTextures.add(Texture.loadTextureFromApk(allTargets[i], getAssets()));
+            }
+        }else
+        {
+            Log.e("ERROR", "Failed to load target images.");
+        }
+
+//        mTextures.add(Texture.loadTextureFromApk("Text.png",
+//            getAssets()));
+//        mTextures.add(Texture.loadTextureFromApk("TextureTeapotBlue.png",
+//                getAssets()));
+//        mTextures.add(Texture.loadTextureFromApk("TextureTeapotRed.png",
+//                getAssets()));
+//        mTextures
+//            .add(Texture.loadTextureFromApk("Buildings.jpeg", getAssets()));
     }
     
     
@@ -773,17 +805,16 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     
     /** Native function to initialize the application. */
-    private native void initApplicationNative(int width, int height);
+    private native void initApplicationNative(int width, int height, String[] targets);
 
-    //method for freezeFrame
-    private native void stopRenderFrame();
 
     /** Initializes AR application components. */
     private void initApplicationAR()
     {
         // Do application initialization in native code (e.g. registering
         // callbacks, etc.):
-        initApplicationNative(mScreenWidth, mScreenHeight);
+        //initializes for getting target names as well
+        initApplicationNative(mScreenWidth, mScreenHeight, targets.getAllTargetNames());
         
         // Create OpenGL ES view:
         int depthSize = 16;
@@ -827,13 +858,13 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
 
                if(!isPaused)
                {
-                   freezebutton.setImageResource(R.drawable.playicon);
+                   freezebutton.setImageResource(R.drawable.unfreezeicon);
                    onFreeze();
                    Log.e("TAG", "FrozenButton Clicked!");
                }
                 else if(isPaused)
                {
-                   freezebutton.setImageResource(R.drawable.pauseicon);
+                   freezebutton.setImageResource(R.drawable.freezeicon);
                    onUnfreeze();
                    Log.e("TAG", "ListButton Clicked!");
                }
@@ -1140,12 +1171,21 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         return result;
     }
-    
-    
+
+
     private void showToast(String text)
     {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
     }
 
+    public AssetManager getAssetManager()
+    {
+        return getAssets();
+    }
 
+    public String[] getTargets()
+    {
+        loadTargets();
+        return targets.getAllTargetNames();
+    }
 }

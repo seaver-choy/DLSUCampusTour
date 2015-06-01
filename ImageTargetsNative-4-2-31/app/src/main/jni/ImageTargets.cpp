@@ -35,6 +35,8 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 #include "Teapot.h"
 #include "Buildings.h"
 #include <QCAR/ImageTarget.h>
+#include "Targets.h"
+
 static const float planeVertices[] =
 {
     -0.5, -0.5, 0.0, 0.5, -0.5, 0.0, 0.5, 0.5, 0.0, -0.5, 0.5, 0.0,
@@ -94,6 +96,9 @@ QCAR::CameraDevice::CAMERA currentCamera;
 const int STONES_AND_CHIPS_DATASET_ID = 0;
 const int TARMAC_DATASET_ID = 1;
 int selectedDataset = STONES_AND_CHIPS_DATASET_ID;
+
+//global variable for targets class
+Targets targets;
 
 QCAR::State frozenState; // adding global variable
 
@@ -328,7 +333,7 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_onQCARInitializedNative(
 
 
 JNIEXPORT void JNICALL
-Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIEnv *, jobject)
+Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIEnv *env, jobject)
 {
     //LOG("Java_com_qualcomm_QCARSamples_ImageTargets_GLRenderer_renderFrame");
 
@@ -353,7 +358,6 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
     else
         glFrontFace(GL_CCW);   //Back camera
 
-
     // Did we find any trackables this frame?
     for(int tIdx = 0; tIdx < state.getNumTrackableResults(); tIdx++)
     {
@@ -361,54 +365,59 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
         const QCAR::TrackableResult* result = state.getTrackableResult(tIdx);
         const QCAR::Trackable& trackable = result->getTrackable();
         QCAR::Matrix44F modelViewMatrix =
-            QCAR::Tool::convertPose2GLMatrix(result->getPose());        
+            QCAR::Tool::convertPose2GLMatrix(result->getPose());
 
         if(!isExtendedTrackingActivated)
         {
 			// Choose the texture based on the target name:
 			int textureIndex;
-			if (strcmp(trackable.getName(), "chips") == 0)
-			{
-				textureIndex = 0;
-			}
-			else if (strcmp(trackable.getName(), "stones") == 0)
-			{
-				textureIndex = 1;
-			}
-			else
-			{
-				textureIndex = 2;
-			}
+
+		    if(targets.hasElement(trackable.getName()))
+			 {
+                textureIndex = targets.getIndexOf(trackable.getName());
+			 }
+
+//			if (strcmp(trackable.getName(), "chips") == 0)
+//			{
+//				textureIndex = 0;
+//			}
+//			else if (strcmp(trackable.getName(), "stones") == 0)
+//			{
+//				textureIndex = 1;
+//			}
+//			else
+//			{
+//				textureIndex = 2;
+//			}
 
 			const Texture* const thisTexture = textures[textureIndex];
-
 			// assuming this is an image target
 
-QCAR::Vec3F targetSize = ((QCAR::ImageTarget *) &trackable)->getSize();
-QCAR::Matrix44F modelViewProjection;
-SampleUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScale,
-                                 &modelViewMatrix.data[0]);
-SampleUtils::scalePoseMatrix(targetSize.data[0], targetSize.data[1], 1.0f,
-                             &modelViewMatrix.data[0]);
-SampleUtils::multiplyMatrix(&projectionMatrix.data[0],
-                            &modelViewMatrix.data[0] ,
-                            &modelViewProjection.data[0]);
-glUseProgram(shaderProgramID);
-glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0,
-                      (const GLvoid*) &planeVertices[0]);
-glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0,
-                      (const GLvoid*) &planeNormals[0]);
-glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0,
-                      (const GLvoid*) &planeTexcoords[0]);
-glEnableVertexAttribArray(vertexHandle);
-glEnableVertexAttribArray(normalHandle);
-glEnableVertexAttribArray(textureCoordHandle);
-glActiveTexture(GL_TEXTURE0);
-glBindTexture(GL_TEXTURE_2D, thisTexture->mTextureID);
-glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE,
-                   (GLfloat*)&modelViewProjection.data[0] );
-glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT,
-               (const GLvoid*) &planeIndices[0]);
+            QCAR::Vec3F targetSize = ((QCAR::ImageTarget *) &trackable)->getSize();
+            QCAR::Matrix44F modelViewProjection;
+            SampleUtils::translatePoseMatrix(0.0f, 0.0f, kObjectScale,
+                                             &modelViewMatrix.data[0]);
+            SampleUtils::scalePoseMatrix(targetSize.data[0], targetSize.data[1], 1.0f,
+                                         &modelViewMatrix.data[0]);
+            SampleUtils::multiplyMatrix(&projectionMatrix.data[0],
+                                        &modelViewMatrix.data[0] ,
+                                        &modelViewProjection.data[0]);
+            glUseProgram(shaderProgramID);
+            glVertexAttribPointer(vertexHandle, 3, GL_FLOAT, GL_FALSE, 0,
+                                  (const GLvoid*) &planeVertices[0]);
+            glVertexAttribPointer(normalHandle, 3, GL_FLOAT, GL_FALSE, 0,
+                                  (const GLvoid*) &planeNormals[0]);
+            glVertexAttribPointer(textureCoordHandle, 2, GL_FLOAT, GL_FALSE, 0,
+                                  (const GLvoid*) &planeTexcoords[0]);
+            glEnableVertexAttribArray(vertexHandle);
+            glEnableVertexAttribArray(normalHandle);
+            glEnableVertexAttribArray(textureCoordHandle);
+            glActiveTexture(GL_TEXTURE0);
+            glBindTexture(GL_TEXTURE_2D, thisTexture->mTextureID);
+            glUniformMatrix4fv(mvpMatrixHandle, 1, GL_FALSE,
+                               (GLfloat*)&modelViewProjection.data[0] );
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_SHORT,
+                           (const GLvoid*) &planeIndices[0]);
 
 			glDisableVertexAttribArray(vertexHandle);
 			glDisableVertexAttribArray(normalHandle);
@@ -522,7 +531,7 @@ configureVideoBackground()
 
 JNIEXPORT void JNICALL
 Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_initApplicationNative(
-                            JNIEnv* env, jobject obj, jint width, jint height)
+                            JNIEnv* env, jobject obj, jint width, jint height, jobjectArray stringArray)
 {
     LOG("Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_initApplicationNative");
     
@@ -535,6 +544,11 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_initApplicationNative(
 
     jmethodID getTextureCountMethodID = env->GetMethodID(activityClass,
                                                     "getTextureCount", "()I");
+
+    //Initialized targets taken from Java
+    Targets targets = Targets(env, stringArray);
+    LOG("Got needed targets!");
+
     if (getTextureCountMethodID == 0)
     {
         LOG("Function getTextureCount() not found.");
@@ -814,36 +828,6 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_updateRendering(
     configureVideoBackground();
 }
 
-JNIEXPORT void JNICALL
-Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_stopRenderFrame(JNIEnv* env, jobject obj, bool renderFrozenFrame, bool freezeCurrent)
-{
-//    // Clear color and depth buffer
-//        //glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-//
-//        QCAR::State state;
-//        if ( renderFrozenFrame )
-//        {
-//            // Get the state from QCAR and mark the beginning of a rendering section
-           //QCAR::Renderer::getInstance().begin(frozenState);
-//        }
-//        else
-//        {
-            state = QCAR::Renderer::getInstance().begin();
-//            if ( freezeCurrent )
-//            {
-//                frozenState = state;
-//
-//                // Release camera
-                QCAR::CameraDevice::getInstance().stop();
-//                QCAR::CameraDevice::getInstance().deinit();
-//            }
-//        }
-//
-//        // Explicitly render the Video Background
-//        QCAR::Renderer::getInstance().drawVideoBackground();
-//
-//        QCAR::Renderer::getInstance().end();
-}
 
 
 #ifdef __cplusplus

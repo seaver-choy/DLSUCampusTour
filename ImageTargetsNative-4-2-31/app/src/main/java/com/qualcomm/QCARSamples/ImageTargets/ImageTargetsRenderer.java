@@ -10,7 +10,9 @@ package com.qualcomm.QCARSamples.ImageTargets;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import android.content.res.AssetManager;
 import android.opengl.GLSurfaceView;
+import android.util.Log;
 
 import com.qualcomm.QCAR.QCAR;
 import com.qualcomm.vuforia.State;
@@ -64,17 +66,18 @@ public class ImageTargetsRenderer implements GLSurfaceView.Renderer
     /** The native render function. */
     public native void renderFrame();
     
-    
     /** Called to draw the current frame. */
     public void onDrawFrame(GL10 gl)
     {
         if (!mIsActive)
             return;
-        
+
         // Update render view (projection matrix and viewport) if needed:
         mActivity.updateRenderView();
         
         // Call our native function to render content
+        Log.e("TAG", "About to render frame...!");
         renderFrame();
+
     }
 }
