@@ -21,7 +21,7 @@ import android.widget.RelativeLayout;
 public class ActivitySplashScreen extends Activity
 {
     
-    private static long SPLASH_MILLIS = 5000;
+    private static long SPLASH_MILLIS = 4000;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -48,8 +48,10 @@ public class ActivitySplashScreen extends Activity
             {
                 
                 Intent intent = new Intent(ActivitySplashScreen.this,
-                    ImageTargets.class);
-
+                   MainMenu.class);
+//                intent.putExtra("ACTIVITY_TO_LAUNCH", "ImageTargets");
+//                intent.putExtra("ABOUT_TEXT_TITLE", "Image Targets");
+//                intent.putExtra("ABOUT_TEXT", "IT_about.html");
                 startActivity(intent);
                 
             }

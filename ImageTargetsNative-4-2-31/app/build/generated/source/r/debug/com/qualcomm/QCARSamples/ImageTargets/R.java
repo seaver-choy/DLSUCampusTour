@@ -21,13 +21,15 @@ public final class R {
     public static final class dimen {
         public static final int about_text=0x7f040004;
         public static final int about_title=0x7f040005;
-        public static final int menu_entries_sides_padding=0x7f040006;
+        public static final int activity_horizontal_margin=0x7f040006;
+        public static final int activity_vertical_margin=0x7f040007;
+        public static final int menu_entries_sides_padding=0x7f040008;
         public static final int menu_entries_text=0x7f040000;
         public static final int menu_entries_title=0x7f040001;
-        public static final int menu_entries_top_down_padding=0x7f040007;
-        public static final int menu_entries_top_down_radio_padding=0x7f040008;
-        public static final int menu_title=0x7f040009;
-        public static final int menu_title_padding=0x7f04000a;
+        public static final int menu_entries_top_down_padding=0x7f040009;
+        public static final int menu_entries_top_down_radio_padding=0x7f04000a;
+        public static final int menu_title=0x7f04000b;
+        public static final int menu_title_padding=0x7f04000c;
         public static final int splash_subtitle=0x7f040002;
         public static final int splash_title=0x7f040003;
     }
@@ -38,34 +40,44 @@ public final class R {
         public static final int listicon=0x7f020003;
         public static final int locationsicon=0x7f020004;
         public static final int logo=0x7f020005;
-        public static final int pauseicon=0x7f020006;
-        public static final int playicon=0x7f020007;
-        public static final int splashscreen=0x7f020008;
-        public static final int unfreezeicon=0x7f020009;
-        public static final int vuforia_splash=0x7f02000a;
+        public static final int mainmenu=0x7f020006;
+        public static final int pauseicon=0x7f020007;
+        public static final int playicon=0x7f020008;
+        public static final int splashscreen=0x7f020009;
+        public static final int unfreezeicon=0x7f02000a;
+        public static final int vuforia_splash=0x7f02000b;
     }
     public static final class id {
-        public static final int Freezebutton=0x7f080005;
-        public static final int Listbutton=0x7f080006;
-        public static final int about_html_text=0x7f080002;
-        public static final int about_text_title=0x7f080000;
-        public static final int button_start=0x7f080001;
-        public static final int camera_overlay_layout=0x7f080003;
-        public static final int loading_indicator=0x7f080004;
-        public static final int menu_group_title=0x7f080007;
-        public static final int menu_group_title_divider=0x7f080008;
-        public static final int settings_menu=0x7f080009;
-        public static final int settings_menu_title=0x7f08000a;
-        public static final int splash_image=0x7f08000b;
+        public static final int Freezebutton=0x7f090009;
+        public static final int Listbutton=0x7f09000a;
+        public static final int about_html_text=0x7f090002;
+        public static final int about_text_title=0x7f090000;
+        public static final int action_settings=0x7f090010;
+        public static final int button_start=0x7f090001;
+        public static final int camera_overlay_layout=0x7f090007;
+        public static final int helpbutton=0x7f090006;
+        public static final int imageView=0x7f090003;
+        public static final int loading_indicator=0x7f090008;
+        public static final int locationbutton=0x7f090005;
+        public static final int menu_group_title=0x7f09000b;
+        public static final int menu_group_title_divider=0x7f09000c;
+        public static final int settings_menu=0x7f09000d;
+        public static final int settings_menu_title=0x7f09000e;
+        public static final int splash_image=0x7f09000f;
+        public static final int startbutton=0x7f090004;
     }
     public static final class layout {
         public static final int about_screen=0x7f030000;
-        public static final int camera_overlay=0x7f030001;
-        public static final int sample_app_menu_group=0x7f030002;
-        public static final int sample_app_menu_group_divider=0x7f030003;
-        public static final int sample_app_menu_group_radio_button=0x7f030004;
-        public static final int sample_app_menu_layer=0x7f030005;
-        public static final int splash_screen=0x7f030006;
+        public static final int activity_main_menu=0x7f030001;
+        public static final int camera_overlay=0x7f030002;
+        public static final int sample_app_menu_group=0x7f030003;
+        public static final int sample_app_menu_group_divider=0x7f030004;
+        public static final int sample_app_menu_group_radio_button=0x7f030005;
+        public static final int sample_app_menu_layer=0x7f030006;
+        public static final int splash_screen=0x7f030007;
+    }
+    public static final class menu {
+        public static final int menu_main_menu=0x7f080000;
     }
     public static final class string {
         public static final int INIT_ERROR=0x7f070000;
@@ -79,27 +91,30 @@ public final class R {
         public static final int INIT_LICENSE_ERROR_NO_NETWORK_TRANSIENT=0x7f070008;
         public static final int INIT_LICENSE_ERROR_PRODUCT_TYPE_MISMATCH=0x7f070009;
         public static final int INIT_LICENSE_ERROR_UNKNOWN_ERROR=0x7f07000a;
-        public static final int app_description=0x7f07000b;
-        public static final int app_name=0x7f07000c;
-        public static final int button_start=0x7f07000d;
-        public static final int menu_back=0x7f07000e;
-        public static final int menu_button_blue=0x7f07000f;
-        public static final int menu_button_green=0x7f070010;
-        public static final int menu_button_red=0x7f070011;
-        public static final int menu_button_yellow=0x7f070012;
-        public static final int menu_camera=0x7f070013;
-        public static final int menu_camera_back=0x7f070014;
-        public static final int menu_camera_front=0x7f070015;
-        public static final int menu_character_mode=0x7f070016;
-        public static final int menu_contAutofocus=0x7f070017;
-        public static final int menu_contAutofocus_error_off=0x7f070018;
-        public static final int menu_contAutofocus_error_on=0x7f070019;
-        public static final int menu_datasets=0x7f07001a;
-        public static final int menu_extended_tracking=0x7f07001b;
-        public static final int menu_flash=0x7f07001c;
-        public static final int menu_flash_error_off=0x7f07001d;
-        public static final int menu_flash_error_on=0x7f07001e;
-        public static final int splash_screen_description=0x7f07001f;
+        public static final int action_settings=0x7f07000b;
+        public static final int app_description=0x7f07000c;
+        public static final int app_name=0x7f07000d;
+        public static final int button_start=0x7f07000e;
+        public static final int hello_world=0x7f07000f;
+        public static final int menu_back=0x7f070010;
+        public static final int menu_button_blue=0x7f070011;
+        public static final int menu_button_green=0x7f070012;
+        public static final int menu_button_red=0x7f070013;
+        public static final int menu_button_yellow=0x7f070014;
+        public static final int menu_camera=0x7f070015;
+        public static final int menu_camera_back=0x7f070016;
+        public static final int menu_camera_front=0x7f070017;
+        public static final int menu_character_mode=0x7f070018;
+        public static final int menu_contAutofocus=0x7f070019;
+        public static final int menu_contAutofocus_error_off=0x7f07001a;
+        public static final int menu_contAutofocus_error_on=0x7f07001b;
+        public static final int menu_datasets=0x7f07001c;
+        public static final int menu_extended_tracking=0x7f07001d;
+        public static final int menu_flash=0x7f07001e;
+        public static final int menu_flash_error_off=0x7f07001f;
+        public static final int menu_flash_error_on=0x7f070020;
+        public static final int splash_screen_description=0x7f070021;
+        public static final int title_activity_main_menu=0x7f070022;
     }
     public static final class style {
         public static final int SampleAppsTheme=0x7f050000;

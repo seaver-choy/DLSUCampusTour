@@ -11,7 +11,12 @@
         android:layout_height="match_parent"
         android:scaleType="fitXY"
         android:contentDescription="@string/splash_screen_description"
-        android:src="@drawable/splashscreen" />
+        android:src="@drawable/splashscreen"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
 
 
 </RelativeLayout>
