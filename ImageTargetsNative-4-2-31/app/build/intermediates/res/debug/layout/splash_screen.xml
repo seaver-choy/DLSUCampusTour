@@ -16,7 +16,33 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <ImageButton
+        android:layout_width="225dp"
+        android:layout_height="80dp"
+        android:id="@+id/mstartbutton"
+        android:background="@drawable/menustart"
+        android:layout_marginBottom="189dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
+    <ImageButton
+        android:layout_width="109dp"
+        android:layout_height="80dp"
+        android:id="@+id/mlocationsbutton"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/menulocations"
+        android:layout_alignTop="@+id/mstartbutton"
+        android:layout_alignLeft="@+id/mstartbutton"
+        android:layout_alignStart="@+id/mstartbutton" />
+
+    <ImageButton
+        android:layout_width="109dp"
+        android:layout_height="80dp"
+        android:id="@+id/mhelpbutton"
+        android:background="@drawable/menuhelp"
+        android:layout_alignTop="@+id/mlocationsbutton"
+        android:layout_alignRight="@+id/mstartbutton"
+        android:layout_alignEnd="@+id/mstartbutton" />
 
 
 </RelativeLayout>

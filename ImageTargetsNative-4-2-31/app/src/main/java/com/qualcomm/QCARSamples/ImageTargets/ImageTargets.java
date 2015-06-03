@@ -13,6 +13,7 @@ import java.util.Vector;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
@@ -476,7 +477,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     {
         DebugLog.LOGD("onResume");
         super.onResume();
-        
+
         // This is needed for some Droid devices to force portrait
         if (mIsDroidDevice)
         {
@@ -555,7 +556,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     {
         DebugLog.LOGD("onPause");
         super.onPause();
-        
+
+
         if (mGlView != null)
         {
             mGlView.setVisibility(View.INVISIBLE);
@@ -582,6 +584,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         // Vuforia-specific pause operation
         QCAR.onPause();
+
+
+
+
     }
     
 
@@ -594,7 +600,9 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     {
         DebugLog.LOGD("onDestroy");
         super.onDestroy();
-        
+
+
+
         // Cancel potentially running tasks
         if (mInitVuforiaTask != null
             && mInitVuforiaTask.getStatus() != InitVuforiaTask.Status.FINISHED)
@@ -633,6 +641,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         }
         
         System.gc();
+
+
     }
     
     

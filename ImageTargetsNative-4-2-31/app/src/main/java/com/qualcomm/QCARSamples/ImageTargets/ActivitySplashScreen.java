@@ -12,9 +12,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 
@@ -22,6 +24,11 @@ public class ActivitySplashScreen extends Activity
 {
     
     private static long SPLASH_MILLIS = 4000;
+    private ImageButton mstart;
+    private ImageButton mlocations;
+    private ImageButton mhelp;
+    Intent i;
+
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -39,24 +46,54 @@ public class ActivitySplashScreen extends Activity
         addContentView(layout, new LayoutParams(LayoutParams.MATCH_PARENT,
             LayoutParams.MATCH_PARENT));
 
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable()
-        {
-            
+        mstart = (ImageButton) findViewById(R.id.mstartbutton);
+        mlocations = (ImageButton) findViewById(R.id.mlocationsbutton);
+        mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
+
+        mstart.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void run()
-            {
-                
-                Intent intent = new Intent(ActivitySplashScreen.this,
-                   MainMenu.class);
-//                intent.putExtra("ACTIVITY_TO_LAUNCH", "ImageTargets");
-//                intent.putExtra("ABOUT_TEXT_TITLE", "Image Targets");
-//                intent.putExtra("ABOUT_TEXT", "IT_about.html");
-                startActivity(intent);
-                
+            public void onClick(View view) {
+                i = new Intent(ActivitySplashScreen.this, ImageTargets.class);
+                finish();
+                startActivity(i);
+
             }
-            
-        }, SPLASH_MILLIS);
+        });
+
+
+
+//        final Handler handler = new Handler();
+//        handler.postDelayed(new Runnable()
+//        {
+//
+//            @Override
+//            public void run()
+//            {
+//
+//                Intent intent = new Intent(ActivitySplashScreen.this,
+//                   MainMenu.class);
+////                intent.putExtra("ACTIVITY_TO_LAUNCH", "ImageTargets");
+////                intent.putExtra("ABOUT_TEXT_TITLE", "Image Targets");
+////                intent.putExtra("ABOUT_TEXT", "IT_about.html");
+//                startActivity(intent);
+//
+//            }
+//
+//        }, SPLASH_MILLIS);
     }
-    
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
 }

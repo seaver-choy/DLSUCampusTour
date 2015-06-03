@@ -17,36 +17,4 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="130dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Start"
-        android:id="@+id/startbutton"
-        android:layout_marginBottom="67dp"
-        android:layout_above="@+id/imageView"
-        android:layout_alignLeft="@+id/locationbutton"
-        android:layout_alignStart="@+id/locationbutton"
-        android:layout_alignRight="@+id/locationbutton"
-        android:layout_alignEnd="@+id/locationbutton" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Locations"
-        android:id="@+id/locationbutton"
-        android:layout_alignTop="@+id/startbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Help"
-        android:id="@+id/helpbutton"
-        android:layout_below="@+id/locationbutton"
-        android:layout_alignRight="@+id/locationbutton"
-        android:layout_alignEnd="@+id/locationbutton"
-        android:layout_alignLeft="@+id/locationbutton"
-        android:layout_alignStart="@+id/locationbutton" />
-
 </RelativeLayout>

@@ -21,18 +21,18 @@ public class MainMenu extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_menu);
 
-        startbutton = (Button) findViewById(R.id.startbutton);
-        locationbutton = (Button) findViewById(R.id.locationbutton);
-        helpbutton = (Button) findViewById(R.id.helpbutton);
-
-
-        startbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                i = new Intent(MainMenu.this, ImageTargets.class);
-                startActivity(i);
-            }
-        });
+//        startbutton = (Button) findViewById(R.id.startbutton);
+//        locationbutton = (Button) findViewById(R.id.locationbutton);
+//        helpbutton = (Button) findViewById(R.id.helpbutton);
+//
+//
+//        startbutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                i = new Intent(MainMenu.this, ImageTargets.class);
+//                startActivity(i);
+//            }
+//        });
 
 
 
