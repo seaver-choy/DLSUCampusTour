@@ -108,6 +108,12 @@
             android:name=".SampleStack"
             android:label="@string/title_activity_sample_stack" >
         </activity>
+        <activity
+            android:name=".location_cardview"
+            android:label="@string/list"
+            android:parentActivityName=".ImageTargets" >
+
+        </activity>
     </application>
 
 </manifest>

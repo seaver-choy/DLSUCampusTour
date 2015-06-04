@@ -890,6 +890,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
 
 
                 //listbutton.setVisibility(View.GONE);
+                Intent openListLocation = new Intent(getApplicationContext(),location_cardview.class);
+                startActivity(openListLocation);
             }
         });
     }

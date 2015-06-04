@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 19
+    compileSdkVersion 21
     buildToolsVersion "22.0.1"
 
     defaultConfig {
         applicationId "com.qualcomm.QCARSamples.ImageTargets"
         minSdkVersion 9
-        targetSdkVersion 18
+        targetSdkVersion 21
     }
 
     sourceSets.main.jni.srcDirs = []
@@ -21,4 +21,7 @@ android {
 
 dependencies {
     compile files('src/main/java/Vuforia.jar')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
 }
