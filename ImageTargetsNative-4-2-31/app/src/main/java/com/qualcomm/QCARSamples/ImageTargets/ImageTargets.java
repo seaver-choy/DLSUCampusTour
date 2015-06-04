@@ -888,6 +888,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
             @Override
             public void onClick(View v) {
 
+
                 //listbutton.setVisibility(View.GONE);
             }
         });

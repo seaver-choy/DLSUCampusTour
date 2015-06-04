@@ -60,6 +60,15 @@ public class ActivitySplashScreen extends Activity
             }
         });
 
+        mhelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i = new Intent(ActivitySplashScreen.this, SampleStack.class);
+                finish();
+                startActivity(i);
+            }
+        });
+
 
 
 //        final Handler handler = new Handler();

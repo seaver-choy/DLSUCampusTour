@@ -1,0 +1,6 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
+    android:name="com.qualcomm.QCARSamples.ImageTargets.ViewDetailsFragment"
+    tools:layout="@layout/fragment_view_details" android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+<!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/activity_view_details.xml -->

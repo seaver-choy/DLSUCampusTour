@@ -56,6 +56,8 @@
     <string name="menu_flash_error_on">Unable to turn on flash</string>
     <string name="splash_screen_description">Vuforia Splash</string>
     <string name="title_activity_main_menu">MainMenu</string>
+    <string name="title_activity_sample_stack">SampleStack</string>
+    <string name="title_activity_view_details">ViewDetails</string>
     <!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="SampleAppsTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
