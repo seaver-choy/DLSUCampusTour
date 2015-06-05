@@ -2,6 +2,7 @@ package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -74,6 +75,6 @@ public class location_cardview extends Activity implements listLocations_Recycle
 
     @Override
     public void itemClicked(View view, int position) {
-
+        startActivity(new Intent(this, ViewDetails.class));
     }
 }

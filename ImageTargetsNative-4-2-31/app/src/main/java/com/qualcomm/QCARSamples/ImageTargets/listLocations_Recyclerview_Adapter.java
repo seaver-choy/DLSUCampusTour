@@ -75,6 +75,10 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         public void onClick(View v) {
             context.startActivity(new Intent(context, ViewDetails.class));
 
+            if(clickListener!=null){
+                clickListener.itemClicked(v,getPosition());
+            }
+
         }
     }
 
