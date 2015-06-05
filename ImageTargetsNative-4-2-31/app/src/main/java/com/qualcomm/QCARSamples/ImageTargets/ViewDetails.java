@@ -26,9 +26,18 @@ public class ViewDetails extends Activity implements
     Animation slide_in_left, slide_out_right;
     Animation slide_in_right, slide_out_left;
 
-    int gallery_grid_Images[]={R.drawable.appicon,R.drawable.menuhelp,R.drawable.menustart,
-            R.drawable.menulocations,R.drawable.pauseicon,R.drawable.unfreezeicon,R.drawable.playicon,
-            R.drawable.listicon,R.drawable.locationsicon,R.drawable.freezeicon
+    int gallery_grid_Images[]={
+            R.drawable.appicon,
+            R.drawable.menuhelp,
+            R.drawable.menustart,
+            R.drawable.menulocations,
+            R.drawable.pauseicon,
+            R.drawable.target1,
+            R.drawable.door2,
+            R.drawable.door3,
+            R.drawable.target2,
+            R.drawable.pattern1
+
     };
 
     @Override
@@ -37,13 +46,11 @@ public class ViewDetails extends Activity implements
         setContentView(R.layout.activity_view_details);
 
         mDetector = new GestureDetectorCompat(this,this);
-//
-//        buttonPrev = (Button) findViewById(R.id.prev);
-//        buttonNext = (Button) findViewById(R.id.next);
+
         viewFlipper = (ViewFlipper) findViewById(R.id.viewflipper);
         viewFlipper.setMeasureAllChildren(false);
 
-        for(int i=0;i<gallery_grid_Images.length;i++)
+        for(int i=0 ;i<gallery_grid_Images.length;i++)
         {
             //  This will create dynamic image view and add them to ViewFlipper
             setFlipperImage(gallery_grid_Images[i]);
@@ -59,29 +66,6 @@ public class ViewDetails extends Activity implements
         slide_out_left = AnimationUtils.loadAnimation(this,
                 R.anim.slide_out_left);
 
-        //viewFlipper.setInAnimation(slide_in_left);
-        //viewFlipper.setOutAnimation(slide_out_right);
-
-//        buttonPrev.setOnClickListener(new OnClickListener() {
-//
-//            @Override
-//            public void onClick(View arg0) {
-//                viewFlipper.setInAnimation(slide_in_right);
-//                viewFlipper.setOutAnimation(slide_out_left);
-//                viewFlipper.showPrevious();
-//            }
-//        });
-//
-//        buttonNext.setOnClickListener(new OnClickListener() {
-//
-//            @Override
-//            public void onClick(View arg0) {
-//                viewFlipper.setInAnimation(slide_in_left);
-//                viewFlipper.setOutAnimation(slide_out_right);
-//                viewFlipper.showNext();
-//            }
-//        });
-        ;
     }
 
     private void setFlipperImage(int res) {
@@ -111,15 +95,12 @@ public class ViewDetails extends Activity implements
         if((e1.getX() - e2.getX()) > sensitvity){
             viewFlipper.setInAnimation(slide_in_right);
             viewFlipper.setOutAnimation(slide_out_left);
-            viewFlipper.showPrevious();
-//            Toast.makeText(ViewDetails.this,
-//                    "Previous", Toast.LENGTH_SHORT).show();
+            viewFlipper.showNext();
+
         }else if((e2.getX() - e1.getX()) > sensitvity){
             viewFlipper.setInAnimation(slide_in_left);
             viewFlipper.setOutAnimation(slide_out_right);
-            viewFlipper.showNext();
-//            Toast.makeText(ViewDetails.this,
-//                    "Next", Toast.LENGTH_SHORT).show();
+            viewFlipper.showPrevious();
         }
 
         return true;

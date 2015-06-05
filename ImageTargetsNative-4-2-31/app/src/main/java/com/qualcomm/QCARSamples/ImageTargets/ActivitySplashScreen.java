@@ -60,7 +60,7 @@ public class ActivitySplashScreen extends Activity
             @Override
             public void onClick(View view) {
                 i = new Intent(ActivitySplashScreen.this, ImageTargets.class);
-                finish();
+
                 startActivity(i);
 
             }
@@ -70,7 +70,7 @@ public class ActivitySplashScreen extends Activity
             @Override
             public void onClick(View view) {
                 i = new Intent(ActivitySplashScreen.this, ViewDetails.class);
-                finish();
+
                 startActivity(i);
             }
         });
