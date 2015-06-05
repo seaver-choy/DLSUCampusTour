@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
@@ -14,11 +15,12 @@ import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 import java.util.List;
 
 
-public class location_cardview extends Activity {
+public class location_cardview extends Activity implements listLocations_Recyclerview_Adapter.ClickListener{
     private RecyclerView recyclerView;
     private listLocations_Recyclerview_Adapter adapter;
     private DatabaseHelper databaseHelper;
     private List<Location> locations;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,7 @@ public class location_cardview extends Activity {
 
         recyclerView = (RecyclerView) findViewById(R.id.locations_recyclerview);
         adapter = new listLocations_Recyclerview_Adapter(this, getIconData());
+        adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
@@ -67,5 +70,10 @@ public class location_cardview extends Activity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void itemClicked(View view, int position) {
+
     }
 }
