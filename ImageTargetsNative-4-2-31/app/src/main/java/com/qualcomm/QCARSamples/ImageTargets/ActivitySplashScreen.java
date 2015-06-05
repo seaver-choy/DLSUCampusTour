@@ -69,7 +69,7 @@ public class ActivitySplashScreen extends Activity
         mhelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = new Intent(ActivitySplashScreen.this, SampleStack.class);
+                i = new Intent(ActivitySplashScreen.this, ViewDetails.class);
                 finish();
                 startActivity(i);
             }

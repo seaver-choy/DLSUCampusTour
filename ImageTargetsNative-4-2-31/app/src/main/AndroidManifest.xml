@@ -45,7 +45,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <!--
@@ -112,7 +111,10 @@
             android:name=".location_cardview"
             android:label="@string/list"
             android:parentActivityName=".ImageTargets" >
-
+        </activity>
+        <activity
+            android:name=".ViewDetails"
+            android:label="@string/title_activity_view_details" >
         </activity>
     </application>
 
