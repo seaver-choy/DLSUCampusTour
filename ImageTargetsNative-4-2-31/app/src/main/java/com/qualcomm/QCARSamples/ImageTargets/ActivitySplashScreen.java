@@ -54,17 +54,7 @@ public class ActivitySplashScreen extends Activity
         mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
 
         databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
-
-        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "pink_trees", false);
-        databaseHelper.createLocation(tempLocation);
-
-        Target tempTarget = new Target(1 , "chips", "Text.png");
-        databaseHelper.createTarget(tempTarget);
-        tempTarget = new Target(2, "stones", "TextureTeapotBlue.png");
-        databaseHelper.createTarget(tempTarget);
-        tempTarget = new Target(3, "tarmac", "TextureTeapotBrass.png");
-        databaseHelper.createTarget(tempTarget);
-
+        databaseHelper.initializeDatabase();
 
         mstart.setOnClickListener(new View.OnClickListener() {
             @Override

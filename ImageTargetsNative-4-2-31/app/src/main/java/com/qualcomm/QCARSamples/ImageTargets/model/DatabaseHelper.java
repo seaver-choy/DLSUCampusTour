@@ -102,6 +102,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    public void initializeDatabase()
+    {
+        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "pink_trees", false);
+        this.createLocation(tempLocation);
+
+        Target tempTarget = new Target(1 , "chips", "Text.png");
+        this.createTarget(tempTarget);
+        tempTarget = new Target(2, "stones", "TextureTeapotBlue.png");
+        this.createTarget(tempTarget);
+        tempTarget = new Target(3, "tarmac", "TextureTeapotBrass.png");
+        this.createTarget(tempTarget);
+    }
+
     //CRUD of location
     public Location getLocation(int loc_id) {
         SQLiteDatabase db = this.getReadableDatabase();

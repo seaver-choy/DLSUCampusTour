@@ -40,9 +40,10 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-5.827586">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+              <caret line="455" column="40" selection-start-line="455" selection-start-column="27" selection-end-line="455" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#34464#34506#0" expanded="true" />
                 <element signature="e#40477#40478#0" expanded="true" />
                 <element signature="e#40511#40512#0" expanded="true" />
               </folding>
@@ -50,14 +51,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActivitySplashScreen.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ActivitySplashScreen.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5687732">
-              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-              <folding>
-                <element signature="e#2938#2939#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,16 +93,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DatabaseHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="255" column="5" selection-start-line="255" selection-start-column="5" selection-end-line="255" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.5260223">
+              <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6334#6342#0" expanded="true" />
-                <element signature="e#8012#8020#0" expanded="true" />
-                <element signature="e#8593#8601#0" expanded="true" />
+                <element signature="e#6872#6880#0" expanded="true" />
+                <element signature="e#8550#8558#0" expanded="true" />
+                <element signature="e#9131#9139#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1480,8 +1479,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/Targets.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/Target.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/DatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java" />
       </list>
     </option>
   </component>
@@ -2227,6 +2226,7 @@
           <caret line="90" column="40" selection-start-line="90" selection-start-column="39" selection-end-line="90" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#34464#34506#0" expanded="true" />
             <element signature="e#40477#40478#0" expanded="true" />
             <element signature="e#40511#40512#0" expanded="true" />
           </folding>
@@ -2237,9 +2237,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2938#2939#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2283,9 +2281,9 @@
           <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6334#6342#0" expanded="true" />
-            <element signature="e#8012#8020#0" expanded="true" />
-            <element signature="e#8593#8601#0" expanded="true" />
+            <element signature="e#6872#6880#0" expanded="true" />
+            <element signature="e#8550#8558#0" expanded="true" />
+            <element signature="e#9131#9139#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2335,6 +2333,7 @@
           <caret line="906" column="5" selection-start-line="906" selection-start-column="5" selection-end-line="906" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#34464#34506#0" expanded="true" />
             <element signature="e#40477#40478#0" expanded="true" />
             <element signature="e#40511#40512#0" expanded="true" />
           </folding>
@@ -2373,9 +2372,9 @@
           <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6334#6342#0" expanded="true" />
-            <element signature="e#8012#8020#0" expanded="true" />
-            <element signature="e#8593#8601#0" expanded="true" />
+            <element signature="e#6872#6880#0" expanded="true" />
+            <element signature="e#8550#8558#0" expanded="true" />
+            <element signature="e#9131#9139#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2437,6 +2436,7 @@
           <caret line="880" column="0" selection-start-line="880" selection-start-column="0" selection-end-line="880" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#34464#34506#0" expanded="true" />
             <element signature="e#40477#40478#0" expanded="true" />
             <element signature="e#40511#40512#0" expanded="true" />
           </folding>
@@ -2623,36 +2623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.827586">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#40477#40478#0" expanded="true" />
-            <element signature="e#40511#40512#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargetsRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="255" column="5" selection-start-line="255" selection-start-column="5" selection-end-line="255" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6334#6342#0" expanded="true" />
-            <element signature="e#8012#8020#0" expanded="true" />
-            <element signature="e#8593#8601#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2679,12 +2654,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ImageTargets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.827586">
+          <caret line="455" column="40" selection-start-line="455" selection-start-column="27" selection-end-line="455" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#34464#34506#0" expanded="true" />
+            <element signature="e#40477#40478#0" expanded="true" />
+            <element signature="e#40511#40512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/ActivitySplashScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5687732">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/qualcomm/QCARSamples/ImageTargets/model/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5260223">
+          <caret line="104" column="36" selection-start-line="104" selection-start-column="36" selection-end-line="104" selection-end-column="36" />
           <folding>
-            <element signature="e#2938#2939#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#6872#6880#0" expanded="true" />
+            <element signature="e#8550#8558#0" expanded="true" />
+            <element signature="e#9131#9139#0" expanded="true" />
           </folding>
         </state>
       </provider>
