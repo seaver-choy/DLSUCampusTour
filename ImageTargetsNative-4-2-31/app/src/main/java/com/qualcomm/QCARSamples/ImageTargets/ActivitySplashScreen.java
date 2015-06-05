@@ -19,6 +19,8 @@ import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
+import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+
 
 public class ActivitySplashScreen extends Activity
 {
@@ -28,7 +30,7 @@ public class ActivitySplashScreen extends Activity
     private ImageButton mlocations;
     private ImageButton mhelp;
     Intent i;
-
+    private DatabaseHelper databaseHelper;
     
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -49,6 +51,12 @@ public class ActivitySplashScreen extends Activity
         mstart = (ImageButton) findViewById(R.id.mstartbutton);
         mlocations = (ImageButton) findViewById(R.id.mlocationsbutton);
         mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
+
+        databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
+
+        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "pink_trees", false);
+        databaseHelper.createLocation(tempLocation);
+
 
         mstart.setOnClickListener(new View.OnClickListener() {
             @Override

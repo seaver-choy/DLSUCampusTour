@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -17,12 +19,11 @@ import java.util.List;
  */
 public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<listLocations_Recyclerview_Adapter.myViewHolder> {
     private LayoutInflater inflater;
-    List<location> locationData = Collections.emptyList();
+    List<Location> locationData = Collections.emptyList();
 
-    public listLocations_Recyclerview_Adapter(Context context, List<location> locationData) {
+    public listLocations_Recyclerview_Adapter(Context context, List<Location> locationData) {
         inflater = LayoutInflater.from(context);
         this.locationData = locationData;
-
 //        Resources res = context.getResources();
 //        locations = res.getStringArray(R.array.locations);
     }
@@ -37,10 +38,10 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
     @Override
     public void onBindViewHolder(myViewHolder holder, int position) {
-        location currentLoc = locationData.get(position);
-        holder.title.setText(currentLoc.name);
-        holder.icon.setImageResource(currentLoc.icon);
-        holder.description.setText(currentLoc.description);
+        Location currentLoc = locationData.get(position);
+        holder.title.setText(currentLoc.getName());
+        holder.icon.setImageResource(currentLoc.getIcon());
+        holder.description.setText(currentLoc.getDescription());
     }
 
     @Override

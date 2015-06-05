@@ -1,11 +1,14 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,36 +17,35 @@ import java.util.List;
 public class location_cardview extends Activity {
     private RecyclerView recyclerView;
     private listLocations_Recyclerview_Adapter adapter;
-    String[]locations;
-    String[]descriptions;
+    private DatabaseHelper databaseHelper;
+    private List<Location> locations;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_view);
-        locations = getResources().getStringArray(R.array.locations);
-        descriptions = getResources().getStringArray(R.array.descriptions);
+        databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
+        locations = databaseHelper.getAllLocations();
+
         recyclerView = (RecyclerView) findViewById(R.id.locations_recyclerview);
-        adapter = new listLocations_Recyclerview_Adapter(this,getData());
+        adapter = new listLocations_Recyclerview_Adapter(this, getIconData());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
-    public List<location> getData(){
-        List<location> data = new ArrayList<>();
-        int icon = R.drawable.pink_trees;
-        String desc = "Description amputa";
+    public List<Location> getIconData(){
 
-        for(int i = 0; i<locations.length;i++){
-            location current = new location();
-            current.name = locations[i];
-            current.icon = icon;
-            current.description = descriptions[i];
-
-            data.add(current);
+        for(int i = 0; i<locations.size();i++){
+            Context context = recyclerView.getContext();
+            int icon = context.getResources().getIdentifier(locations.get(i).getIconName(), "drawable", context.getPackageName());
+            locations.get(i).setIcon(icon);
+            //current.name = locations[i];
+            //current.description = descriptions[i];
         }
-
-        return data;
+        return locations;
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

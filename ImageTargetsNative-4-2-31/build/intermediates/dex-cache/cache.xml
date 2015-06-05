@@ -2,11 +2,53 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\admin\Documents\DLSUCampusTour\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
+        jar="C:\Users\admin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-cd4aaa78a796c04c90bcb77403e493cf0b47d62f.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-a4ff6bcc2b73db23342f7c0115730075cc9c13ad.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-4ca7a3e7f0cddf0739479f64458affd2be75ceec.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-88895b8c60f793dd2b532f7484105e1701c747cb.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-b9b97b5afc1892e4bd96cb198910f77eee48f83b.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="dc574f68d5776268181756e656458f20604240af">
-        <dex dex="C:\Users\admin\Documents\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-88b33cbfc86cc8e630d6a9597804eed891bac634.jar" />
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-c436f769d32af1e67ce6bfbf5f693398ddb9d85d.jar" />
+    </item>
+    <item
+        jar="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="C:\Users\admin\StudioProjects\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-b0ac15637debe31e268c807daaa0279ce526d799.jar" />
     </item>
 
 </items>

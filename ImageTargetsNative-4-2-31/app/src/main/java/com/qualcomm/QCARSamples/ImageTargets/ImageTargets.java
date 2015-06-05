@@ -20,7 +20,6 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
-import android.opengl.GLES20;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
@@ -41,11 +40,10 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.qualcomm.QCAR.QCAR;
+import com.qualcomm.QCARSamples.ImageTargets.model.Targets;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenu;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuGroup;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuInterface;
-import com.qualcomm.vuforia.CameraDevice;
-import com.qualcomm.vuforia.State;
 import com.qualcomm.vuforia.Vuforia;
 
 
@@ -907,6 +905,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         mGlView.onResume();
         isPaused = false;
     }
+
     /** Tells native code to switch dataset as soon as possible */
     private native void switchDatasetAsap(int datasetId);
     
