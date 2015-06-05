@@ -9,8 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 
-import java.util.ArrayList;
 import java.util.List;
 
 

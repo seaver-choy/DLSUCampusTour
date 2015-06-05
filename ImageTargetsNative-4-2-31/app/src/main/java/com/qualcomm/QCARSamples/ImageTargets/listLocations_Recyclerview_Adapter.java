@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 
 import java.util.Collections;
 import java.util.List;

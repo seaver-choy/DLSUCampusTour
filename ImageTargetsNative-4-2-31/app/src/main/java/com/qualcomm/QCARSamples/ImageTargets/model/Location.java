@@ -1,4 +1,4 @@
-package com.qualcomm.QCARSamples.ImageTargets;
+package com.qualcomm.QCARSamples.ImageTargets.model;
 
 /**
  * Created by Interns on 5/29/2015.
