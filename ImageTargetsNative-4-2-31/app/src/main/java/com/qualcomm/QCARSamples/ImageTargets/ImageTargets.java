@@ -40,7 +40,8 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import com.qualcomm.QCAR.QCAR;
-import com.qualcomm.QCARSamples.ImageTargets.model.Targets;
+import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Target;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenu;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuGroup;
 import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuInterface;
@@ -88,8 +89,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     // Our renderer:
     private ImageTargetsRenderer mRenderer;
 
-    //List of targets and their corresponding images
-    Targets targets;
+    private DatabaseHelper databaseHelper;
 
     // Display size of the device:
     private int mScreenWidth = 0;
@@ -369,6 +369,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         // Load any sample specific textures:
         mTextures = new Vector<Texture>();
+        databaseHelper = DatabaseHelper.getInstance(getApplicationContext());
         loadTextures();
         
         // Configure Vuforia to use OpenGL ES 2.0
@@ -390,24 +391,12 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
      * We want to load specific textures from the APK, which we will later use
      * for rendering.
      */
-    //gets targets from a text file.
-    private void loadTargets()
-    {
-        try
-        {
-            targets = new Targets(getAssets().open("TargetsTextures.txt"));
-        }catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
     //loads all textures
     private void loadTextures()
     {
-        String[] allTargets = null;
-        loadTargets();
+        String[] allTargets;
         //gets the targetImages only
-        allTargets = targets.getAllTargetImages();
+        allTargets = databaseHelper.getImageNames();
 
         if(allTargets != null)
         {
@@ -822,7 +811,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         // Do application initialization in native code (e.g. registering
         // callbacks, etc.):
         //initializes for getting target names as well
-        initApplicationNative(mScreenWidth, mScreenHeight, targets.getAllTargetNames());
+        initApplicationNative(mScreenWidth, mScreenHeight, databaseHelper.getTargetNames());
         
         // Create OpenGL ES view:
         int depthSize = 16;
@@ -1193,11 +1182,5 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     public AssetManager getAssetManager()
     {
         return getAssets();
-    }
-
-    public String[] getTargets()
-    {
-        loadTargets();
-        return targets.getAllTargetNames();
     }
 }

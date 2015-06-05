@@ -102,6 +102,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    //CRUD of location
     public Location getLocation(int loc_id) {
         SQLiteDatabase db = this.getReadableDatabase();
 
@@ -163,6 +164,107 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
+
+        return tag_id;
+    }
+
+    //CRUD of Target
+    public List<Target> getAllTargets() {
+        List<Target> targetList = new ArrayList<Target>();
+        String selectQuery = "SELECT  * FROM " + TABLE_TARGET;
+
+        Log.e(LOG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                Target tl = new Target();
+                tl.setTargetID(c.getInt((c.getColumnIndex(KEY_ID))));
+                tl.setImageName((c.getString(c.getColumnIndex(KEY_DESCRIPTION))));
+                tl.setTargetName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
+                tl.setLocID(c.getInt((c.getColumnIndex(KEY_LOCATION_ID))));
+
+                // adding to todo list
+                targetList.add(tl);
+            } while (c.moveToNext());
+        }
+
+        return targetList;
+    }
+
+    public Target getTarget(int target_id) {
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        String selectQuery = "SELECT  * FROM " + TABLE_TARGET + " WHERE "
+                + KEY_ID + " = " + target_id;
+
+        Log.e(LOG, selectQuery);
+
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        if (c != null)
+            c.moveToFirst();
+
+        Target tl = new Target();
+        tl.setTargetID(c.getInt((c.getColumnIndex(KEY_ID))));
+        tl.setImageName((c.getString(c.getColumnIndex(KEY_DESCRIPTION))));
+        tl.setTargetName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
+        tl.setLocID(c.getInt((c.getColumnIndex(KEY_LOCATION_ID))));
+
+        return tl;
+    }
+
+    public String[] getTargetNames()
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<String> targetNames = new ArrayList<String>();
+        String selectQuery = "SELECT " + KEY_TARGET_NAME + " FROM " + TABLE_TARGET;
+
+        Log.e(LOG, selectQuery);
+
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        if (c.moveToFirst()) {
+            do {
+                targetNames.add(c.getString(c.getColumnIndex(KEY_TARGET_NAME)));
+            } while (c.moveToNext());
+        }
+
+        return targetNames.toArray(new String[targetNames.size()]);
+    }
+
+    public String[] getImageNames()
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        List<String> imageNames = new ArrayList<String>();
+        String selectQuery = "SELECT " + KEY_IMAGE_NAME + " FROM " + TABLE_TARGET;
+
+        Log.e(LOG, selectQuery);
+
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        if (c.moveToFirst()) {
+            do {
+                imageNames.add(c.getString(c.getColumnIndex(KEY_IMAGE_NAME)));
+            } while (c.moveToNext());
+        }
+
+        return imageNames.toArray(new String[imageNames.size()]);
+    }
+
+    public long createTarget(Target target) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_TARGET_NAME, target.getTargetName());
+        values.put(KEY_IMAGE_NAME, target.getImageName());
+        values.put(KEY_LOCATION_ID, target.getLocID());
+
+        // insert row
+        long tag_id = db.insert(TABLE_TARGET, null, values);
 
         return tag_id;
     }

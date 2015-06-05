@@ -1,41 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/values/strings.xml -->
-    <eat-comment/>
-    <string-array name="descriptions">
-
-        <item>1Description/Buttons go here...</item>
-        <item>2Description/Buttons go here...</item>
-        <item>3Description/Buttons go here...</item>
-        <item>4Description/Buttons go here...</item>
-        <item>5Description/Buttons go here...</item>
-        <item>6Description/Buttons go here...</item>
-        <item>7Description/Buttons go here...</item>
-        <item>8Description/Buttons go here...</item>
-        <item>9Description/Buttons go here...</item>
-        <item>10Description/Buttons go here...</item>
-        <item>11Description/Buttons go here...</item>
-        <item>12Description/Buttons go here...</item>
-        <item>13Description/Buttons go here...</item>
-
-    </string-array>
-    <string-array name="locations">
-
-        <item>Agno</item>
-        <item>Andrew Building</item>
-        <item>SJ Hall</item>
-        <item>Henry Sy Hall</item>
-        <item>LS Building</item>
-        <item>Miguel Velasco Building</item>
-        <item>STRC Building</item>
-        <item>Mutien Marie Building</item>
-        <item>Yuchenco Building</item>
-        <item>Brother Conon Hall</item>
-        <item>Enrique Razon Sports Complex</item>
-        <item>Brother Bloemen Hall</item>
-        <item>Gokongwei Building</item>
-
-    </string-array>
     <!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>

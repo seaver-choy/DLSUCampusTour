@@ -20,6 +20,7 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Target;
 
 
 public class ActivitySplashScreen extends Activity
@@ -56,6 +57,13 @@ public class ActivitySplashScreen extends Activity
 
         Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "pink_trees", false);
         databaseHelper.createLocation(tempLocation);
+
+        Target tempTarget = new Target(1 , "chips", "Text.png");
+        databaseHelper.createTarget(tempTarget);
+        tempTarget = new Target(2, "stones", "TextureTeapotBlue.png");
+        databaseHelper.createTarget(tempTarget);
+        tempTarget = new Target(3, "tarmac", "TextureTeapotBrass.png");
+        databaseHelper.createTarget(tempTarget);
 
 
         mstart.setOnClickListener(new View.OnClickListener() {
