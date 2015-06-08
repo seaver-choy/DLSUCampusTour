@@ -53,14 +53,23 @@ public class ActivitySplashScreen extends Activity
         mlocations = (ImageButton) findViewById(R.id.mlocationsbutton);
         mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
 
-        databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
-        databaseHelper.initializeDatabase();
+        boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun", true);
+
+        if(firstRun) {
+            databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
+            databaseHelper.initializeDatabase();
+
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).
+                    edit().
+                    putBoolean("firstRun", false).
+                    commit();
+        }
 
         mstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 i = new Intent(ActivitySplashScreen.this, ImageTargets.class);
-
+                finish();
                 startActivity(i);
 
             }
@@ -70,7 +79,7 @@ public class ActivitySplashScreen extends Activity
             @Override
             public void onClick(View view) {
                 i = new Intent(ActivitySplashScreen.this, ViewDetails.class);
-
+                finish();
                 startActivity(i);
             }
         });
