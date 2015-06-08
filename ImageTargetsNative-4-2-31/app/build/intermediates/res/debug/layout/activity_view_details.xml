@@ -10,15 +10,6 @@
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-
-
-    <ViewFlipper
-        android:id="@+id/viewflipper"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#FFFFFF">
-    </ViewFlipper>
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,13 +17,29 @@
         android:id="@+id/scrollView"
         android:layout_gravity="center_horizontal"
         >
-
+        <LinearLayout
+          android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FFFFFF">
+    </ViewFlipper>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:fontFamily="Arial"
             android:textStyle="normal"
+            android:layout_marginTop="10dp"
             android:text="This is the content!This is the content!
             This is the content!This is the content!This is the content!
             This is the content!This is the content!This is the content!
@@ -52,8 +59,8 @@
             This is the content!This is the content!This is the content!"
             android:id="@+id/textView"
             android:background="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
 
-    </ScrollView>>
 
-
-</LinearLayout><!-- From: file:/C:/Users/Interns/Desktop/workspace/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/activity_view_details.xml -->
+</LinearLayout><!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/activity_view_details.xml -->

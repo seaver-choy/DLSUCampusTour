@@ -1654,20 +1654,21 @@ containing a value of this type.
         public static final int locationsicon=0x7f020045;
         public static final int lockicon=0x7f020046;
         public static final int logo=0x7f020047;
-        public static final int mainmenu=0x7f020048;
-        public static final int menuhelp=0x7f020049;
-        public static final int menulocations=0x7f02004a;
-        public static final int menustart=0x7f02004b;
-        public static final int pattern=0x7f02004c;
-        public static final int pattern1=0x7f02004d;
-        public static final int pauseicon=0x7f02004e;
-        public static final int pink_trees=0x7f02004f;
-        public static final int playicon=0x7f020050;
-        public static final int splashscreen=0x7f020051;
-        public static final int target1=0x7f020052;
-        public static final int target2=0x7f020053;
-        public static final int unfreezeicon=0x7f020054;
-        public static final int vuforia_splash=0x7f020055;
+        public static final int magnifyicon=0x7f020048;
+        public static final int mainmenu=0x7f020049;
+        public static final int menuhelp=0x7f02004a;
+        public static final int menulocations=0x7f02004b;
+        public static final int menustart=0x7f02004c;
+        public static final int pattern=0x7f02004d;
+        public static final int pattern1=0x7f02004e;
+        public static final int pauseicon=0x7f02004f;
+        public static final int pink_trees=0x7f020050;
+        public static final int playicon=0x7f020051;
+        public static final int splashscreen=0x7f020052;
+        public static final int target1=0x7f020053;
+        public static final int target2=0x7f020054;
+        public static final int unfreezeicon=0x7f020055;
+        public static final int vuforia_splash=0x7f020056;
     }
     public static final class id {
         public static final int Freezebutton=0x7f0c0058;
@@ -1687,7 +1688,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c003d;
         public static final int action_mode_bar_stub=0x7f0c003c;
         public static final int action_mode_close_button=0x7f0c0025;
-        public static final int action_settings=0x7f0c0068;
+        public static final int action_settings=0x7f0c0069;
         public static final int activity_chooser_view_content=0x7f0c0026;
         public static final int alertTitle=0x7f0c0030;
         public static final int always=0x7f0c0016;
@@ -1714,6 +1715,7 @@ containing a value of this type.
         public static final int icon=0x7f0c002b;
         public static final int ifRoom=0x7f0c0018;
         public static final int image=0x7f0c0028;
+        public static final int imageButton=0x7f0c0068;
         public static final int imageView=0x7f0c0052;
         public static final int imagteview=0x7f0c005b;
         public static final int listMode=0x7f0c0009;
