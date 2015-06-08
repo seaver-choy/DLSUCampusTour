@@ -4,12 +4,12 @@
     android:layout_height="wrap_content"
     android:background="@drawable/background"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-  >
+    >
 
     <android.support.v7.widget.CardView
         android:id="@+id/locations_cardview"
         android:layout_width="match_parent"
-        android:layout_height="259dp"
+        android:layout_height="wrap_content"
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="4dp"
@@ -22,35 +22,31 @@
             >
 
             <RelativeLayout
-                android:id="@+id/test"
+
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="184dp"
                 android:orientation="vertical"
                 android:weightSum="1"
                 >
 
 
                 <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:id="@+id/location_imageview"
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:adjustViewBounds="true"
-                    android:focusable="true"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/pink_trees"
-                    android:paddingBottom="5dp" />
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/pink_trees" />
 
                 <TextView
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_alignBottom="@+id/location_imageview"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
                     android:background="#2849df54"
 
                     android:shadowColor="#000000"
@@ -58,38 +54,21 @@
                     android:textAlignment="center"
                     android:textColor="#ffffff"
                     android:textSize="23sp"
-                    android:layout_marginBottom="5dp"
-                    android:padding="5dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/description"
-                    android:text="sakuras are pink!"
-                    android:textColor="#ff000000"
                     android:padding="5dp"
-                    android:layout_below="@+id/location_imageview"
+                    android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true" />
-
-                <ImageButton
-                    android:layout_width="110dp"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/imageButton"
-                    android:padding="5dp"
-                    android:background="@drawable/details_btn"
-                    android:layout_below="@+id/description"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true" />
 
                 <ImageButton
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:id="@+id/lockbutton"
                     android:background="@drawable/lockicon"
-                    android:layout_below="@+id/description"
-                    android:layout_toLeftOf="@+id/imageButton"
-                    android:layout_toStartOf="@+id/imageButton" />
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="1dp" />
 
             </RelativeLayout>
 

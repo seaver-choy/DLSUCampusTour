@@ -112,7 +112,8 @@
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:label="@string/list"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ImageTargets" >
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ImageTargets"
+            android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.ViewDetails"

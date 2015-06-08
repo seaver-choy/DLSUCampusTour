@@ -45,7 +45,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         Location currentLoc = locationData.get(position);
         holder.title.setText(currentLoc.getName());
         holder.icon.setImageResource(currentLoc.getIcon());
-        holder.description.setText(currentLoc.getDescription());
+      //  holder.description.setText(currentLoc.getDescription());
     }
 
     public void setClickListener(ClickListener clickListener){
@@ -67,7 +67,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             itemView.setOnClickListener(this);
             title = (TextView) itemView.findViewById(R.id.title);
             icon = (ImageView) itemView.findViewById(R.id.location_imageview);
-            description = (TextView) itemView.findViewById(R.id.description);
+          //  description = (TextView) itemView.findViewById(R.id.description);
 
         }
 

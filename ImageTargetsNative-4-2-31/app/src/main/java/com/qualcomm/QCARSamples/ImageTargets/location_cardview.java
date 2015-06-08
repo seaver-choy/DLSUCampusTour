@@ -1,9 +1,11 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -16,7 +18,7 @@ import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 import java.util.List;
 
 
-public class location_cardview extends Activity implements listLocations_Recyclerview_Adapter.ClickListener{
+public class location_cardview extends ActionBarActivity implements listLocations_Recyclerview_Adapter.ClickListener{
     private RecyclerView recyclerView;
     private listLocations_Recyclerview_Adapter adapter;
     private DatabaseHelper databaseHelper;

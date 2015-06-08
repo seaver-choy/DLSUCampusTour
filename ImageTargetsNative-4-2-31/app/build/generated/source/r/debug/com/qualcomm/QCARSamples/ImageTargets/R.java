@@ -1687,7 +1687,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c003d;
         public static final int action_mode_bar_stub=0x7f0c003c;
         public static final int action_mode_close_button=0x7f0c0025;
-        public static final int action_settings=0x7f0c006b;
+        public static final int action_settings=0x7f0c0068;
         public static final int activity_chooser_view_content=0x7f0c0026;
         public static final int alertTitle=0x7f0c0030;
         public static final int always=0x7f0c0016;
@@ -1702,7 +1702,6 @@ containing a value of this type.
         public static final int customPanel=0x7f0c0034;
         public static final int decor_content_parent=0x7f0c003e;
         public static final int default_activity_button=0x7f0c0029;
-        public static final int description=0x7f0c0068;
         public static final int dialog=0x7f0c001b;
         public static final int disableHome=0x7f0c000c;
         public static final int dropdown=0x7f0c001c;
@@ -1715,16 +1714,15 @@ containing a value of this type.
         public static final int icon=0x7f0c002b;
         public static final int ifRoom=0x7f0c0018;
         public static final int image=0x7f0c0028;
-        public static final int imageButton=0x7f0c0069;
         public static final int imageView=0x7f0c0052;
         public static final int imagteview=0x7f0c005b;
         public static final int listMode=0x7f0c0009;
         public static final int list_item=0x7f0c002a;
         public static final int loading_indicator=0x7f0c0057;
-        public static final int location_imageview=0x7f0c0067;
+        public static final int location_imageview=0x7f0c0066;
         public static final int locations_cardview=0x7f0c0065;
         public static final int locations_recyclerview=0x7f0c005c;
-        public static final int lockbutton=0x7f0c006a;
+        public static final int lockbutton=0x7f0c0067;
         public static final int menu_group_title=0x7f0c005d;
         public static final int menu_group_title_divider=0x7f0c005e;
         public static final int mhelpbutton=0x7f0c0064;
@@ -1766,7 +1764,6 @@ containing a value of this type.
         public static final int stackView=0x7f0c0053;
         public static final int submit_area=0x7f0c004b;
         public static final int tabMode=0x7f0c000b;
-        public static final int test=0x7f0c0066;
         public static final int textSpacerNoButtons=0x7f0c0033;
         public static final int textView=0x7f0c0055;
         public static final int textview=0x7f0c005a;

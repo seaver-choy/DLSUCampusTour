@@ -11,8 +11,8 @@
         android:targetSdkVersion = application's targeted API level
     -->
     <uses-sdk
-        android:minSdkVersion="16"
-        android:targetSdkVersion="16" />
+        android:minSdkVersion="7"
+        android:targetSdkVersion="22" />
 
     <uses-feature android:glEsVersion="0x00020000" />
 
@@ -112,7 +112,9 @@
         <activity
             android:name=".location_cardview"
             android:label="@string/list"
-            android:parentActivityName=".ImageTargets" >
+            android:parentActivityName=".ImageTargets"
+            android:theme="@style/Theme.AppCompat.Light"
+            >
         </activity>
         <activity
             android:name=".ViewDetails"

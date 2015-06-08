@@ -486,7 +486,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c003d
 int id action_mode_bar_stub 0x7f0c003c
 int id action_mode_close_button 0x7f0c0025
-int id action_settings 0x7f0c006b
+int id action_settings 0x7f0c0068
 int id activity_chooser_view_content 0x7f0c0026
 int id alertTitle 0x7f0c0030
 int id always 0x7f0c0016
@@ -501,7 +501,6 @@ int id custom 0x7f0c0035
 int id customPanel 0x7f0c0034
 int id decor_content_parent 0x7f0c003e
 int id default_activity_button 0x7f0c0029
-int id description 0x7f0c0068
 int id dialog 0x7f0c001b
 int id disableHome 0x7f0c000c
 int id dropdown 0x7f0c001c
@@ -514,16 +513,15 @@ int id homeAsUp 0x7f0c000d
 int id icon 0x7f0c002b
 int id ifRoom 0x7f0c0018
 int id image 0x7f0c0028
-int id imageButton 0x7f0c0069
 int id imageView 0x7f0c0052
 int id imagteview 0x7f0c005b
 int id listMode 0x7f0c0009
 int id list_item 0x7f0c002a
 int id loading_indicator 0x7f0c0057
-int id location_imageview 0x7f0c0067
+int id location_imageview 0x7f0c0066
 int id locations_cardview 0x7f0c0065
 int id locations_recyclerview 0x7f0c005c
-int id lockbutton 0x7f0c006a
+int id lockbutton 0x7f0c0067
 int id menu_group_title 0x7f0c005d
 int id menu_group_title_divider 0x7f0c005e
 int id mhelpbutton 0x7f0c0064
@@ -565,7 +563,6 @@ int id src_over 0x7f0c0022
 int id stackView 0x7f0c0053
 int id submit_area 0x7f0c004b
 int id tabMode 0x7f0c000b
-int id test 0x7f0c0066
 int id textSpacerNoButtons 0x7f0c0033
 int id textView 0x7f0c0055
 int id textview 0x7f0c005a
