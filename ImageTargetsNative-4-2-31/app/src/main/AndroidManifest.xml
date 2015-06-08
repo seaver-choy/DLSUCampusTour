@@ -96,13 +96,15 @@
         <activity
             android:name=".AboutScreen"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
 
         <!-- ImageTargets Activity -->
         <activity
             android:name=".ImageTargets"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ActivitySplashScreen" />
         <activity
             android:name=".SampleStack"
             android:label="@string/title_activity_sample_stack" >
@@ -114,7 +116,8 @@
         </activity>
         <activity
             android:name=".ViewDetails"
-            android:label="@string/title_activity_view_details" >
+            android:label="@string/title_activity_view_details"
+            android:parentActivityName=".location_cardview" >
         </activity>
     </application>
 

@@ -68,18 +68,26 @@ public class ActivitySplashScreen extends Activity
         mstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = new Intent(ActivitySplashScreen.this, ImageTargets.class);
-                finish();
+                i = new Intent(getBaseContext(), ImageTargets.class);
                 startActivity(i);
 
             }
         });
 
+        mlocations.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i = new Intent(getBaseContext(), location_cardview.class);
+                startActivity(i);
+
+            }
+        });
+
+
         mhelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = new Intent(ActivitySplashScreen.this, ViewDetails.class);
-                finish();
+                i = new Intent(getBaseContext(), ViewDetails.class);
                 startActivity(i);
             }
         });
