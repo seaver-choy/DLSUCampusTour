@@ -3,6 +3,7 @@ package com.qualcomm.QCARSamples.ImageTargets;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.view.GestureDetectorCompat;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -15,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
-public class ViewDetails extends Activity implements
+public class ViewDetails extends ActionBarActivity implements
         GestureDetector.OnGestureListener {
 
     private GestureDetectorCompat mDetector;
@@ -27,7 +28,7 @@ public class ViewDetails extends Activity implements
     Animation slide_in_right, slide_out_left;
 
     int gallery_grid_Images[]={
-            R.drawable.appicon,
+            R.drawable.gox1,
             R.drawable.menuhelp,
             R.drawable.menustart,
             R.drawable.menulocations,

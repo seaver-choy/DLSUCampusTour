@@ -102,7 +102,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void initializeDatabase()
     {
-        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "pink_trees", false);
+        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "gox1", false);
         this.createLocation(tempLocation);
 
         Target tempTarget = new Target(1 , "chips", "Text.png");

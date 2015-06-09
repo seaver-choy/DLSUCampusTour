@@ -119,7 +119,8 @@
         <activity
             android:name=".ViewDetails"
             android:label="@string/title_activity_view_details"
-            android:parentActivityName=".location_cardview" >
+            android:parentActivityName=".location_cardview"
+            android:theme="@style/Theme.AppCompat.Light">
         </activity>
     </application>
 

@@ -10,56 +10,34 @@
     tools:context=".MainActivity"
     android:background="@drawable/background">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:id="@+id/scrollView"
-        android:layout_gravity="center_horizontal"
-        >
-        <LinearLayout
-          android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+
     <ViewFlipper
         android:id="@+id/viewflipper"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="#FFFFFF">
     </ViewFlipper>
-        </LinearLayout>
-        
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:fontFamily="Arial"
-            android:textStyle="normal"
-            android:layout_marginTop="10dp"
-            android:text="This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!
-            This is the content!This is the content!This is the content!"
-            android:id="@+id/textView"
-            android:background="#FFFFFF"/>
-        </LinearLayout>
+
+    <TextView
+        android:layout_width="354dp"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:fontFamily="Arial"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:text="Location: Gokongwei Building"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:id="@+id/details_content" />
+
+    <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/scrollView"
+                android:layout_gravity="center_horizontal"
+                >
+
     </ScrollView>
 
 
