@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/background"
+    android:background="#298A08"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     >
 
@@ -10,15 +10,17 @@
         android:id="@+id/locations_cardview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         card_view:cardUseCompatPadding="true"
         card_view:cardCornerRadius="4dp"
         card_view:cardElevation="4dp"
-        >
+       >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
+
             >
 
             <RelativeLayout
