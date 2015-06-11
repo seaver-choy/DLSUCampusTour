@@ -19,6 +19,7 @@ public class Target {
     private String target_name;
     private String image_name;
     private int target_id;
+
     public Target()
     {
     }
@@ -34,45 +35,45 @@ public class Target {
         this.loc_id = loc_id;
         this.target_name = target_name;
         this.image_name = image_name;
-
     }
-
 
     public Target(String target_name, String image_name) {
         this.target_name = target_name;
         this.image_name = image_name;
     }
 
-    public int getLocID() {
-        return loc_id;
-
-    }
-
+    //Setters
     public void setLocID(int loc_id) {
         this.loc_id = loc_id;
-    }
-
-    public String getImageName() {
-        return image_name;
     }
 
     public void setImageName(String image_name) {
         this.image_name = image_name;
     }
 
-    public String getTargetName() {
-        return target_name;
-    }
-
     public void setTargetName(String target_name) {
         this.target_name = target_name;
     }
 
-    public int getTargetID() {
-        return target_id;
-    }
-
     public void setTargetID(int target_id) {
         this.target_id = target_id;
+    }
+
+    //Getters
+    public int getLocID() {
+        return loc_id;
+
+    }
+
+    public String getImageName() {
+        return image_name;
+    }
+
+    public String getTargetName() {
+        return target_name;
+    }
+
+    public int getTargetID() {
+        return target_id;
     }
 }
