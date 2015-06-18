@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -45,6 +46,12 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         Location currentLoc = locationData.get(position);
         holder.title.setText(currentLoc.getName());
         holder.icon.setImageResource(currentLoc.getIcon());
+        holder.btn_loc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context,map.class));
+            }
+        });
       //  holder.description.setText(currentLoc.getDescription());
     }
 
@@ -60,6 +67,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
     class myViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView title;
         ImageView icon;
+        ImageButton btn_loc;
         TextView description;
 
         public myViewHolder(View itemView) {
@@ -67,6 +75,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             itemView.setOnClickListener(this);
             title = (TextView) itemView.findViewById(R.id.title);
             icon = (ImageView) itemView.findViewById(R.id.location_imageview);
+            btn_loc = (ImageButton) itemView.findViewById(R.id.btn_location);
           //  description = (TextView) itemView.findViewById(R.id.description);
 
         }
