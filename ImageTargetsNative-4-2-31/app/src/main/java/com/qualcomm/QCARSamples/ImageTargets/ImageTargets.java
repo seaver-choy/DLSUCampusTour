@@ -33,8 +33,11 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
+import android.view.animation.TranslateAnimation;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -58,6 +61,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     // Camera buttons
     private ImageButton listbutton;
     private ImageButton freezebutton;
+    private Button dabutton;
+
+    private ImageView border;
+    private boolean isDisplayed = true;
 
     // state flag
     private boolean isPaused = false;
@@ -846,6 +853,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         // Button connectors
         freezebutton = (ImageButton) findViewById(R.id.Freezebutton);
         listbutton = (ImageButton) findViewById(R.id.Listbutton);
+        dabutton = (Button) findViewById(R.id.button1);
+        border = (ImageView) findViewById(R.id.borderimage);
+
+
 
         //Button Listeners
         freezebutton.setOnClickListener(new View.OnClickListener() {
@@ -879,6 +890,24 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                 //listbutton.setVisibility(View.GONE);
                 Intent openListLocation = new Intent(getApplicationContext(),location_cardview.class);
                 startActivity(openListLocation);
+            }
+        });
+
+        dabutton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                if(isDisplayed) {
+
+                    border.setVisibility(View.GONE);
+                    isDisplayed = false;
+                }
+                else if(!isDisplayed) {
+
+                    border.setVisibility(View.VISIBLE);
+                    isDisplayed = true;
+                }
             }
         });
     }
