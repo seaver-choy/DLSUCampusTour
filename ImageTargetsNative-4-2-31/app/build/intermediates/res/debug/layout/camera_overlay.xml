@@ -36,4 +36,24 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="510dp"
+        android:id="@+id/borderimage"
+        android:src="@drawable/border"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Freezebutton"
+        android:layout_alignEnd="@+id/Freezebutton"
+        android:layout_marginLeft="-25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="border"
+        android:id="@+id/button1"
+        android:layout_above="@+id/Listbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="52dp" />
+
 </RelativeLayout><!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/camera_overlay.xml -->
