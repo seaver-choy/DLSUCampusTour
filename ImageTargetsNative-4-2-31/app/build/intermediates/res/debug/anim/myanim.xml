@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <rotate  xmlns:android="http://schemas.android.com/apk/res/android"
+        android:fromDegrees="0"
+        android:toDegrees="-90"
+        android:pivotX="50%"
+        android:duration="0" />
+
+</LinearLayout>
+<!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/anim/myanim.xml -->

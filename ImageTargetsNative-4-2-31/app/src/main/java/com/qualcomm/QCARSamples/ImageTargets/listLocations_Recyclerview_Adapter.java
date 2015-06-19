@@ -75,7 +75,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             itemView.setOnClickListener(this);
             title = (TextView) itemView.findViewById(R.id.title);
             icon = (ImageView) itemView.findViewById(R.id.location_imageview);
-            btn_loc = (ImageButton) itemView.findViewById(R.id.btn_location);
+            btn_loc = (ImageButton) itemView.findViewById(R.id.loc_button);
           //  description = (TextView) itemView.findViewById(R.id.description);
 
         }

@@ -75,7 +75,7 @@
                 <ImageButton
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:id="@+id/imageButton"
+                    android:id="@+id/loc_button"
                     android:background="@drawable/magnifyicon"
                     android:layout_alignBottom="@+id/title"
                     android:layout_alignParentRight="true"

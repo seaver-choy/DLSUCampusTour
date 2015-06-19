@@ -12,12 +12,15 @@ import java.util.Vector;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.hardware.Camera;
 import android.hardware.Camera.CameraInfo;
 import android.os.AsyncTask;
@@ -25,6 +28,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextPaint;
+import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -40,6 +45,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.qualcomm.QCAR.QCAR;
@@ -61,10 +67,12 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     // Camera buttons
     private ImageButton listbutton;
     private ImageButton freezebutton;
-    private Button dabutton;
+
 
     private ImageView border;
     private boolean isDisplayed = true;
+    private TextView content;
+    private TextView fake;
 
     // state flag
     private boolean isPaused = false;
@@ -853,8 +861,12 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         // Button connectors
         freezebutton = (ImageButton) findViewById(R.id.Freezebutton);
         listbutton = (ImageButton) findViewById(R.id.Listbutton);
-        dabutton = (Button) findViewById(R.id.button1);
+
         border = (ImageView) findViewById(R.id.borderimage);
+        content = (TextView) findViewById(R.id.contents);
+        fake = (TextView) findViewById(R.id.faketext);
+
+        fake.setRotation(90);
 
 
 
@@ -864,17 +876,29 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
             @Override
             public void onClick(View v) {
 
-               if(!isPaused)
+               if(!isPaused || !isDisplayed)
                {
                    freezebutton.setImageResource(R.drawable.playicon);
                    onFreeze();
                    Log.e("TAG", "FrozenButton Clicked!");
+
+                   border.setVisibility(View.VISIBLE);
+                   content.setVisibility(View.VISIBLE);
+                   fake.setVisibility(View.VISIBLE);
+                   isDisplayed = true;
+
                }
-                else if(isPaused)
+                else if(isPaused || isDisplayed)
                {
                    freezebutton.setImageResource(R.drawable.pauseicon);
                    onUnfreeze();
                    Log.e("TAG", "ListButton Clicked!");
+
+
+                   border.setVisibility(View.GONE);
+                   content.setVisibility(View.GONE);
+                   fake.setVisibility(View.GONE);
+                   isDisplayed = false;
                }
 
             }
@@ -893,23 +917,27 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
             }
         });
 
-        dabutton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View view) {
-
-                if(isDisplayed) {
-
-                    border.setVisibility(View.GONE);
-                    isDisplayed = false;
-                }
-                else if(!isDisplayed) {
-
-                    border.setVisibility(View.VISIBLE);
-                    isDisplayed = true;
-                }
-            }
-        });
+//        dabutton.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View view) {
+//
+//                if(isDisplayed) {
+//
+//                    border.setVisibility(View.GONE);
+//                    content.setVisibility(View.GONE);
+//                    fake.setVisibility(View.GONE);
+//                    isDisplayed = false;
+//                }
+//                else if(!isDisplayed) {
+//
+//                    border.setVisibility(View.VISIBLE);
+//                    content.setVisibility(View.VISIBLE);
+//                    fake.setVisibility(View.VISIBLE);
+//                    isDisplayed = true;
+//                }
+//            }
+//        });
     }
 
     protected void onFreeze()
@@ -1212,4 +1240,10 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     {
         return getAssets();
     }
+
+
+
+
+
+
 }
