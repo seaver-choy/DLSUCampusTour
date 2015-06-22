@@ -42,14 +42,17 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
     }
 
     @Override
-    public void onBindViewHolder(myViewHolder holder, int position) {
+    public void onBindViewHolder(myViewHolder holder, final int position) {
         Location currentLoc = locationData.get(position);
         holder.title.setText(currentLoc.getName());
         holder.icon.setImageResource(currentLoc.getIcon());
         holder.btn_loc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context,map.class));
+                if(position == 1)
+                    context.startActivity(new Intent(context,map.class));
+                else
+                    context.startActivity(new Intent(context,directions.class));
             }
         });
       //  holder.description.setText(currentLoc.getDescription());
