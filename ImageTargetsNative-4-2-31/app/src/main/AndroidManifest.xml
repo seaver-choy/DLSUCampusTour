@@ -113,15 +113,19 @@
             android:name=".location_cardview"
             android:label="@string/list"
             android:parentActivityName=".ImageTargets"
-            android:theme="@style/Theme.AppCompat.Light"
+            android:theme="@style/ActionBar.Solid.Dlsutheme"
             >
         </activity>
         <activity
             android:name=".ViewDetails"
             android:label="@string/title_activity_view_details"
             android:parentActivityName=".location_cardview"
-            android:theme="@style/Theme.AppCompat.Light">
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
         </activity>
+        <activity android:name=".map"
+            android:label="map"
+            android:parentActivityName=".location_cardview"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"></activity>
     </application>
 
 </manifest>
