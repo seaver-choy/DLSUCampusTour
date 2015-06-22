@@ -71,7 +71,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
 
     private ImageView border;
     private boolean isDisplayed = true;
-    private TextView content;
     private TextView fake;
 
     // state flag
@@ -459,7 +458,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     private native void stopCamera();
     
-    
+
     /**
      * Native method for setting / updating the projection matrix for AR content
      * rendering
@@ -863,11 +862,13 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         listbutton = (ImageButton) findViewById(R.id.Listbutton);
 
         border = (ImageView) findViewById(R.id.borderimage);
-        content = (TextView) findViewById(R.id.contents);
         fake = (TextView) findViewById(R.id.faketext);
 
         fake.setRotation(90);
 
+        border.setVisibility(View.GONE);
+        fake.setVisibility(View.GONE);
+        isDisplayed = false;
 
 
         //Button Listeners
@@ -883,7 +884,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                    Log.e("TAG", "FrozenButton Clicked!");
 
                    border.setVisibility(View.VISIBLE);
-                   content.setVisibility(View.VISIBLE);
                    fake.setVisibility(View.VISIBLE);
                    isDisplayed = true;
 
@@ -896,7 +896,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
 
 
                    border.setVisibility(View.GONE);
-                   content.setVisibility(View.GONE);
                    fake.setVisibility(View.GONE);
                    isDisplayed = false;
                }
