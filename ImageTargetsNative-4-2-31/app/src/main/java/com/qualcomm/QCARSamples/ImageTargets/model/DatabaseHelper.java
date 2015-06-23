@@ -128,16 +128,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void initializeDatabaseFromXML()
     {
         Location locations[] = SitesXMLPullParser.getLocations(this.getContext());
+        Log.e("TAG", "SUCCESSFULLY READ from locations.xml");
         for(int i = 0; i < locations.length; i++)
         {
             this.createLocation(locations[i]);
         }
 
         Target targets[] = SitesXMLPullParser.getTargets(this.getContext());
+        Log.e("TAG", "SUCCESSFULLY READ from targets.xml");
         for(int i = 0; i < locations.length; i++)
         {
             this.createTarget(targets[i]);
         }
+
     }
     //CRUD of location
     public Location getLocation(int loc_id) {

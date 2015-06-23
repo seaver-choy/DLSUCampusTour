@@ -1,12 +1,13 @@
 package com.qualcomm.QCARSamples.ImageTargets.model;
 
 import android.content.Context;
+import android.content.res.AssetManager;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
@@ -43,7 +44,8 @@ public class SitesXMLPullParser {
             XmlPullParser xpp = factory.newPullParser();
 
             // Open up InputStream and Reader of our file.
-            FileInputStream fis = ctxt.openFileInput("Locations.xml");
+            AssetManager assetManager = ctxt.getAssets();
+            InputStream fis = assetManager.open("Locations.xml");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
             //point parser to our file
@@ -131,7 +133,8 @@ public class SitesXMLPullParser {
             XmlPullParser xpp = factory.newPullParser();
 
             // Open up InputStream and Reader of our file.
-            FileInputStream fis = ctxt.openFileInput("Targets.xml");
+            AssetManager assetManager = ctxt.getAssets();
+            InputStream fis = assetManager.open("Targets.xml");
             BufferedReader reader = new BufferedReader(new InputStreamReader(fis));
 
             //point parser to our file
