@@ -136,7 +136,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         Target targets[] = SitesXMLPullParser.getTargets(this.getContext());
         Log.e("TAG", "SUCCESSFULLY READ from targets.xml");
-        for(int i = 0; i < locations.length; i++)
+        for(int i = 0; i < targets.length; i++)
         {
             this.createTarget(targets[i]);
         }
