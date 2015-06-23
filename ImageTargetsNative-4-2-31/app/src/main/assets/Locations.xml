@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Location-list>
+	<Location>
+		<location_id>1</location_id>
+		<location_name>Gokongwei</location_name>
+		<location_description>Land of CCS</location_description>
+		<location_icon_name>gox1</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_isBuilding>true</location_isBuilding>
+	</Location>
+	<Location>
+		<location_id>2</location_id>
+		<location_name>Yuchengco</location_name>
+		<location_description>Land of Economics</location_description>
+		<location_icon_name>pink_trees</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_isBuilding>true</location_isBuilding>
+	</Location>
+</Location-list>

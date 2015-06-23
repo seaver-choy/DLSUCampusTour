@@ -57,7 +57,7 @@ public class ActivitySplashScreen extends Activity
 
         if(firstRun) {
             databaseHelper = DatabaseHelper.getInstance(this.getApplicationContext());
-            databaseHelper.initializeDatabase();
+            databaseHelper.initializeDatabaseFromXML();
 
             getSharedPreferences("PREFERENCE", MODE_PRIVATE).
                     edit().

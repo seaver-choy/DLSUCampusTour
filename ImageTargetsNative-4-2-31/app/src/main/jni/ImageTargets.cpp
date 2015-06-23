@@ -333,7 +333,7 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_onQCARInitializedNative(
 
 
 JNIEXPORT void JNICALL
-Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIEnv *env, jobject)
+Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIEnv *env, jobject obj)
 {
     //LOG("Java_com_qualcomm_QCARSamples_ImageTargets_GLRenderer_renderFrame");
 
@@ -375,6 +375,11 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
 		    if(targets.hasElement(trackable.getName()))
 			 {
                 textureIndex = targets.getIndexOf(trackable.getName());
+                //Trying to call method from java.
+                //jstring js = env->NewStringUTF(trackable.getName());
+                //jclass javaClass = env->FindClass("com/qualcomm/QCARSamples/ImageTargets/ImageTargets");
+                //jmethodID method = env->GetMethodID(javaClass, "changeIsDisplayed", "()V");
+                //env->CallVoidMethod(obj,method);
 			 }
 
 //			if (strcmp(trackable.getName(), "chips") == 0)

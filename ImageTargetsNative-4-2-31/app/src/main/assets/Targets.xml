@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<Target-list>
+	<Target>
+		<target_id>1</target_id>
+		<target_name>chips</target_name>
+		<target_image_name>Text.png</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>2</target_id>
+		<target_name>stones</target_name>
+		<target_image_name>TextureTeapotBlue.png</target_image_name>
+		<target_location_id>2</target_location_id>
+	</Target>
+	<Target>
+		<target_id>3</target_id>
+		<target_name>tarmac</target_name>
+		<target_image_name>TextureTeapotBrass.png</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+</Target-list>
