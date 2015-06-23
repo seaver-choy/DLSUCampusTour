@@ -143,6 +143,16 @@ ADDED from AndroidManifest.xml:119:9
 		ADDED from AndroidManifest.xml:122:13
 	android:name
 		ADDED from AndroidManifest.xml:120:13
+activity#com.qualcomm.QCARSamples.ImageTargets.map
+ADDED from AndroidManifest.xml:125:9
+	android:label
+		ADDED from AndroidManifest.xml:126:13
+	android:theme
+		ADDED from AndroidManifest.xml:128:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:127:13
+	android:name
+		ADDED from AndroidManifest.xml:125:19
 activity#android.support.v7.widget.TestActivity
 ADDED from com.android.support:recyclerview-v7:21.0.3:18:9
 	android:label

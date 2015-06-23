@@ -113,7 +113,7 @@
             android:name=".location_cardview"
             android:label="@string/list"
             android:parentActivityName=".ImageTargets"
-            android:theme="@style/ActionBar.Solid.Dlsutheme"
+            android:theme="@style/SampleAppsTheme"
             >
         </activity>
         <activity
