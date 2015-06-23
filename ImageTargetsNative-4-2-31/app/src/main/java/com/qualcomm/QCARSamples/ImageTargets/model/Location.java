@@ -10,7 +10,17 @@ public class Location {
     private int loc_id;
     private boolean hasVisited;
     private int icon;
+    private boolean isBuilding;
 
+    public Location(int loc_id, String name, String description, String icon_name, boolean hasVisited, boolean isBuilding)
+    {
+        this.loc_id = loc_id;
+        this.name = name;
+        this.description = description;
+        this.icon_name = icon_name;
+        this.hasVisited = hasVisited;
+        this.isBuilding = isBuilding;
+    }
     public Location(int loc_id, String name, String description, String icon_name, boolean hasVisited)
     {
         this.loc_id = loc_id;
@@ -18,6 +28,15 @@ public class Location {
         this.description = description;
         this.icon_name = icon_name;
         this.hasVisited = hasVisited;
+    }
+
+    public Location(String name, String description, String icon_name, boolean hasVisited, boolean isBuilding)
+    {
+        this.name = name;
+        this.description = description;
+        this.icon_name = icon_name;
+        this.hasVisited = hasVisited;
+        this.isBuilding = isBuilding;
     }
 
     public Location(String name, String description, String icon_name, boolean hasVisited)
@@ -57,6 +76,10 @@ public class Location {
         this.icon = icon;
     }
 
+    public void setIsBuilding(boolean isBuilding)
+    {
+        this.isBuilding = isBuilding;
+    }
     //Getters
     public String getName() {
         return name;
@@ -80,5 +103,10 @@ public class Location {
 
     public boolean isHasVisited() {
         return hasVisited;
+    }
+
+    public boolean isBuilding()
+    {
+        return isBuilding;
     }
 }
