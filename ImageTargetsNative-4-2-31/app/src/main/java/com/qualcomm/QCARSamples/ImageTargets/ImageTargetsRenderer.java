@@ -25,8 +25,7 @@ public class ImageTargetsRenderer implements GLSurfaceView.Renderer
     
     /** Reference to main activity **/
     public ImageTargets mActivity;
-    
-    
+
     /** Native function for initializing the renderer. */
     public native void initRendering();
     
@@ -78,6 +77,17 @@ public class ImageTargetsRenderer implements GLSurfaceView.Renderer
         // Call our native function to render content
         Log.e("TAG", "About to render frame...!");
         renderFrame();
+    }
 
+    public void showDialogBox()
+    {
+        Log.e("TAG", "About to show dialog box");
+        mActivity.showDialogBox();
+    }
+
+    public void hideDialogBox()
+    {
+        Log.e("TAG", "About to hide dialog box");
+        mActivity.hideDialogBox();
     }
 }

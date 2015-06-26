@@ -36,6 +36,11 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 #include "Buildings.h"
 #include <QCAR/ImageTarget.h>
 #include "Targets.h"
+#include <android/log.h>
+
+#define  LOG_TAG    "testjni"
+#define  ALOG(...)  __android_log_print(ANDROID_LOG_INFO,LOG_TAG,__VA_ARGS__)
+
 
 static const float planeVertices[] =
 {
@@ -358,7 +363,20 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
     else
         glFrontFace(GL_CCW);   //Back camera
 
+    ALOG("About to find javaClass");
+    jclass javaClass = env->GetObjectClass(obj);
+    if(javaClass == NULL)
+        ALOG("javaClass is NULL!");
+
+    if(javaClass != NULL)
+        ALOG("javaClass found!");
+
     // Did we find any trackables this frame?
+    if(state.getNumTrackableResults() == 0){
+        ALOG("hiding dialog box");
+        jmethodID method = env->GetMethodID(javaClass, "hideDialogBox", "()V");
+        env->CallVoidMethod(obj,method);
+    }
     for(int tIdx = 0; tIdx < state.getNumTrackableResults(); tIdx++)
     {
         // Get the trackable:
@@ -377,11 +395,15 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
                 textureIndex = targets.getIndexOf(trackable.getName());
                 //Trying to call method from java.
                 //jstring js = env->NewStringUTF(trackable.getName());
-                //jclass javaClass = env->FindClass("com/qualcomm/QCARSamples/ImageTargets/ImageTargets");
-                //jmethodID method = env->GetMethodID(javaClass, "changeIsDisplayed", "()V");
-                //env->CallVoidMethod(obj,method);
-			 }
+                
+                jmethodID method = env->GetMethodID(javaClass, "showDialogBox", "()V");
+                if(method == NULL)
+                    ALOG("Method is null!");
 
+                if(javaClass != NULL && method != NULL)
+                env->CallVoidMethod(obj,method);
+
+			 }
 //			if (strcmp(trackable.getName(), "chips") == 0)
 //			{
 //				textureIndex = 0;

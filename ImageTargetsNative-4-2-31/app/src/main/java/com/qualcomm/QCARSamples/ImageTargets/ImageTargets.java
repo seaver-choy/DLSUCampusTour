@@ -883,8 +883,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                    onFreeze();
                    Log.e("TAG", "FrozenButton Clicked!");
 
-                   border.setVisibility(View.VISIBLE);
-                   fake.setVisibility(View.VISIBLE);
+//                   border.setVisibility(View.VISIBLE);
+//                   fake.setVisibility(View.VISIBLE);
                    isDisplayed = true;
 
                }
@@ -895,8 +895,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                    Log.e("TAG", "ListButton Clicked!");
 
 
-                   border.setVisibility(View.GONE);
-                   fake.setVisibility(View.GONE);
+//                   border.setVisibility(View.GONE);
+//                   fake.setVisibility(View.GONE);
                    isDisplayed = false;
                }
 
@@ -1240,7 +1240,27 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         return getAssets();
     }
 
+    public void showDialogBox()
+    {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                    border.setVisibility(View.VISIBLE);
+                    fake.setVisibility(View.VISIBLE);
+            }
+        });
+    }
 
+    public void hideDialogBox()
+    {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                    border.setVisibility(View.GONE);
+                    fake.setVisibility(View.GONE);
+            }
+        });
+    }
 
 
 
