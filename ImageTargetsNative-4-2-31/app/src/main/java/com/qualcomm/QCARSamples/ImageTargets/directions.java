@@ -35,6 +35,14 @@ public class directions extends ActionBarActivity {
 
         step steps = new step("dfdsf","asdasdasdasd",1);
         stepList.add(steps);
+        steps = new step("dfdsf","asdasdasdasd",1);
+        stepList.add(steps);
+        steps = new step("dfdsf","asdasdasdasd",1);
+        stepList.add(steps);
+        steps = new step("dfdsf","asdasdasdasd",1);
+        stepList.add(steps);
+        steps = new step("dfdsf","asdasdasdasd",1);
+        stepList.add(steps);
         return stepList;
     }
 

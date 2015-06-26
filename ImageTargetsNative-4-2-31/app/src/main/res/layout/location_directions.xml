@@ -32,6 +32,14 @@
         android:layout_gravity="center_horizontal"
         android:padding="3dp"
         android:fontFamily="roboto" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Gokongwei Building"
+        android:padding="3dp"
+        android:fontFamily="roboto"
+        android:textColor="#ff1400ff"
+        android:id="@+id/seeMoreBtn"/>
 
 
 

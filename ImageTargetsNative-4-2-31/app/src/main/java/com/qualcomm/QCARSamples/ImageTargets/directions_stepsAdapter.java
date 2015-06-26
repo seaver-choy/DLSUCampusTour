@@ -38,6 +38,10 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
         step currentStep = directionsData.get(position);
         holder.stepNum.setText(currentStep.stepNum);
         holder.stepDesc.setText(currentStep.stepDesc);
+
+        if (position!=0){
+            holder.seeMore.setVisibility(View.GONE);
+        }
     }
 
 
@@ -50,6 +54,7 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
     class directionsVH extends RecyclerView.ViewHolder{
         TextView stepNum;
         TextView stepDesc;
+        TextView seeMore;
         ImageView picture;
 
         public directionsVH(View itemView) {
@@ -58,6 +63,8 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
             stepNum = (TextView) itemView.findViewById(R.id.step_number);
             stepDesc = (TextView) itemView.findViewById(R.id.step_description);
           //  picture = (ImageView) itemView.findViewById(R.id.step_image);
+            seeMore = (TextView) itemView.findViewById(R.id.seeMoreBtn);
+
 
         }
     }
