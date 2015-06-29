@@ -394,14 +394,17 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargetsRenderer_renderFrame(JNIE
 			 {
                 textureIndex = targets.getIndexOf(trackable.getName());
                 //Trying to call method from java.
-                //jstring js = env->NewStringUTF(trackable.getName());
+
+                jstring js = env->NewStringUTF(trackable.getName());
                 
-                jmethodID method = env->GetMethodID(javaClass, "showDialogBox", "()V");
+                if(js != NULL)
+                    ALOG("Successfully created string");
+                jmethodID method = env->GetMethodID(javaClass, "showDialogBox", "(Ljava/lang/String;)V");
                 if(method == NULL)
                     ALOG("Method is null!");
 
                 if(javaClass != NULL && method != NULL)
-                env->CallVoidMethod(obj,method);
+                env->CallVoidMethod(obj,method, js);
 
 			 }
 //			if (strcmp(trackable.getName(), "chips") == 0)
