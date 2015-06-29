@@ -113,19 +113,25 @@
             android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:label="@string/list"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ImageTargets"
-            android:theme="@style/SampleAppsTheme" >
+            android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.ViewDetails"
             android:label="@string/title_activity_view_details"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark" >
+            android:theme="@style/Theme.AppCompat.Light" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.map"
             android:label="map"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
-            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
+            android:label="directions"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
         <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />

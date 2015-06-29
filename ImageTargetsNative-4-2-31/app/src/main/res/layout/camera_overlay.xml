@@ -40,14 +40,23 @@
         android:layout_marginTop="5dp"
         android:layout_marginLeft="-40dp"/>
 
+
     <TextView
         android:layout_width="298dp"
-        android:layout_height="20dp"
+        android:layout_height="140dp"
         android:id="@+id/faketext"
-        android:text="This is the content!This is the content!1111das"
+        android:text="This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        This is the content!This is the content!1111das
+        "
         android:textColor="#006a25"
-        android:layout_marginTop="334dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginTop="273dp"
+        android:layout_marginLeft="-50dp"
         android:fontFamily="freshman"/>
 
     <ProgressBar
@@ -57,6 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
+
 
 
 </RelativeLayout>
