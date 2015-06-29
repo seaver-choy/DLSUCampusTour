@@ -1240,13 +1240,15 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         return getAssets();
     }
 
-    public void showDialogBox()
+    public void showDialogBox(final String s)
     {
+        Log.e("TAG", "Will display " + s);
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
                     border.setVisibility(View.VISIBLE);
                     fake.setVisibility(View.VISIBLE);
+                    fake.setText("This is the target named " + s);
             }
         });
     }

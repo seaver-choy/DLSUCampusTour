@@ -79,10 +79,10 @@ public class ImageTargetsRenderer implements GLSurfaceView.Renderer
         renderFrame();
     }
 
-    public void showDialogBox()
+    public void showDialogBox(String s)
     {
         Log.e("TAG", "About to show dialog box");
-        mActivity.showDialogBox();
+        mActivity.showDialogBox(s);
     }
 
     public void hideDialogBox()
