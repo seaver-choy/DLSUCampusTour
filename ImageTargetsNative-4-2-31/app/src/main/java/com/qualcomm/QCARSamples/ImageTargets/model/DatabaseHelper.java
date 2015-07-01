@@ -30,6 +30,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TABLE_LOCATION = "location";
     private static final String TABLE_TARGET = "target";
     private static final String TABLE_LOCATION_IMAGE = "loc_has_images";
+    private static final String TABLE_BUILDING = "building";
+    private static final String TABLE_STEP = "step";
 
     // Common column names
     private static final String KEY_ID = "id";
@@ -39,7 +41,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_HAS_VISITED = "hasVisited";
     private static final String KEY_DESCRIPTION = "location_description";
     private static final String KEY_ICON_NAME = "icon_name";
-    private static final String KEY_IS_BUILDING = "isBuilding";
 
     // TARGETS Table - column names
     private static final String KEY_TARGET_NAME = "target_name";
@@ -50,12 +51,23 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_LOCATION_ID_IMAGES = "location_id";
     private static final String KEY_IMAGE_NAME_IMAGES = "image_name";
 
+    // BUILDING Table - column names
+    private static final String KEY_BUILDING_LOCATION_ID = "location_id";
+    private static final String KEY_BUILDING_MAP_IMAGE = "building_image";
+
+    // STEP Table - column names
+    private static final String KEY_STEP_LOCATION_ID = "location_id";
+    private static final String KEY_STEP_DESCRIPTION = "step_description";
+    private static final String KEY_STEP_NUMBER = "step_number";
+    private static final String KEY_STEP_PICTURE = "step_picture";
+    private static final String KEY_STEP_TITLE = "step_title";
+
     // Table Create Statements
     // location table create statement
     private static final String CREATE_TABLE_LOCATION = "CREATE TABLE "
             + TABLE_LOCATION + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_LOCATION_NAME
             + " TEXT," + KEY_HAS_VISITED + " INTEGER," + KEY_DESCRIPTION
-            + " TEXT," + KEY_ICON_NAME +" TEXT," + KEY_IS_BUILDING + " INTEGER" +")";
+            + " TEXT," + KEY_ICON_NAME +" TEXT" + ")";
 
     // targets table create statement
     private static final String CREATE_TABLE_TARGET = "CREATE TABLE " + TABLE_TARGET
@@ -67,6 +79,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + TABLE_LOCATION_IMAGE + "(" + KEY_ID + " INTEGER PRIMARY KEY,"
             + KEY_LOCATION_ID_IMAGES + " INTEGER," + KEY_IMAGE_NAME_IMAGES + " TEXT" + ")";
 
+    private static final String CREATE_TABLE_BUILDING = "CREATE TABLE " + TABLE_BUILDING
+            + "(" + KEY_BUILDING_LOCATION_ID + " INTEGER PRIMARY KEY, " + KEY_BUILDING_MAP_IMAGE + " TEXT" + ")";
+
+    private static final String CREATE_TABLE_STEP = "CREATE TABLE " + TABLE_STEP + "(" + KEY_STEP_LOCATION_ID
+            + " INTEGER NOT NULL, " + KEY_STEP_NUMBER + " INTEGER NOT NULL, " + KEY_STEP_DESCRIPTION + " TEXT, "
+            + KEY_STEP_TITLE + " TEXT, " + KEY_STEP_PICTURE + " TEXT, " + "PRIMARY KEY (" + KEY_STEP_LOCATION_ID + ", "
+            + KEY_STEP_NUMBER + "))";
     public static synchronized DatabaseHelper getInstance(Context context) {
 
         // Use the application context, which will ensure that you
@@ -95,6 +114,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_LOCATION);
         db.execSQL(CREATE_TABLE_TARGET);
         db.execSQL(CREATE_TABLE_LOC_HAS_IMAGES);
+        db.execSQL(CREATE_TABLE_BUILDING);
+        db.execSQL(CREATE_TABLE_STEP);
     }
 
     @Override
@@ -103,19 +124,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_LOCATION);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_TARGET);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_LOCATION_IMAGE);
-
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_BUILDING);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_STEP);
         // create new tables
         onCreate(db);
     }
 
     public void initializeDatabase()
     {
-        Location tempLocation = new Location("Gokongwei", "Land of College of Computer Science", "gox1", false, true);
-        this.createLocation(tempLocation);
-        tempLocation = new Location("Yuchengco", "Land of Economics", "pink_trees", false, true);
-        this.createLocation(tempLocation);
-        tempLocation = new Location("Henry Sy Sr. Hall", "Land of Books", "pink_trees", false, true);
-        this.createLocation(tempLocation);
+        Building tempBuilding = new Building("Gokongwei", "Land of College of Computer Science", "gox1", false, "leaves2");
+        this.createBuilding(tempBuilding);
+        tempBuilding = new Building("Yuchengco", "Land of Economics", "pink_trees", false, "leaves1");
+        this.createBuilding(tempBuilding);
+        tempBuilding = new Building("Henry Sy Sr. Hall", "Land of Books", "pink_trees", false, "pattern");
+        this.createBuilding(tempBuilding);
 
         Target tempTarget = new Target(1 , "chips", "Text.png");
         this.createTarget(tempTarget);
@@ -128,17 +150,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void initializeDatabaseFromXML()
     {
         Location locations[] = SitesXMLPullParser.getLocations(this.getContext());
-        Log.e("TAG", "SUCCESSFULLY READ from locations.xml");
+        Log.e("TAG", "SUCCESSFULLY READ " + locations.length + " locations from Locations.xml");
         for(int i = 0; i < locations.length; i++)
         {
             this.createLocation(locations[i]);
         }
 
+        Building buildings[] = SitesXMLPullParser.getBuildings(this.getContext());
+        Log.e("TAG", "SUCCESSFULLY READ " + buildings.length + " buildings from Buildings.xml");
+        for(int i = 0; i < buildings.length; i++)
+        {
+            this.createBuilding(buildings[i]);
+        }
+
         Target targets[] = SitesXMLPullParser.getTargets(this.getContext());
-        Log.e("TAG", "SUCCESSFULLY READ from targets.xml");
+        Log.e("TAG", "SUCCESSFULLY READ " + targets.length + " targets from Targets.xml");
         for(int i = 0; i < targets.length; i++)
         {
             this.createTarget(targets[i]);
+        }
+
+        Step steps[] = SitesXMLPullParser.getSteps(this.getContext());
+        Log.e("TAG", "SUCCESSFULLY READ " + steps.length + " steps from Steps.xml");
+        for(int i = 0; i < steps.length; i++)
+        {
+            this.createStep(steps[i]);
         }
 
     }
@@ -162,7 +198,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
         tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
         tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
-        tl.setIsBuilding(c.getInt(c.getColumnIndex(KEY_IS_BUILDING)) == 1);
 
         return tl;
     }
@@ -185,7 +220,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
-                tl.setIsBuilding(c.getInt(c.getColumnIndex(KEY_IS_BUILDING)) == 1);
                 // adding to todo list
                 locationList.add(tl);
             } while (c.moveToNext());
@@ -202,7 +236,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DESCRIPTION, location.getDescription());
         values.put(KEY_HAS_VISITED, location.isHasVisited());
         values.put(KEY_ICON_NAME, location.getIconName());
-        values.put(KEY_IS_BUILDING, location.isBuilding());
 
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
@@ -309,6 +342,69 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long tag_id = db.insert(TABLE_TARGET, null, values);
 
         return tag_id;
+    }
+
+    //CRUD of Building Table
+    public long createBuilding(Building building) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_LOCATION_NAME, building.getName());
+        values.put(KEY_DESCRIPTION, building.getDescription());
+        values.put(KEY_HAS_VISITED, building.isHasVisited());
+        values.put(KEY_ICON_NAME, building.getIconName());
+
+        // insert row
+        long tag_id = db.insert(TABLE_LOCATION, null, values);
+
+        values = new ContentValues();
+        values.put(KEY_BUILDING_LOCATION_ID, tag_id);
+        values.put(KEY_BUILDING_MAP_IMAGE, building.getMapImage());
+
+        tag_id = db.insert(TABLE_BUILDING, null, values);
+        return tag_id;
+    }
+
+    //CRUD of Step Table
+    public long createStep(Step step) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_STEP_LOCATION_ID, step.getLocId());
+        values.put(KEY_STEP_NUMBER, step.getStepNum());
+        values.put(KEY_STEP_DESCRIPTION, step.getStepDesc());
+        values.put(KEY_STEP_PICTURE, step.getPicture());
+        values.put(KEY_STEP_TITLE, step.getTitle());
+
+        long tag_id = db.insert(TABLE_STEP, null, values);
+
+        return tag_id;
+    }
+
+    public List<Step> getAllStepsOfLocation(int loc_id) {
+        List<Step> stepList = new ArrayList<>();
+        String selectQuery = "SELECT  * FROM " + TABLE_STEP + "WHERE " + KEY_STEP_LOCATION_ID + " = " + loc_id;
+
+        Log.e(LOG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                Step ts = new Step();
+                ts.setLocId(c.getInt((c.getColumnIndex(KEY_STEP_LOCATION_ID))));
+                ts.setStepDesc((c.getString(c.getColumnIndex(KEY_STEP_DESCRIPTION))));
+                ts.setStepNum(c.getInt(c.getColumnIndex(KEY_STEP_NUMBER)));
+                ts.setTitle(c.getString(c.getColumnIndex(KEY_STEP_TITLE)));
+                ts.setPictureName(c.getString(c.getColumnIndex(KEY_STEP_PICTURE)));
+                // adding to step list
+                stepList.add(ts);
+            } while (c.moveToNext());
+        }
+
+        return stepList;
     }
 
     public void closeDB() {

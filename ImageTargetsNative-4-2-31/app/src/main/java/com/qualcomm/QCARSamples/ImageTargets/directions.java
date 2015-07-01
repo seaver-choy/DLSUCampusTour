@@ -7,9 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.qualcomm.QCARSamples.ImageTargets.model.Step;
+
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 
@@ -30,19 +30,9 @@ public class directions extends ActionBarActivity {
 
     }
 
-    public List<step> getData(){
-        List<step> stepList = new ArrayList<>();
+    public List<Step> getData(){
+        List<Step> stepList = new ArrayList<>();
 
-        step steps = new step("dfdsf","asdasdasdasd",1);
-        stepList.add(steps);
-        steps = new step("dfdsf","asdasdasdasd",1);
-        stepList.add(steps);
-        steps = new step("dfdsf","asdasdasdasd",1);
-        stepList.add(steps);
-        steps = new step("dfdsf","asdasdasdasd",1);
-        stepList.add(steps);
-        steps = new step("dfdsf","asdasdasdasd",1);
-        stepList.add(steps);
         return stepList;
     }
 

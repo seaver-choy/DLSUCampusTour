@@ -2,14 +2,13 @@ package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.qualcomm.QCARSamples.ImageTargets.model.Step;
 
 import java.util.Collections;
 import java.util.List;
@@ -19,9 +18,9 @@ import java.util.List;
  */
 public class directions_stepsAdapter extends RecyclerView.Adapter<directions_stepsAdapter.directionsVH>{
     private LayoutInflater inflater;
-    List<step> directionsData = Collections.emptyList();
+    List<Step> directionsData = Collections.emptyList();
 
-    public  directions_stepsAdapter(Context context,List<step> directionsData){
+    public  directions_stepsAdapter(Context context,List<Step> directionsData){
         inflater = LayoutInflater.from(context);
         this.directionsData = directionsData;
     }
@@ -35,13 +34,9 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
 
     @Override
     public void onBindViewHolder(directionsVH holder, int position) {
-        step currentStep = directionsData.get(position);
-        holder.stepNum.setText(currentStep.stepNum);
-        holder.stepDesc.setText(currentStep.stepDesc);
-
-        if (position!=0){
-            holder.seeMore.setVisibility(View.GONE);
-        }
+        Step currentStep = directionsData.get(position);
+        holder.stepNum.setText(currentStep.getStepNum());
+        holder.stepDesc.setText(currentStep.getStepDesc());
     }
 
 
@@ -54,7 +49,6 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
     class directionsVH extends RecyclerView.ViewHolder{
         TextView stepNum;
         TextView stepDesc;
-        TextView seeMore;
         ImageView picture;
 
         public directionsVH(View itemView) {
@@ -63,8 +57,6 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
             stepNum = (TextView) itemView.findViewById(R.id.step_number);
             stepDesc = (TextView) itemView.findViewById(R.id.step_description);
           //  picture = (ImageView) itemView.findViewById(R.id.step_image);
-            seeMore = (TextView) itemView.findViewById(R.id.seeMoreBtn);
-
 
         }
     }

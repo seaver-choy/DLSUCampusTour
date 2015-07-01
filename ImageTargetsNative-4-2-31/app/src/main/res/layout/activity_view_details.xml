@@ -62,7 +62,7 @@ Gokongwei Building"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="This is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goesThis is where the description goes"
-            android:id="@+id/textView"
+            android:id="@+id/location_description"
             android:textColor="#ffffffff"
             android:layout_margin="3dp" />
 

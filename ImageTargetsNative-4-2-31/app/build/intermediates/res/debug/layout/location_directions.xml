@@ -32,15 +32,7 @@
         android:layout_gravity="center_horizontal"
         android:padding="3dp"
         android:fontFamily="roboto" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="See Gokongwei Building"
-        android:padding="3dp"
-        android:fontFamily="roboto"
-        android:textColor="#ff1400ff"
-        android:id="@+id/seeMoreBtn"/>
 
 
 
-</LinearLayout><!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/location_directions.xml -->
+</LinearLayout><!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/layout/location_directions.xml -->

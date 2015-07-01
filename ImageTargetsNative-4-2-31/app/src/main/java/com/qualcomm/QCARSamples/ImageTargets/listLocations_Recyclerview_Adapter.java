@@ -3,6 +3,7 @@ package com.qualcomm.QCARSamples.ImageTargets;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.qualcomm.QCARSamples.ImageTargets.model.Building;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 
 import java.util.Collections;
@@ -43,13 +45,13 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
     @Override
     public void onBindViewHolder(myViewHolder holder, final int position) {
-        Location currentLoc = locationData.get(position);
+        final Location currentLoc = locationData.get(position);
         holder.title.setText(currentLoc.getName());
         holder.icon.setImageResource(currentLoc.getIcon());
         holder.btn_loc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(position == 1)
+                if(currentLoc instanceof Building)
                     context.startActivity(new Intent(context,map.class));
                 else
                     context.startActivity(new Intent(context,directions.class));
@@ -85,7 +87,12 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
         @Override
         public void onClick(View v) {
-            context.startActivity(new Intent(context, ViewDetails.class));
+
+            Intent intent = new Intent(context, ViewDetails.class);
+            intent.putExtra("description", locationData.get(getPosition()).getDescription());
+            Log.e("TAG", locationData.get(getPosition()).getDescription() + "");
+
+            context.startActivity(intent);
 
             if(clickListener!=null){
                 clickListener.itemClicked(v,getPosition());

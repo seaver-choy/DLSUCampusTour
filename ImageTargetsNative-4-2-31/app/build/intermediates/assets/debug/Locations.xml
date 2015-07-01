@@ -1,59 +1,10 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Location-list>
 	<Location>
-		<location_id>1</location_id>
-		<location_name>Gokongwei</location_name>
-		<location_description>Land of CCS</location_description>
+		<location_id>8</location_id>
+		<location_name>NetCentric</location_name>
+		<location_description>Land of Developers</location_description>
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>2</location_id>
-		<location_name>Yuchengco</location_name>
-		<location_description>Land of Economics</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>3</location_id>
-		<location_name>Henry Sy Sr.</location_name>
-		<location_description>Library</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>4</location_id>
-		<location_name>La Salle Hall</location_name>
-		<location_description>Land of Lasallians</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>5</location_id>
-		<location_name>Br. Andrew Building</location_name>
-		<location_description>Land of Minors, Froshes, Offices</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>6</location_id>
-		<location_name>Science and Technology Research Center</location_name>
-		<location_description>Land of Research</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
-	</Location>
-	<Location>
-		<location_id>7</location_id>
-		<location_name>Enrique Razon Building</location_name>
-		<location_description>Land of Sports</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_isBuilding>true</location_isBuilding>
 	</Location>
 </Location-list>
