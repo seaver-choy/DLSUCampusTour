@@ -53,7 +53,13 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             public void onClick(View v) {
                 if(currentLoc instanceof Building)
                 {
-                    context.startActivity(new Intent(context, map.class));
+                    Building building = (Building) currentLoc;
+                    Log.e("ImageName", building.getMapImage());
+                    int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
+                    building.setMapIcon(icon);
+                    Intent intent = new Intent(context, map.class);
+                    intent.putExtra("mapIcon", building.getMapIcon());
+                    context.startActivity(intent);
                 }
                 else
                 {

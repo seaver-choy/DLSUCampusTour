@@ -15,8 +15,12 @@ public class map extends ActionBarActivity {
         //setContentView(R.layout.activity_main);
 
         TouchImageView img = new TouchImageView(this);
-        img.setImageResource(R.drawable.pink_trees);
-        img.setMaxZoom(4f);
+        int icon = getIntent().getIntExtra("mapIcon", 0);
+        if(icon != 0)
+        {
+            img.setImageResource(icon);
+            img.setMaxZoom(4f);
+        }
         setContentView(img);
     }
 }

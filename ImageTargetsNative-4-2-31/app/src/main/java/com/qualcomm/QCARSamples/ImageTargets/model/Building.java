@@ -6,6 +6,7 @@ package com.qualcomm.QCARSamples.ImageTargets.model;
 public class Building extends Location {
 
     private String map_image;
+    private int map_icon;
 
     public Building (int loc_id, String name, String description, String icon_name, boolean hasVisited, String map_image)
     {
@@ -30,5 +31,13 @@ public class Building extends Location {
 
     public void setMapImage(String map_image) {
         this.map_image = map_image;
+    }
+
+    public int getMapIcon() {
+        return map_icon;
+    }
+
+    public void setMapIcon(int map_icon) {
+        this.map_icon = map_icon;
     }
 }
