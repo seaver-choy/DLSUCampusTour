@@ -238,6 +238,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, location.getLocId());
         values.put(KEY_LOCATION_NAME, location.getName());
         values.put(KEY_DESCRIPTION, location.getDescription());
         values.put(KEY_HAS_VISITED, location.isHasVisited());
@@ -340,6 +341,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, target.getTargetID());
         values.put(KEY_TARGET_NAME, target.getTargetName());
         values.put(KEY_IMAGE_NAME, target.getImageName());
         values.put(KEY_LOCATION_ID, target.getLocID());
@@ -355,6 +357,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
+        values.put(KEY_ID, building.getLocId());
         values.put(KEY_LOCATION_NAME, building.getName());
         values.put(KEY_DESCRIPTION, building.getDescription());
         values.put(KEY_HAS_VISITED, building.isHasVisited());
@@ -416,7 +419,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public List<Step> getAllStepsOfLocation(int loc_id) {
         List<Step> stepList = new ArrayList<>();
-        String selectQuery = "SELECT  * FROM " + TABLE_STEP + "WHERE " + KEY_STEP_LOCATION_ID + " = " + loc_id;
+        String selectQuery = "SELECT  * FROM " + TABLE_STEP + " WHERE " + KEY_STEP_LOCATION_ID + " = " + loc_id;
 
         Log.e(LOG, selectQuery);
 

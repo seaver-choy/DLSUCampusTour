@@ -2,6 +2,7 @@ package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,9 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
     @Override
     public void onBindViewHolder(directionsVH holder, int position) {
         Step currentStep = directionsData.get(position);
-        holder.stepNum.setText(currentStep.getStepNum());
+        Log.e("TAG", currentStep.getStepNum()+ "");
+        Log.e("TAG", currentStep.getStepDesc() + "");
+        holder.stepNum.setText(currentStep.getStepNum() + "");
         holder.stepDesc.setText(currentStep.getStepDesc());
     }
 

@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 import com.qualcomm.QCARSamples.ImageTargets.model.Step;
 
 import java.util.ArrayList;
@@ -17,12 +18,13 @@ public class directions extends ActionBarActivity {
 
     private RecyclerView recyclerView;
     private directions_stepsAdapter adapter;
-
+    private DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycler_view);
 
+        databaseHelper = DatabaseHelper.getInstance(this);
         recyclerView = (RecyclerView) findViewById(R.id.locations_recyclerview);
         adapter = new directions_stepsAdapter(this,getData());
         recyclerView.setAdapter(adapter);
@@ -31,8 +33,8 @@ public class directions extends ActionBarActivity {
     }
 
     public List<Step> getData(){
-        List<Step> stepList = new ArrayList<>();
-
+        List<Step> stepList;
+        stepList = databaseHelper.getAllStepsOfLocation(getIntent().getIntExtra("location_id", -999));
         return stepList;
     }
 
