@@ -58,6 +58,17 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             }
         });
       //  holder.description.setText(currentLoc.getDescription());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ViewDetails.class);
+                intent.putExtra("description", locationData.get(position).getDescription());
+                Log.e("TAG", locationData.get(position).getDescription());
+                intent.putExtra("name", locationData.get(position).getName());
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     public void setClickListener(ClickListener clickListener){
@@ -77,7 +88,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
         public myViewHolder(View itemView) {
             super(itemView);
-            itemView.setOnClickListener(this);
+        ;
             title = (TextView) itemView.findViewById(R.id.title);
             icon = (ImageView) itemView.findViewById(R.id.location_imageview);
             btn_loc = (ImageButton) itemView.findViewById(R.id.loc_button);
@@ -89,8 +100,8 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         public void onClick(View v) {
 
             Intent intent = new Intent(context, ViewDetails.class);
-            intent.putExtra("description", locationData.get(getPosition()).getDescription());
-            Log.e("TAG", locationData.get(getPosition()).getDescription() + "");
+            intent.putExtra("description", "TANGINA MO");
+            Log.e("TAG", "TANGINA MO");
 
             context.startActivity(intent);
 

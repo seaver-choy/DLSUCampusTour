@@ -54,7 +54,7 @@
 Gokongwei Building"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:id="@+id/textView2"
+            android:id="@+id/TVname"
             android:textColor="#ffffffff"
             android:layout_margin="3dp" />
 

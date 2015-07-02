@@ -19,9 +19,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
 
+import org.w3c.dom.Text;
+
 public class ViewDetails extends ActionBarActivity{
 
-
+    String s = null;
+    String name = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +32,15 @@ public class ViewDetails extends ActionBarActivity{
         setContentView(R.layout.activity_view_details);
 
         TextView description = (TextView) findViewById(R.id.location_description);
-        Intent intent = new Intent();
+        TextView txtviewName = (TextView) findViewById(R.id.TVname);
 
-        String s = intent.getStringExtra("description");
-
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+           s = (String) extras.getString("description");
+            name = (String) extras.getString("name");
+        }
+        Log.e("TAG",s+" should be something before me");
         description.setText(s);
+        txtviewName.setText(name);
     }
 }

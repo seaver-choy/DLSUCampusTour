@@ -123,6 +123,12 @@
             android:label="map"
             android:parentActivityName=".location_cardview"
             android:theme="@style/Theme.AppCompat"></activity>
+        <activity android:name=".directions"
+            android:label="directions"
+            android:parentActivityName=".location_cardview"
+            android:theme="@style/Theme.AppCompat.Light">
+
+        </activity>
     </application>
 
 </manifest>
