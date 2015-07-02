@@ -52,9 +52,17 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             @Override
             public void onClick(View v) {
                 if(currentLoc instanceof Building)
-                    context.startActivity(new Intent(context,map.class));
+                {
+                    context.startActivity(new Intent(context, map.class));
+                }
                 else
-                    context.startActivity(new Intent(context,directions.class));
+                {
+                    Intent intent = new Intent(context, directions.class);
+                    Log.e("loc_id", currentLoc.getLocId() + "");
+                    intent.putExtra("location_id", currentLoc.getLocId());
+                    context.startActivity(intent);
+                }
+
             }
         });
       //  holder.description.setText(currentLoc.getDescription());
