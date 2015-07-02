@@ -204,12 +204,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     
     public List<Location> getAllLocations() {
         List<Location> locationList = new ArrayList<Location>();
-        String selectQuery = "SELECT  * FROM " + TABLE_LOCATION;
 
+
+        List<Building> buildingList = this.getAllBuildings();
+        locationList.addAll(buildingList);
+
+        String selectQuery = "SELECT * FROM " + TABLE_LOCATION;
         Log.e(LOG, selectQuery);
 
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery(selectQuery, null);
+
 
         // looping through all rows and adding to list
         if (c.moveToFirst()) {
@@ -221,6 +226,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
                 // adding to todo list
+                if(!locationList.contains(tl))
                 locationList.add(tl);
             } while (c.moveToNext());
         }
@@ -363,6 +369,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         tag_id = db.insert(TABLE_BUILDING, null, values);
         return tag_id;
+    }
+
+    public List<Building> getAllBuildings() {
+        List<Building> buildingList = new ArrayList<Building>();
+        String selectQuery = "SELECT * FROM " + TABLE_BUILDING + ", " + TABLE_LOCATION + " WHERE " + KEY_BUILDING_LOCATION_ID + " = " + KEY_ID;
+
+        Log.e(LOG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        // looping through all rows and adding to list
+        if (c.moveToFirst()) {
+            do {
+                Building tl = new Building();
+                tl.setLocId(c.getInt((c.getColumnIndex(KEY_BUILDING_LOCATION_ID))));
+                tl.setDescription((c.getString(c.getColumnIndex(KEY_DESCRIPTION))));
+                tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
+                tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
+                tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
+                tl.setMapImage(c.getString(c.getColumnIndex(KEY_BUILDING_MAP_IMAGE)));
+                // adding to todo list
+                buildingList.add(tl);
+            } while (c.moveToNext());
+        }
+
+        return buildingList;
     }
 
     //CRUD of Step Table

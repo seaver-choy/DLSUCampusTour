@@ -1,5 +1,7 @@
 package com.qualcomm.QCARSamples.ImageTargets.model;
 
+import android.util.Log;
+
 /**
  * Created by Interns on 5/29/2015.
  */
@@ -80,5 +82,23 @@ public class Location {
 
     public boolean isHasVisited() {
         return hasVisited;
+    }
+
+    @Override
+    public boolean equals(Object object)
+    {
+        Location obj = (Location) object;
+        if(obj == null){
+            return false;
+        }else if(obj.getDescription() != this.getDescription()
+                && obj.getIconName() != this.getIconName()
+                && obj.getLocId() != this.getLocId()
+                && obj.getName() != this.getName())
+        {
+            return false;
+        }
+        Log.e("OBJ", obj.getDescription() + " " + obj.getIconName() + " " + obj.getLocId() + " " + obj.getName());
+        Log.e("THIS", this.getDescription() + " " + this.getIconName() + " " + this.getLocId() + " " + this.getName());
+        return true;
     }
 }
