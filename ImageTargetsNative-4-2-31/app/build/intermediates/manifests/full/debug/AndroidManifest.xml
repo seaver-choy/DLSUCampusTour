@@ -123,6 +123,12 @@
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:theme="@style/Theme.AppCompat" />
         <activity
+            android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
+            android:label="directions"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:theme="@style/Theme.AppCompat.Light" >
+        </activity>
+        <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />
     </application>

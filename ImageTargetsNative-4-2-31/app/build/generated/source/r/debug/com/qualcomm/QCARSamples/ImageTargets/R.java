@@ -1679,6 +1679,7 @@ containing a value of this type.
     public static final class id {
         public static final int Freezebutton=0x7f0c005b;
         public static final int Listbutton=0x7f0c005c;
+        public static final int TVname=0x7f0c0058;
         public static final int about_html_text=0x7f0c0051;
         public static final int about_text_title=0x7f0c004f;
         public static final int action_bar=0x7f0c0040;
@@ -1784,7 +1785,6 @@ containing a value of this type.
         public static final int submit_area=0x7f0c004b;
         public static final int tabMode=0x7f0c000b;
         public static final int textSpacerNoButtons=0x7f0c0033;
-        public static final int textView2=0x7f0c0058;
         public static final int textview=0x7f0c0060;
         public static final int title=0x7f0c002c;
         public static final int title_template=0x7f0c002f;

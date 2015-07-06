@@ -54,7 +54,7 @@
 Gokongwei Building"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:id="@+id/textView2"
+            android:id="@+id/TVname"
             android:textColor="#ffffffff"
             android:layout_margin="3dp" />
 
@@ -68,4 +68,4 @@ Gokongwei Building"
 
     </LinearLayout>
 
-</ScrollView><!-- From: file:/C:/Users/admin/StudioProjects/ImageTargetsNative-4-2-31/app/src/main/res/layout/activity_view_details.xml -->
+</ScrollView><!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/activity_view_details.xml -->
