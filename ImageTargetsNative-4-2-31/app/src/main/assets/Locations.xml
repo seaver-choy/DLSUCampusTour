@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Location-list>
 	<Location>
-		<location_id>8</location_id>
+		<location_id>11</location_id>
 		<location_name>NetCentric</location_name>
 		<location_description>Land of Developers</location_description>
 		<location_icon_name>gox1</location_icon_name>

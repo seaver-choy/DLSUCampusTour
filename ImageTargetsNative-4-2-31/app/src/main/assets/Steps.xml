@@ -1,14 +1,14 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Step-list>
 	<Step>
-		<location_id>8</location_id>
+		<location_id>9</location_id>
 		<step_number>1</step_number>
 		<step_description>Up the stairs</step_description>
 		<step_picture_name>gox1</step_picture_name>
 		<step_title>Go to 2nd Floor</step_title>
 	</Step>
 	<Step>
-		<location_id>8</location_id>
+		<location_id>9</location_id>
 		<step_number>2</step_number>
 		<step_description>Go up!</step_description>
 		<step_picture_name>gox1</step_picture_name>
