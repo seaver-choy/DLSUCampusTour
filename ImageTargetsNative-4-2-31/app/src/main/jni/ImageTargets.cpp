@@ -241,7 +241,7 @@ Java_com_qualcomm_QCARSamples_ImageTargets_ImageTargets_loadTrackerData(JNIEnv *
     }
 
     // Load the data sets:
-    if (!dataSetStonesAndChips->load("StonesAndChips.xml", QCAR::STORAGE_APPRESOURCE))
+    if (!dataSetStonesAndChips->load("DLSUCampusTourDatabase.xml", QCAR::STORAGE_APPRESOURCE))
     {
         LOG("Failed to load data set.");
         return 0;

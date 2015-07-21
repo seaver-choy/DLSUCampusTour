@@ -2,6 +2,7 @@ package com.qualcomm.QCARSamples.ImageTargets.model;
 
 import android.content.Context;
 import android.content.res.AssetManager;
+import android.util.Log;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -164,6 +165,7 @@ public class SitesXMLPullParser {
                     case XmlPullParser.TEXT:
                         //grab the current text so we can use it in END_TAG event
                         currText = xpp.getText();
+                        Log.e("TAG", currText);
                         break;
 
                     case XmlPullParser.END_TAG:
