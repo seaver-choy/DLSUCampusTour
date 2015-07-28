@@ -174,6 +174,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Log.e("TAG", "SUCCESSFULLY READ " + steps.length + " steps from Steps.xml");
         for(int i = 0; i < steps.length; i++)
         {
+            Log.e("TAG", steps[i].getPictureName());
             this.createStep(steps[i]);
         }
 
@@ -409,7 +410,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_STEP_LOCATION_ID, step.getLocId());
         values.put(KEY_STEP_NUMBER, step.getStepNum());
         values.put(KEY_STEP_DESCRIPTION, step.getStepDesc());
-        values.put(KEY_STEP_PICTURE, step.getPicture());
+        values.put(KEY_STEP_PICTURE, step.getPictureName());
         values.put(KEY_STEP_TITLE, step.getTitle());
 
         long tag_id = db.insert(TABLE_STEP, null, values);

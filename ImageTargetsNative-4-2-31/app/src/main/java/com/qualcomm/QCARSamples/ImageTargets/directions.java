@@ -1,13 +1,16 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
+import android.content.Context;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 import com.qualcomm.QCARSamples.ImageTargets.model.Step;
 
 import java.util.ArrayList;
@@ -19,6 +22,7 @@ public class directions extends ActionBarActivity {
     private RecyclerView recyclerView;
     private directions_stepsAdapter adapter;
     private DatabaseHelper databaseHelper;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,12 @@ public class directions extends ActionBarActivity {
     public List<Step> getData(){
         List<Step> stepList;
         stepList = databaseHelper.getAllStepsOfLocation(getIntent().getIntExtra("location_id", -999));
+        for(int i = 0; i < stepList.size();i++){
+            Context context = recyclerView.getContext();
+            int icon = context.getResources().getIdentifier(stepList.get(i).getPictureName(), "drawable", context.getPackageName());
+            Log.e("Tag", icon + " " + stepList.get(i).getPictureName());
+            stepList.get(i).setPicture(icon);
+        }
         return stepList;
     }
 

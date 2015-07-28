@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,8 +46,6 @@ public class location_cardview extends ActionBarActivity implements listLocation
             Context context = recyclerView.getContext();
             int icon = context.getResources().getIdentifier(locations.get(i).getIconName(), "drawable", context.getPackageName());
             locations.get(i).setIcon(icon);
-            //current.name = locations[i];
-            //current.description = descriptions[i];
         }
         return locations;
     }

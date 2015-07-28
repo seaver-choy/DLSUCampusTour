@@ -38,8 +38,9 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
         Step currentStep = directionsData.get(position);
         Log.e("TAG", currentStep.getStepNum()+ "");
         Log.e("TAG", currentStep.getStepDesc() + "");
-        holder.stepNum.setText(currentStep.getStepNum() + "");
+        holder.stepNum.setText(currentStep.getTitle() + "");
         holder.stepDesc.setText(currentStep.getStepDesc());
+        holder.picture.setImageResource(currentStep.getPicture());
     }
 
 
@@ -59,8 +60,7 @@ public class directions_stepsAdapter extends RecyclerView.Adapter<directions_ste
 
             stepNum = (TextView) itemView.findViewById(R.id.step_number);
             stepDesc = (TextView) itemView.findViewById(R.id.step_description);
-          //  picture = (ImageView) itemView.findViewById(R.id.step_image);
-
+            picture = (ImageView) itemView.findViewById(R.id.step_image);
         }
     }
 }
