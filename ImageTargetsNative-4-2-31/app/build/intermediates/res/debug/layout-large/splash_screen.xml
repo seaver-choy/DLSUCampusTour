@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/splash_screen_description"
+        android:src="@drawable/mainmenu2"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:id="@+id/mstartbutton"
+        android:background="@drawable/menustart"
+        android:layout_marginBottom="274dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:id="@+id/mlocationsbutton"
+        android:background="@drawable/menulocations"
+        android:layout_marginTop="119dp"
+        android:layout_alignTop="@+id/mstartbutton"
+        android:layout_alignLeft="@+id/mstartbutton"
+        android:layout_alignStart="@+id/mstartbutton" />
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="105dp"
+        android:id="@+id/mhelpbutton"
+        android:background="@drawable/menuhelp"
+        android:layout_alignTop="@+id/mlocationsbutton"
+        android:layout_alignRight="@+id/mstartbutton"
+        android:layout_alignEnd="@+id/mstartbutton" />
+
+
+</RelativeLayout>
+
+<!-- From: file:/C:/Users/admin/Documents/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout-large/splash_screen.xml -->

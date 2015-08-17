@@ -1,17 +1,45 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Step-list>
 	<Step>
-		<location_id>8</location_id>
+		<location_id>11</location_id>
 		<step_number>1</step_number>
-		<step_description>Up the stairs</step_description>
-		<step_picture_name>gox1</step_picture_name>
-		<step_title>Go to 2nd Floor</step_title>
+		<step_description>Locate the entrance</step_description>
+		<step_picture_name>netcentric1</step_picture_name>
+		<step_title>1. Find the entrance!</step_title>
 	</Step>
 	<Step>
-		<location_id>8</location_id>
+		<location_id>11</location_id>
 		<step_number>2</step_number>
-		<step_description>Go up!</step_description>
-		<step_picture_name>gox1</step_picture_name>
-		<step_title>Go to 3rd floor</step_title>
+		<step_description>As you enter the building, right in front of you are the stairs take it to the top floor of the building (4th floor)</step_description>
+		<step_picture_name>netcentric2</step_picture_name>
+		<step_title>2. Find the stairs!</step_title>
 	</Step>
+    <Step>
+        <location_id>11</location_id>
+        <step_number>3</step_number>
+        <step_description>The stair should look something like this keep taking it up</step_description>
+        <step_picture_name>netcentric3</step_picture_name>
+        <step_title>3. Up the stairs!</step_title>
+    </Step>
+    <Step>
+        <location_id>11</location_id>
+        <step_number>4</step_number>
+        <step_description>You're at the top floor when you see this</step_description>
+        <step_picture_name>netcentric4</step_picture_name>
+        <step_title>4. Fourth floor!</step_title>
+    </Step>
+    <Step>
+        <location_id>11</location_id>
+        <step_number>5</step_number>
+        <step_description>Keep following the hallwa</step_description>
+        <step_picture_name>netcentric5</step_picture_name>
+        <step_title>5. Hallway!</step_title>
+    </Step>
+    <Step>
+        <location_id>11</location_id>
+        <step_number>6</step_number>
+        <step_description>The entrance to netcentric should look like this.. good job!</step_description>
+        <step_picture_name>netcentric6</step_picture_name>
+        <step_title>6. You're here!!</step_title>
+    </Step>
 </Step-list>

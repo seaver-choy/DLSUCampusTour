@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.Building;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
@@ -48,39 +49,63 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         final Location currentLoc = locationData.get(position);
         holder.title.setText(currentLoc.getName());
         holder.icon.setImageResource(currentLoc.getIcon());
+
+        //LOOK AT THIS FOR THE LOCK BUTTON ITS PSEUDOCODE
+
+
+            if(currentLoc.isHasVisited() == true){
+                 holder.btn_lock.setVisibility(View.GONE);
+            }
+
+
+
         holder.btn_loc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(currentLoc instanceof Building)
-                {
-                    Building building = (Building) currentLoc;
-                    Log.e("ImageName", building.getMapImage());
-                    int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
-                    building.setMapIcon(icon);
-                    Intent intent = new Intent(context, map.class);
-                    intent.putExtra("mapIcon", building.getMapIcon());
-                    context.startActivity(intent);
+
+                if(currentLoc.isHasVisited() == true){
+
+                    if(currentLoc instanceof Building)
+                    {
+                        Building building = (Building) currentLoc;
+                        Log.e("ImageName", building.getMapImage());
+                        int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
+                        building.setMapIcon(icon);
+                        Intent intent = new Intent(context, map.class);
+                        intent.putExtra("mapIcon", building.getMapIcon());
+                        context.startActivity(intent);
+                    }
+                    else
+                    {
+                        Intent intent = new Intent(context, directions.class);
+                        Log.e("loc_id", currentLoc.getLocId() + "");
+                        intent.putExtra("location_id", currentLoc.getLocId());
+                        context.startActivity(intent);
+                    }
                 }
+
                 else
-                {
-                    Intent intent = new Intent(context, directions.class);
-                    Log.e("loc_id", currentLoc.getLocId() + "");
-                    intent.putExtra("location_id", currentLoc.getLocId());
-                    context.startActivity(intent);
-                }
+                    Toast.makeText(context.getApplicationContext(),"LOCATION LOCKED", Toast.LENGTH_SHORT).show();
+
 
             }
         });
-      //  holder.description.setText(currentLoc.getDescription());
+        //  holder.description.setText(currentLoc.getDescription());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, ViewDetails.class);
-                intent.putExtra("description", locationData.get(position).getDescription());
-                Log.e("TAG", locationData.get(position).getDescription());
-                intent.putExtra("name", locationData.get(position).getName());
 
-                context.startActivity(intent);
+                if(currentLoc.isHasVisited() == true) {
+                    Intent intent = new Intent(context, ViewDetails.class);
+                    intent.putExtra("description", locationData.get(position).getDescription());
+                    Log.e("TAG", locationData.get(position).getDescription());
+                    intent.putExtra("name", locationData.get(position).getName());
+
+                    context.startActivity(intent);
+                }
+
+                else
+                    Toast.makeText(context.getApplicationContext(),"LOCATION LOCKED", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -98,15 +123,18 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         TextView title;
         ImageView icon;
         ImageButton btn_loc;
+        ImageView btn_lock;
         TextView description;
 
         public myViewHolder(View itemView) {
             super(itemView);
-        ;
+            ;
             title = (TextView) itemView.findViewById(R.id.title);
             icon = (ImageView) itemView.findViewById(R.id.location_imageview);
             btn_loc = (ImageButton) itemView.findViewById(R.id.loc_button);
-          //  description = (TextView) itemView.findViewById(R.id.description);
+            btn_lock = (ImageView) itemView.findViewById(R.id.lockbutton);
+
+            //  description = (TextView) itemView.findViewById(R.id.description);
 
         }
 

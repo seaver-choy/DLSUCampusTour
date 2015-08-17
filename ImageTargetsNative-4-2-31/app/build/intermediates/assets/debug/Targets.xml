@@ -2,20 +2,68 @@
 <Target-list>
 	<Target>
 		<target_id>1</target_id>
-		<target_name>chips</target_name>
-		<target_image_name>Text.png</target_image_name>
+		<target_name>Yuchengco</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
 		<target_location_id>1</target_location_id>
 	</Target>
 	<Target>
 		<target_id>2</target_id>
-		<target_name>stones</target_name>
-		<target_image_name>TextureTeapotBlue.png</target_image_name>
+		<target_name>William</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
 		<target_location_id>2</target_location_id>
 	</Target>
 	<Target>
 		<target_id>3</target_id>
-		<target_name>tarmac</target_name>
-		<target_image_name>TextureTeapotBrass.png</target_image_name>
+		<target_name>Velasco</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>4</target_id>
+		<target_name>Razon</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>5</target_id>
+		<target_name>MuntienMarie</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>6</target_id>
+		<target_name>Miguel</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>7</target_id>
+		<target_name>LasalleHall</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>8</target_id>
+		<target_name>Joseph</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>9</target_id>
+		<target_name>HenrySy</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>10</target_id>
+		<target_name>Gokongwei</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>1</target_location_id>
+	</Target>
+	<Target>
+		<target_id>11</target_id>
+		<target_name>BrAndrew</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
 		<target_location_id>1</target_location_id>
 	</Target>
 </Target-list>
