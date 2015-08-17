@@ -16,6 +16,7 @@ import android.view.View;
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -46,6 +47,15 @@ public class location_cardview extends ActionBarActivity implements listLocation
             Context context = recyclerView.getContext();
             int icon = context.getResources().getIdentifier(locations.get(i).getIconName(), "drawable", context.getPackageName());
             locations.get(i).setIcon(icon);
+
+            String[] imageNames = locations.get(i).getImageNames();
+            ArrayList<Integer> imageIconsList = new ArrayList<Integer>();
+            for(int x = 0; x < imageNames.length;x++){
+                int imageIcon = context.getResources().getIdentifier(imageNames[x], "drawable", context.getPackageName());
+                imageIconsList.add(imageIcon);
+            }
+
+            locations.get(i).setImageIcons(imageIconsList.toArray(new Integer[imageIconsList.size()]));
         }
         return locations;
     }

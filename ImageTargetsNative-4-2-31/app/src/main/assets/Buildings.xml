@@ -6,30 +6,34 @@
 		<location_description>Land of CCS</location_description>
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>gox1,netcentric1,netcentric2</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
 		<location_id>2</location_id>
 		<location_name>Yuchengco</location_name>
 		<location_description>Land of Economics</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
+		<location_icon_name>yuch</location_icon_name>
+        <location_hasVisited>false</location_hasVisited>
+        <location_images>powermac,yuch,powermac</location_images>
 		<building_image>leaves2</building_image>
 	</Building>
 	<Building>
 		<location_id>3</location_id>
 		<location_name>Henry Sy Sr.</location_name>
 		<location_description>Library</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>henrysy1,henrysy2,henrysy1</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
 		<location_id>4</location_id>
 		<location_name>La Salle Hall</location_name>
 		<location_description>Land of Lasallians</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>lasallehall1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>lasallehall1,lasallehall1,lasallehall1</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
@@ -38,6 +42,7 @@
 		<location_description>Land of Minors, Froshes, Offices</location_description>
 		<location_icon_name>pink_trees</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
@@ -46,6 +51,7 @@
 		<location_description>Land of Research</location_description>
 		<location_icon_name>pink_trees</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
@@ -54,6 +60,7 @@
 		<location_description>Land of Sports</location_description>
 		<location_icon_name>pink_trees</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
@@ -158,8 +165,9 @@ The first computers ever used in DLSU was situated in the Miguel Building – pu
 The Comm Arts Television Studio was a gift of the Japanese people through the Commemorative Association for the Japan World Exposition.
 Houses some labs for the College of engineering because it was an engineering building before and the equipment are too heavy to transfer to Velasco Hall so they retained the labs.
 		</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>stmiguel</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>pattern1</building_image>
 	</Building>
 	<Building>
@@ -262,8 +270,9 @@ In Oct. 6, 2006, all of the Science and Mathematics programs have been granted t
 In front of SJ hall is the SJ walk, called the conscious walk, because of all the people sitting in the benches and staring at you when you walk there
 There are preserved fetuses, snakes, and the like placed on a container displayed on the 6th floor of the building
 		</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>stjoseph</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 	<Building>
@@ -324,6 +333,7 @@ Religious Studies Department (W703)
 		</location_description>
 		<location_icon_name>pink_trees</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
+        <location_images>pink_trees,leaves1,pink_trees</location_images>
 		<building_image>leaves1</building_image>
 	</Building>
 </Building-list>

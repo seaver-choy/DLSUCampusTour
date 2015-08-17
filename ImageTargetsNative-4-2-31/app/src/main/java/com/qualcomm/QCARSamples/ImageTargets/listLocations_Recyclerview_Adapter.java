@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.qualcomm.QCARSamples.ImageTargets.model.Building;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -98,8 +99,17 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                 if(currentLoc.isHasVisited() == true) {
                     Intent intent = new Intent(context, ViewDetails.class);
                     intent.putExtra("description", locationData.get(position).getDescription());
-                    Log.e("TAG", locationData.get(position).getDescription());
                     intent.putExtra("name", locationData.get(position).getName());
+
+                    ArrayList<Integer> imageIconsList = new ArrayList<Integer>();
+                    Integer[] imageIcons = locationData.get(position).getImageIcons();
+
+                    for(int i = 0; i < imageIcons.length; i++)
+                    {
+                        imageIconsList.add(imageIcons[i]);
+                    }
+
+                    intent.putIntegerArrayListExtra("imageIcons", imageIconsList);
 
                     context.startActivity(intent);
                 }

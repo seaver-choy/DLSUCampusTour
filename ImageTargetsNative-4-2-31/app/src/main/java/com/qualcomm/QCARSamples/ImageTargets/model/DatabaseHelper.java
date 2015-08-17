@@ -174,7 +174,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         Log.e("TAG", "SUCCESSFULLY READ " + steps.length + " steps from Steps.xml");
         for(int i = 0; i < steps.length; i++)
         {
-            Log.e("TAG", steps[i].getPictureName());
             this.createStep(steps[i]);
         }
 
@@ -226,6 +225,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
+                tl.setImageNames(this.getImagesOfLocation(tl.getLocId()));
+
                 // adding to todo list
                 if(!locationList.contains(tl))
                 locationList.add(tl);
@@ -248,13 +249,33 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
 
+        String[] tempLocationImages = location.getImageNames();
+
+        for(int i = 0; i < tempLocationImages.length; i++) {
+            values = new ContentValues();
+            values.put(KEY_LOCATION_ID_IMAGES, location.getLocId());
+            values.put(KEY_IMAGE_NAME_IMAGES, tempLocationImages[i]);
+
+            long temptag_id = db.insert(TABLE_LOCATION_IMAGE, null, values);
+        }
         return tag_id;
+    }
+
+    public void changeLocationToVisited(int loc_id){
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_HAS_VISITED, true);
+
+        db.update(TABLE_LOCATION, values, KEY_ID + " = " + loc_id, null);
+
+        Log.e("TAG", loc_id + " id has been changed to visited");
     }
 
     //CRUD of Target
     public List<Target> getAllTargets() {
         List<Target> targetList = new ArrayList<Target>();
-        String selectQuery = "SELECT  * FROM " + TABLE_TARGET;
+        String selectQuery = "SELECT * FROM " + TABLE_TARGET;
 
         Log.e(LOG, selectQuery);
 
@@ -266,8 +287,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 Target tl = new Target();
                 tl.setTargetID(c.getInt((c.getColumnIndex(KEY_ID))));
-                tl.setImageName((c.getString(c.getColumnIndex(KEY_DESCRIPTION))));
-                tl.setTargetName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
+                tl.setImageName((c.getString(c.getColumnIndex(KEY_IMAGE_NAME))));
+                tl.setTargetName(c.getString(c.getColumnIndex(KEY_TARGET_NAME)));
                 tl.setLocID(c.getInt((c.getColumnIndex(KEY_LOCATION_ID))));
 
                 // adding to todo list
@@ -293,8 +314,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         Target tl = new Target();
         tl.setTargetID(c.getInt((c.getColumnIndex(KEY_ID))));
-        tl.setImageName((c.getString(c.getColumnIndex(KEY_DESCRIPTION))));
-        tl.setTargetName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
+        tl.setImageName((c.getString(c.getColumnIndex(KEY_IMAGE_NAME))));
+        tl.setTargetName(c.getString(c.getColumnIndex(KEY_TARGET_NAME)));
         tl.setLocID(c.getInt((c.getColumnIndex(KEY_LOCATION_ID))));
 
         return tl;
@@ -353,6 +374,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return tag_id;
     }
 
+
     //CRUD of Building Table
     public long createBuilding(Building building) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -366,6 +388,16 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
+
+        String[] tempLocationImages = building.getImageNames();
+
+        for(int i = 0; i < tempLocationImages.length; i++) {
+            values = new ContentValues();
+            values.put(KEY_LOCATION_ID_IMAGES, building.getLocId());
+            values.put(KEY_IMAGE_NAME_IMAGES, tempLocationImages[i]);
+
+            long temptag_id = db.insert(TABLE_LOCATION_IMAGE, null, values);
+        }
 
         values = new ContentValues();
         values.put(KEY_BUILDING_LOCATION_ID, tag_id);
@@ -394,6 +426,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
                 tl.setMapImage(c.getString(c.getColumnIndex(KEY_BUILDING_MAP_IMAGE)));
+
+                tl.setImageNames(this.getImagesOfLocation(tl.getLocId()));
                 // adding to todo list
                 buildingList.add(tl);
             } while (c.moveToNext());
@@ -443,6 +477,26 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         return stepList;
     }
+
+    //CRUD of loc_has_images table
+    public String[] getImagesOfLocation(int loc_id)
+    {
+        ArrayList<String> imageNames = new ArrayList<>();
+        String selectQuery = "SELECT * FROM " + TABLE_LOCATION_IMAGE + " WHERE " + KEY_LOCATION_ID_IMAGES + " = " + loc_id;
+
+        Log.e(LOG, selectQuery);
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor c = db.rawQuery(selectQuery, null);
+
+        if(c.moveToFirst()) {
+            do {
+                imageNames.add(c.getString(c.getColumnIndex(KEY_IMAGE_NAME_IMAGES)));
+            }while(c.moveToNext());
+            }
+        return imageNames.toArray(new String[imageNames.size()]);
+        }
+
 
     public void closeDB() {
         SQLiteDatabase db = this.getReadableDatabase();

@@ -24,6 +24,7 @@ public class SitesXMLPullParser {
     private static final String KEY_LOCATION_DESCRIPTION = "location_description";
     private static final String KEY_LOCATION_ICON_NAME = "location_icon_name";
     private static final String KEY_LOCATION_HASVISITED = "location_hasVisited";
+    private static final String KEY_LOCATION_IMAGES = "location_images";
 
     //Building keys
     private static final String KEY_BUILDING = "Building";
@@ -109,6 +110,10 @@ public class SitesXMLPullParser {
                                 currLocation.setHasVisited(true);
                             }
                             else currLocation.setHasVisited(false);
+                        } else if (tagname.equalsIgnoreCase(KEY_LOCATION_IMAGES)) {
+                            Log.e("TAG", currText);
+                            String[] imageNames = currText.split(",");
+                            currLocation.setImageNames(imageNames);
                         }
                         break;
 
@@ -165,7 +170,7 @@ public class SitesXMLPullParser {
                     case XmlPullParser.TEXT:
                         //grab the current text so we can use it in END_TAG event
                         currText = xpp.getText();
-                        Log.e("TAG", currText);
+                        //Log.e("TAG", currText);
                         break;
 
                     case XmlPullParser.END_TAG:
@@ -187,11 +192,13 @@ public class SitesXMLPullParser {
                             currBuilding.setIconName(currText);
                         } else if (tagname.equalsIgnoreCase(KEY_LOCATION_HASVISITED)) {
                             // if </location_hasVisited> use setHasVisited() on currBuilding
-                            if(currText.contentEquals("true"))
-                            {
+                            if (currText.contentEquals("true")) {
                                 currBuilding.setHasVisited(true);
-                            }
-                            else currBuilding.setHasVisited(false);
+                            } else currBuilding.setHasVisited(false);
+                        }else if (tagname.equalsIgnoreCase(KEY_LOCATION_IMAGES)) {
+                            Log.e("TAG", currText);
+                            String[] imageNames = currText.split(",");
+                            currBuilding.setImageNames(imageNames);
                         } else if (tagname.equalsIgnoreCase(KEY_BUILDING_MAP_IMAGE)) {
                             currBuilding.setMapImage(currText);
                         }

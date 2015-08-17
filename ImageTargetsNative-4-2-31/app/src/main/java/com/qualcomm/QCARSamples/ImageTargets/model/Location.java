@@ -12,6 +12,8 @@ public class Location {
     private int loc_id;
     private boolean hasVisited;
     private int icon;
+    private String[] imageNames = null;
+    private Integer[] imageIcons = null;
 
     public Location(int loc_id, String name, String description, String icon_name, boolean hasVisited)
     {
@@ -34,6 +36,10 @@ public class Location {
     {
     }
 
+
+
+
+
     //Setters
     public void setName(String name) {
         this.name = name;
@@ -55,8 +61,16 @@ public class Location {
         this.hasVisited = hasVisited;
     }
 
+    public void setImageNames(String[] imageNames) {
+        this.imageNames = imageNames;
+    }
+
     public void setIcon(int icon) {
         this.icon = icon;
+    }
+
+    public void setImageIcons(Integer[] imageIcons) {
+        this.imageIcons = imageIcons;
     }
 
     //Getters
@@ -84,6 +98,14 @@ public class Location {
         return hasVisited;
     }
 
+    public String[] getImageNames() {
+        return imageNames;
+    }
+
+    public Integer[] getImageIcons() {
+        return imageIcons;
+    }
+
     @Override
     public boolean equals(Object object)
     {
@@ -97,8 +119,8 @@ public class Location {
         {
             return false;
         }
-        Log.e("OBJ", obj.getDescription() + " " + obj.getIconName() + " " + obj.getLocId() + " " + obj.getName());
-        Log.e("THIS", this.getDescription() + " " + this.getIconName() + " " + this.getLocId() + " " + this.getName());
+        //Log.e("OBJ", obj.getDescription() + " " + obj.getIconName() + " " + obj.getLocId() + " " + obj.getName());
+        //Log.e("THIS", this.getDescription() + " " + this.getIconName() + " " + this.getLocId() + " " + this.getName());
         return true;
     }
 }

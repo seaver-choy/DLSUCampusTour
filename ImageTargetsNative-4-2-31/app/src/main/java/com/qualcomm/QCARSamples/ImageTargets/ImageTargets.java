@@ -8,6 +8,7 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import java.lang.ref.WeakReference;
+import java.util.List;
 import java.util.Vector;
 
 import android.app.Activity;
@@ -1243,12 +1244,21 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     public void showDialogBox(final String s)
     {
         Log.e("TAG", "Will display " + s);
+
+        List<Target> targets = databaseHelper.getAllTargets();
+
+        for(int i = 0; i < targets.size(); i++)
+        {
+            if(targets.get(i).getTargetName().equalsIgnoreCase(s))
+                databaseHelper.changeLocationToVisited(targets.get(i).getLocID());
+        }
+
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                    border.setVisibility(View.VISIBLE);
-                    fake.setVisibility(View.VISIBLE);
-                    fake.setText("This is the target named " + s);
+                border.setVisibility(View.VISIBLE);
+                fake.setVisibility(View.VISIBLE);
+                fake.setText("This is the target named " + s);
             }
         });
     }
