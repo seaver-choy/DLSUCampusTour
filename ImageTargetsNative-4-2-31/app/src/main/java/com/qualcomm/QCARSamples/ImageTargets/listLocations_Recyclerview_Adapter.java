@@ -64,7 +64,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             @Override
             public void onClick(View v) {
 
-                if(currentLoc.isHasVisited() == true){
+//                if(currentLoc.isHasVisited() == true){
 
                     if(currentLoc instanceof Building)
                     {
@@ -83,10 +83,10 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                         intent.putExtra("location_id", currentLoc.getLocId());
                         context.startActivity(intent);
                     }
-                }
+//                }
 
-                else
-                    Toast.makeText(context.getApplicationContext(),"LOCATION LOCKED", Toast.LENGTH_SHORT).show();
+//                else
+//                    Toast.makeText(context.getApplicationContext(),"LOCATION LOCKED", Toast.LENGTH_SHORT).show();
 
 
             }
