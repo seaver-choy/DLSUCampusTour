@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,6 +36,8 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         this.context = context;
 //        Resources res = context.getResources();
 //        locations = res.getStringArray(R.array.locations);
+
+        //warning.setDuration(Toast.LENGTH_LONG);
     }
 
     @Override
@@ -114,8 +117,11 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                     context.startActivity(intent);
                 }
 
-                else
-                    Toast.makeText(context.getApplicationContext(),"LOCATION LOCKED", Toast.LENGTH_SHORT).show();
+                else {
+                    Toast warning = Toast.makeText(context.getApplicationContext(),"                        LOCATION LOCKED\n Please press the get location button instead." , Toast.LENGTH_SHORT);
+                    warning.setDuration(Toast.LENGTH_LONG);
+                    warning.show();
+                }
             }
         });
     }

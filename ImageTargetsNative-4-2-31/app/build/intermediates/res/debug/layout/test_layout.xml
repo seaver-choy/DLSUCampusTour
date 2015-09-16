@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background ="#163f0a"
+    android:background ="#0b6329"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     >
 

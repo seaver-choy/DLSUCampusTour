@@ -3,6 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0b6329"
     >
 
 
@@ -11,9 +12,12 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Step 1: Locate this"
+        android:textColor="#FFFFFF"
         android:id="@+id/step_number"
         android:padding="2dp"
-        android:fontFamily="roboto" />
+        android:fontFamily="roboto"
+        android:textSize="40px"
+        />
 
     <ImageView
         android:layout_width="match_parent"
@@ -27,11 +31,20 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Once you are along taft bla bla bla bla bla this should be easy enough to locate"
+        android:textColor="#FFFFFF"
         android:id="@+id/step_description"
         android:layout_gravity="center_horizontal"
         android:padding="3dp"
-        android:fontFamily="roboto" />
+        android:fontFamily="roboto"
+        android:layout_marginBottom="20px"
+        android:textSize="30px"/>
 
+    <View android:id="@+id/separator"
+        android:background="#ffffff"
+        android:layout_width = "fill_parent"
+        android:layout_height="5dip"
+        android:layout_centerVertical ="true"
+        android:layout_alignParentTop="true"/>
 
 
 </LinearLayout>
