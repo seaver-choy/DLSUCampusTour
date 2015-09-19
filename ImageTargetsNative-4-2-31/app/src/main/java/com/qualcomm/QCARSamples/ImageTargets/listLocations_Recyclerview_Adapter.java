@@ -1,6 +1,8 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -118,9 +120,31 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                 }
 
                 else {
-                    Toast warning = Toast.makeText(context.getApplicationContext(),"                        LOCATION LOCKED\n Please press the get location button instead." , Toast.LENGTH_SHORT);
-                    warning.setDuration(Toast.LENGTH_LONG);
-                    warning.show();
+
+                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                            context);
+
+                    // set title
+                    alertDialogBuilder.setTitle("LOCATION LOCKED");
+
+                    // set dialog message
+                    alertDialogBuilder
+                            .setMessage("Please press the get location button instead.")
+                            .setCancelable(false)
+                            .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog,int id) {
+                                    // if this button is clicked, close
+                                    // current activity
+                                    dialog.cancel();
+                                }
+                            });
+
+                    // create alert dialog
+                    AlertDialog alertDialog = alertDialogBuilder.create();
+
+                    // show it
+                    alertDialog.show();
+
                 }
             }
         });
