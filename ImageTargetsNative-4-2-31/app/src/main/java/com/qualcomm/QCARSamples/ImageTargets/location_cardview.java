@@ -88,4 +88,19 @@ public class location_cardview extends ActionBarActivity implements listLocation
     public void itemClicked(View view, int position) {
         startActivity(new Intent(this, ViewDetails.class));
     }
+
+    public void onBackPressed()
+    {
+        //do whatever you want the 'Back' button to do
+        Intent i = getIntent();
+        String previous = i.getStringExtra("FROM ACTIVITY");
+
+        if(previous.equals("camera"))
+            this.startActivity(new Intent(this, ImageTargets.class));
+
+        else if (previous.equals("mainmenu"))
+            this.startActivity(new Intent(this, ActivitySplashScreen.class));
+
+            return;
+    }
 }

@@ -210,6 +210,7 @@
     <dimen name="menu_entries_top_down_radio_padding">7dp</dimen>
     <dimen name="menu_title">22sp</dimen>
     <dimen name="menu_title_padding">14dp</dimen>
+    <dimen name="padding_medium">5dp</dimen>
     <!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <item name="action_bar_activity_content" type="id"/>
@@ -284,6 +285,7 @@
     <string name="splash_screen_description">Vuforia Splash</string>
     <string name="title_activity_main_menu">MainMenu</string>
     <string name="title_activity_sample_stack">SampleStack</string>
+    <string name="title_activity_tutorial_screen">TutorialScreen</string>
     <string name="title_activity_view_details">ViewDetails</string>
     <!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>

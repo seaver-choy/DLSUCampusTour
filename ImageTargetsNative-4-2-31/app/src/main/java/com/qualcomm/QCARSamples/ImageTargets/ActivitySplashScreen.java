@@ -8,7 +8,10 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -18,6 +21,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.LinearLayoutManager;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 import com.qualcomm.QCARSamples.ImageTargets.model.Target;
@@ -32,7 +37,11 @@ public class ActivitySplashScreen extends Activity
     private ImageButton mhelp;
     Intent i;
     private DatabaseHelper databaseHelper;
-    
+    Context context = this;
+
+
+
+
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -53,6 +62,27 @@ public class ActivitySplashScreen extends Activity
         mlocations = (ImageButton) findViewById(R.id.mlocationsbutton);
         mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
 
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                context);
+
+        // set title
+        alertDialogBuilder.setTitle("FIRST RUN");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("Please press the Question Mark button to learn how to use the app.")
+                .setCancelable(false)
+                .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, close
+                        // current activity
+                        dialog.cancel();
+                    }
+                });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
         boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun", true);
 
         if(firstRun) {
@@ -63,12 +93,21 @@ public class ActivitySplashScreen extends Activity
                     edit().
                     putBoolean("firstRun", false).
                     commit();
+
+            // show it
+          //alertDialog.show();
+
+            i = new Intent(getBaseContext(), TutorialScreen.class);
+            i.putExtra("FROM ACTIVITY", "mainmenu");
+            startActivity(i);
+
         }
 
         mstart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 i = new Intent(getBaseContext(), ImageTargets.class);
+                i.putExtra("FROM ACTIVITY", "mainmenu");
                 startActivity(i);
 
             }
@@ -78,6 +117,7 @@ public class ActivitySplashScreen extends Activity
             @Override
             public void onClick(View view) {
                 i = new Intent(getBaseContext(), location_cardview.class);
+                i.putExtra("FROM ACTIVITY", "mainmenu");
                 startActivity(i);
 
             }
@@ -87,7 +127,8 @@ public class ActivitySplashScreen extends Activity
         mhelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = new Intent(getBaseContext(), ViewDetails.class);
+                i = new Intent(getBaseContext(), TutorialScreen.class);
+                i.putExtra("FROM ACTIVITY", "mainmenu");
                 startActivity(i);
             }
         });

@@ -197,4 +197,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
     public interface ClickListener{
         public void itemClicked(View view, int position);
     }
+
+
+
 }

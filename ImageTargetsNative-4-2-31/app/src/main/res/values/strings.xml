@@ -42,5 +42,6 @@
     <string name="title_activity_view_details">ViewDetails</string>
     <string name="title_activity_sample_stack">SampleStack</string>
     <string name="list">Locations list</string>
+    <string name="title_activity_tutorial_screen">TutorialScreen</string>
     
 </resources>
