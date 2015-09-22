@@ -5,7 +5,7 @@ android {
 
     defaultConfig {
         applicationId "com.qualcomm.QCARSamples.ImageTargets"
-        minSdkVersion 9
+        minSdkVersion 13
         targetSdkVersion 21
     }
 

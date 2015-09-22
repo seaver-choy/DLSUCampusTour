@@ -1,9 +1,12 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.app.Activity;
 import android.support.v4.view.GestureDetectorCompat;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -32,6 +35,10 @@ public class ViewDetails extends ActionBarActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_details);
+
+        ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
+
 
         TextView description = (TextView) findViewById(R.id.location_description);
         TextView txtviewName = (TextView) findViewById(R.id.TVname);

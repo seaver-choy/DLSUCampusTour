@@ -12,7 +12,7 @@
         android:targetSdkVersion = application's targeted API level
     -->
     <uses-sdk
-        android:minSdkVersion="9"
+        android:minSdkVersion="13"
         android:targetSdkVersion="21" />
 
     <uses-feature android:glEsVersion="0x00020000" />
@@ -109,6 +109,7 @@
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:label="@string/list"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
@@ -126,7 +127,7 @@
             android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
             android:label="directions"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
-            android:theme="@style/Theme.AppCompat.Light" >
+            android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.TutorialScreen"

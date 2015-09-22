@@ -1,11 +1,14 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
-import android.app.ActionBar;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -39,6 +42,11 @@ public class location_cardview extends ActionBarActivity implements listLocation
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        ActionBar bar = getSupportActionBar();
+        bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
+
+
     }
 
     public List<Location> getIconData(){
@@ -98,7 +106,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
         if(previous.equals("camera"))
             this.startActivity(new Intent(this, ImageTargets.class));
 
-        else if (previous.equals("mainmenu"))
+        else
             this.startActivity(new Intent(this, ActivitySplashScreen.class));
 
             return;
