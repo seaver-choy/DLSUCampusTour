@@ -108,13 +108,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
-            android:label="@string/list"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
+            android:label="Location List"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.ViewDetails"
-            android:label="@string/title_activity_view_details"
+            android:label="Location Details"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:theme="@style/Theme.AppCompat" >
         </activity>
@@ -125,7 +124,7 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
-            android:label="directions"
+            android:label="Directions"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:theme="@style/Theme.AppCompat" >
         </activity>
@@ -134,6 +133,13 @@
             android:label="@string/title_activity_tutorial_screen"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen" >
         </activity>
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         <activity
             android:name="android.support.v7.widget.TestActivity"
             android:label="RecyclerViewTestActivity" />

@@ -12,6 +12,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -100,6 +101,17 @@ public class ActivitySplashScreen extends Activity
             i = new Intent(getBaseContext(), TutorialScreen.class);
             i.putExtra("FROM ACTIVITY", "mainmenu");
             startActivity(i);
+
+            SharedPreferences pref = getSharedPreferences("ActivityPREF", Context.MODE_PRIVATE);
+            if(pref.getBoolean("activity_executed", false)){
+                Intent intent = new Intent(this, TutorialScreen.class);
+                startActivity(intent);
+//                finish();
+            } else {
+                SharedPreferences.Editor ed = pref.edit();
+                ed.putBoolean("activity_executed", true);
+                ed.commit();
+            }
 
         }
 

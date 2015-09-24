@@ -107,13 +107,13 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".location_cardview"
-            android:label="@string/list"
-            android:parentActivityName=".ActivitySplashScreen"
+            android:label="Location List"
+
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
             android:name=".ViewDetails"
-            android:label="@string/title_activity_view_details"
+            android:label="Location Details"
             android:parentActivityName=".location_cardview"
             android:theme="@style/Theme.AppCompat" >
         </activity>
@@ -124,7 +124,7 @@
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name=".directions"
-            android:label="directions"
+            android:label="Directions"
             android:parentActivityName=".location_cardview"
             android:theme="@style/Theme.AppCompat" >
         </activity>
@@ -133,6 +133,12 @@
             android:label="@string/title_activity_tutorial_screen"
             android:parentActivityName=".ActivitySplashScreen">
         </activity>
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
     </application>
 
 </manifest>

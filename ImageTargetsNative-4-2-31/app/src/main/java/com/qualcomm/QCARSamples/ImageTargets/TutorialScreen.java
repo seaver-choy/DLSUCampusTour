@@ -1,7 +1,9 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -15,9 +17,15 @@ public class TutorialScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_screen);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-        ImageAdapter adapter = new ImageAdapter(this);
-        viewPager.setAdapter(adapter);
+//        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+//        ImageAdapter adapter = new ImageAdapter(this);
+//        viewPager.setAdapter(adapter);
+
+        CustomPagerAdapter mCustomPagerAdapter = new CustomPagerAdapter(this);
+
+        ViewPager mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager.setAdapter(mCustomPagerAdapter);
+
     }
 
     @Override

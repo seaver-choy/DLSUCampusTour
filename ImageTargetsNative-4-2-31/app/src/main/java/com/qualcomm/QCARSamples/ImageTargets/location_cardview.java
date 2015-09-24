@@ -45,6 +45,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
 
         ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
 
     }
@@ -103,10 +104,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
         Intent i = getIntent();
         String previous = i.getStringExtra("FROM ACTIVITY");
 
-        if(previous.equals("camera"))
-            this.startActivity(new Intent(this, ImageTargets.class));
 
-        else
             this.startActivity(new Intent(this, ActivitySplashScreen.class));
 
             return;
