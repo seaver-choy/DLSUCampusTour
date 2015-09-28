@@ -108,7 +108,7 @@
         <activity
             android:name=".location_cardview"
             android:label="Location List"
-
+            android:parentActivityName=".ActivitySplashScreen"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
@@ -119,7 +119,7 @@
         </activity>
         <activity
             android:name=".map"
-            android:label="map"
+            android:label="Campus Map"
             android:parentActivityName=".location_cardview"
             android:theme="@style/Theme.AppCompat" />
         <activity

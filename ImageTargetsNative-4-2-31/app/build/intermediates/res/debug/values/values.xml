@@ -287,6 +287,14 @@
     <string name="title_activity_sample_stack">SampleStack</string>
     <string name="title_activity_tutorial_screen">TutorialScreen</string>
     <string name="title_activity_view_details">ViewDetails</string>
+    <!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AboutDialog">
+        <item name="android:windowTitleStyle">@style/dialogtitle</item>
+        <item name="android:textColor">#1A8200</item>
+        <item name="android:background">#ffffff</item>
+
+    </style>
     <!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
@@ -1557,4 +1565,9 @@
     <style name="Widget.AppCompat.TextView.SpinnerItem" parent="Base.Widget.AppCompat.TextView.SpinnerItem"/>
     <style name="Widget.AppCompat.Toolbar" parent="Base.Widget.AppCompat.Toolbar"/>
     <style name="Widget.AppCompat.Toolbar.Button.Navigation" parent="RtlOverlay.Widget.AppCompat.Toolbar.Button.Navigation"/>
+    <!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="dialogtitle">
+        <item name="android:textColor">#1A8200</item>
+    </style>
 </resources>

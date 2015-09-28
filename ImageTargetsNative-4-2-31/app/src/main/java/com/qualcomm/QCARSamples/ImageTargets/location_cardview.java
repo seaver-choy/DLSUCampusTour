@@ -11,6 +11,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.text.Html;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -45,7 +46,8 @@ public class location_cardview extends ActionBarActivity implements listLocation
 
         ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
-        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        //bar.setTitle(Html.fromHtml("<font color='#ffffff'>Location List</font>"));
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
     }

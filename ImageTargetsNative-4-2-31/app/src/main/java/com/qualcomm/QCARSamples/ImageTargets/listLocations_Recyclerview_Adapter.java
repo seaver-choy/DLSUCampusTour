@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.internal.view.ContextThemeWrapper;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
@@ -122,7 +123,9 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                 else {
 
                     AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                            context);
+                        context    );
+
+                   // new ContextThemeWrapper(context, R.style.AboutDialog)
 
                     // set title
                     alertDialogBuilder.setTitle("LOCATION LOCKED");
