@@ -109,7 +109,6 @@
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
             android:label="Location List"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity

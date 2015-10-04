@@ -123,8 +123,6 @@ activity#com.qualcomm.QCARSamples.ImageTargets.location_cardview
 ADDED from AndroidManifest.xml:108:9
 	android:label
 		ADDED from AndroidManifest.xml:110:13
-	android:parentActivityName
-		ADDED from AndroidManifest.xml:111:13
 	android:theme
 		ADDED from AndroidManifest.xml:112:13
 	android:name

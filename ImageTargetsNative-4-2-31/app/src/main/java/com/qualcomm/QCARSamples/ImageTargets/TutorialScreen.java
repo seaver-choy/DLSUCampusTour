@@ -7,24 +7,48 @@ import android.content.SharedPreferences;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 public class TutorialScreen extends Activity {
+    private CustomPagerAdapter mCustomPagerAdapter;
+    private ViewPager mViewPager;
+    private Intent i;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_screen);
-
-//        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
-//        ImageAdapter adapter = new ImageAdapter(this);
-//        viewPager.setAdapter(adapter);
-
-        CustomPagerAdapter mCustomPagerAdapter = new CustomPagerAdapter(this);
-
-        ViewPager mViewPager = (ViewPager) findViewById(R.id.pager);
+        mCustomPagerAdapter = new CustomPagerAdapter(this);
+        mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mCustomPagerAdapter);
+
+
+       mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+           @Override
+           public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+               Log.i("pager", mViewPager.getCurrentItem() + "");
+
+               if(mViewPager.getCurrentItem() == 2)
+               {
+                   i = new Intent(getBaseContext(), ActivitySplashScreen.class);
+                   finish();
+                   startActivity(i);
+               }
+
+           }
+
+           @Override
+           public void onPageSelected(int position) {
+
+           }
+
+           @Override
+           public void onPageScrollStateChanged(int state) {
+
+           }
+       });
 
     }
 
@@ -54,8 +78,9 @@ public class TutorialScreen extends Activity {
     {
         //do whatever you want the 'Back' button to do
 
+        this.finish();
+        this.startActivity(new Intent(this, ActivitySplashScreen.class));
 
-        this.startActivity(new Intent(this,ActivitySplashScreen.class));
 
         return;
     }

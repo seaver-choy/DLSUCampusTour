@@ -31,16 +31,11 @@ import com.qualcomm.QCARSamples.ImageTargets.model.Target;
 
 public class ActivitySplashScreen extends Activity
 {
-    
-    private static long SPLASH_MILLIS = 4000;
     private ImageButton mstart;
     private ImageButton mlocations;
     private ImageButton mhelp;
-    Intent i;
     private DatabaseHelper databaseHelper;
-    Context context = this;
-
-
+    private Intent i;
 
 
     @Override
@@ -63,26 +58,6 @@ public class ActivitySplashScreen extends Activity
         mlocations = (ImageButton) findViewById(R.id.mlocationsbutton);
         mhelp = (ImageButton) findViewById(R.id.mhelpbutton);
 
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                context);
-
-        // set title
-        alertDialogBuilder.setTitle("FIRST RUN");
-
-        // set dialog message
-        alertDialogBuilder
-                .setMessage("Please press the Question Mark button to learn how to use the app.")
-                .setCancelable(false)
-                .setPositiveButton("OK",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
-                        // if this button is clicked, close
-                        // current activity
-                        dialog.cancel();
-                    }
-                });
-
-        // create alert dialog
-        AlertDialog alertDialog = alertDialogBuilder.create();
 
         boolean firstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE).getBoolean("firstRun", true);
 
@@ -95,8 +70,6 @@ public class ActivitySplashScreen extends Activity
                     putBoolean("firstRun", false).
                     commit();
 
-            // show it
-          //alertDialog.show();
 
             i = new Intent(getBaseContext(), TutorialScreen.class);
             i.putExtra("FROM ACTIVITY", "mainmenu");
@@ -106,7 +79,7 @@ public class ActivitySplashScreen extends Activity
             if(pref.getBoolean("activity_executed", false)){
                 Intent intent = new Intent(this, TutorialScreen.class);
                 startActivity(intent);
-//                finish();
+
             } else {
                 SharedPreferences.Editor ed = pref.edit();
                 ed.putBoolean("activity_executed", true);
@@ -147,38 +120,7 @@ public class ActivitySplashScreen extends Activity
 
 
 
-//        final Handler handler = new Handler();
-//        handler.postDelayed(new Runnable()
-//        {
-//
-//            @Override
-//            public void run()
-//            {
-//
-//                Intent intent = new Intent(ActivitySplashScreen.this,
-//                   MainMenu.class);
-////                intent.putExtra("ACTIVITY_TO_LAUNCH", "ImageTargets");
-////                intent.putExtra("ABOUT_TEXT_TITLE", "Image Targets");
-////                intent.putExtra("ABOUT_TEXT", "IT_about.html");
-//                startActivity(intent);
-//
-//            }
-//
-//        }, SPLASH_MILLIS);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 }

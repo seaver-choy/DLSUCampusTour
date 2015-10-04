@@ -106,7 +106,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
         Intent i = getIntent();
         String previous = i.getStringExtra("FROM ACTIVITY");
 
-
+            this.finish();
             this.startActivity(new Intent(this, ActivitySplashScreen.class));
 
             return;

@@ -16,6 +16,8 @@ import android.widget.LinearLayout;
 
         Context mContext;
         LayoutInflater mLayoutInflater;
+        View itemView;
+        ImageView imageView;
 
         int[] mResources = {
                 R.drawable.welcome1,
@@ -30,6 +32,7 @@ import android.widget.LinearLayout;
 
         @Override
         public int getCount() {
+
             return mResources.length;
         }
 
@@ -40,9 +43,8 @@ import android.widget.LinearLayout;
 
         @Override
         public Object instantiateItem(ViewGroup container, int position) {
-            View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
-
-            ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
+            imageView = (ImageView) itemView.findViewById(R.id.imageView);
             imageView.setImageResource(mResources[position]);
 
             container.addView(itemView);
