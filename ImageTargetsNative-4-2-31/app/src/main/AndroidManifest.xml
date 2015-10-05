@@ -121,7 +121,8 @@
             android:name=".map"
             android:label="Campus Map"
             android:parentActivityName=".location_cardview"
-            android:theme="@style/Theme.AppCompat" />
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="sensor"/>
         <activity
             android:name=".directions"
             android:label="Directions"
@@ -131,7 +132,8 @@
         <activity
             android:name=".TutorialScreen"
             android:label="@string/title_activity_tutorial_screen"
-            android:parentActivityName=".ActivitySplashScreen">
+            android:parentActivityName=".ActivitySplashScreen"
+            android:screenOrientation="portrait">
         </activity>
 
         <intent-filter>

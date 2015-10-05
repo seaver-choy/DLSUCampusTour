@@ -4,6 +4,8 @@ package com.qualcomm.QCARSamples.ImageTargets;
  * Created by Interns on 6/18/2015.
  */
 import android.graphics.Color;
+import android.graphics.PointF;
+import android.graphics.RectF;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.app.Activity;
@@ -22,7 +24,20 @@ public class map extends ActionBarActivity {
 
 
 
-        TouchImageView img = new TouchImageView(this);
+        final TouchImageView img = new TouchImageView(this);
+
+        img.setOnTouchImageViewListener(new TouchImageView.OnTouchImageViewListener() {
+
+            @Override
+            public void onMove() {
+                PointF point = img.getScrollPosition();
+                RectF rect = img.getZoomedRect();
+                float currentZoom = img.getCurrentZoom();
+                boolean isZoomed = img.isZoomed();
+
+            }
+        });
+
         int icon = getIntent().getIntExtra("mapIcon", 0);
         if(icon != 0)
         {

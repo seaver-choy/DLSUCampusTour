@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -15,6 +16,8 @@ public class TutorialScreen extends Activity {
     private CustomPagerAdapter mCustomPagerAdapter;
     private ViewPager mViewPager;
     private Intent i;
+    Handler handler = new Handler();
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,11 +33,18 @@ public class TutorialScreen extends Activity {
            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                Log.i("pager", mViewPager.getCurrentItem() + "");
 
-               if(mViewPager.getCurrentItem() == 2)
+               if(mViewPager.getCurrentItem() == 5)
                {
-                   i = new Intent(getBaseContext(), ActivitySplashScreen.class);
-                   finish();
-                   startActivity(i);
+                   handler.postDelayed(new Runnable() {
+                       @Override
+                       public void run() {
+                           i = new Intent(getBaseContext(), ActivitySplashScreen.class);
+                           finish();
+                           startActivity(i);
+                       }
+                   }, 500);
+
+
                }
 
            }

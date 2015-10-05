@@ -22,7 +22,10 @@ import android.widget.LinearLayout;
         int[] mResources = {
                 R.drawable.welcome1,
                 R.drawable.mainmenu1,
-                R.drawable.locationlist1
+                R.drawable.camera1,
+                R.drawable.poster1,
+                R.drawable.locationlist1,
+                R.drawable.lastslide
         };
 
         public CustomPagerAdapter(Context context) {

@@ -121,6 +121,7 @@
             android:name="com.qualcomm.QCARSamples.ImageTargets.map"
             android:label="Campus Map"
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:screenOrientation="sensor"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
@@ -131,7 +132,8 @@
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.TutorialScreen"
             android:label="@string/title_activity_tutorial_screen"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen" >
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
+            android:screenOrientation="portrait" >
         </activity>
 
         <intent-filter>
