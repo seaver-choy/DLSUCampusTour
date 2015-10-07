@@ -33,7 +33,7 @@ public class TutorialScreen extends Activity {
            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                Log.i("pager", mViewPager.getCurrentItem() + "");
 
-               if(mViewPager.getCurrentItem() == 5)
+               if(mViewPager.getCurrentItem() == 13)
                {
                    handler.postDelayed(new Runnable() {
                        @Override
@@ -88,9 +88,8 @@ public class TutorialScreen extends Activity {
     {
         //do whatever you want the 'Back' button to do
 
-        this.finish();
         this.startActivity(new Intent(this, ActivitySplashScreen.class));
-
+        finish();
 
         return;
     }

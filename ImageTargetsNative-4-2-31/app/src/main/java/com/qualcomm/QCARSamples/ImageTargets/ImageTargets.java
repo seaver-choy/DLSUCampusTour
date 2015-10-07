@@ -1279,14 +1279,15 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     public void onBackPressed()
     {
         //do whatever you want the 'Back' button to do
-        Intent i = getIntent();
-        String previous = i.getStringExtra("FROM ACTIVITY");
+         Intent i = getIntent();
+         String previous = i.getStringExtra("FROM ACTIVITY");
 
 //        if(previous.equals("locationlist"))
 //          this.startActivity(new Intent(this, listLocations_Recyclerview_Adapter.class));
 //
 //        else if (previous.equals("mainmenu"))
             this.startActivity(new Intent(this, ActivitySplashScreen.class));
+            finish();
 
         return;
     }

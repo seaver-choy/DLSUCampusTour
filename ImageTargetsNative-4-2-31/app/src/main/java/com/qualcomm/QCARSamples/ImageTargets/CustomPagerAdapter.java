@@ -23,8 +23,16 @@ import android.widget.LinearLayout;
                 R.drawable.welcome1,
                 R.drawable.mainmenu1,
                 R.drawable.camera1,
-                R.drawable.poster1,
                 R.drawable.locationlist1,
+                R.drawable.map1,
+                R.drawable.map2,
+                R.drawable.map3,
+                R.drawable.direstions1,
+                R.drawable.poster1,
+                R.drawable.camera2,
+                R.drawable.locationlist2,
+                R.drawable.locationdetails,
+                R.drawable.closingslide,
                 R.drawable.lastslide
         };
 
