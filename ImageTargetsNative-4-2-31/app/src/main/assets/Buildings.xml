@@ -2,66 +2,66 @@
 <Building-list>
 	<Building>
 		<location_id>1</location_id>
-		<location_name>Gokongwei</location_name>
+		<location_name>Gokongwei Hall</location_name>
 		<location_description>Land of CCS</location_description>
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>gox1,netcentric1,netcentric2</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>gox2,gox3,gox4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>2</location_id>
-		<location_name>Yuchengco</location_name>
+		<location_name>Yuchengco Hall</location_name>
 		<location_description>Land of Economics</location_description>
-		<location_icon_name>yuch</location_icon_name>
+		<location_icon_name>yuchengco4</location_icon_name>
         <location_hasVisited>false</location_hasVisited>
-        <location_images>powermac,yuch,powermac</location_images>
-		<building_image>leaves2</building_image>
+        <location_images>yuchengco1,yuchengco2,yuchengco3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>3</location_id>
-		<location_name>Henry Sy Sr.</location_name>
+		<location_name>Henry Sy Sr. Hall</location_name>
 		<location_description>Library</location_description>
 		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>henrysy1,henrysy2,henrysy1</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>henrysy2,henrysy3,henrysy4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>4</location_id>
-		<location_name>La Salle Hall</location_name>
+		<location_name>St. La Salle Hall</location_name>
 		<location_description>Land of Lasallians</location_description>
 		<location_icon_name>lasallehall1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>lasallehall1,lasallehall1,lasallehall1</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>lasallehall2,lasallehall3,lasallehall4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>5</location_id>
-		<location_name>Br. Andrew Building</location_name>
+		<location_name>Br. Andrew Gonzalez Hall</location_name>
 		<location_description>Land of Minors, Froshes, Offices</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>andrew2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>andrew1,andrew2,andrew3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>6</location_id>
 		<location_name>Science and Technology Research Center</location_name>
 		<location_description>Land of Research</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>strc3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>strc1,strc2,strc3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>7</location_id>
-		<location_name>Enrique Razon Building</location_name>
+		<location_name>Enrique Razon Sports Center</location_name>
 		<location_description>Land of Sports</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>razon3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>razon1,razon2,razon3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>8</location_id>
@@ -167,8 +167,8 @@ Houses some labs for the College of engineering because it was an engineering bu
 		</location_description>
 		<location_icon_name>stmiguel</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>pattern1</building_image>
+        <location_images>stmiguel,stmiguel,stmiguel</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>9</location_id>
@@ -270,10 +270,10 @@ In Oct. 6, 2006, all of the Science and Mathematics programs have been granted t
 In front of SJ hall is the SJ walk, called the conscious walk, because of all the people sitting in the benches and staring at you when you walk there
 There are preserved fetuses, snakes, and the like placed on a container displayed on the 6th floor of the building
 		</location_description>
-		<location_icon_name>stjoseph</location_icon_name>
+		<location_icon_name>stjoseph3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>stjoseph1,stjoseph2,stjoseph3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>10</location_id>
@@ -331,9 +331,54 @@ Religious Studies Department (W703)
 - Chair: Dr. Luis C. Sembrano
 - Vice Chair: Mr. Lysander P. Rivera
 		</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>williamhall3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>williamhall1,williamtheater,williamhall2</location_images>
+		<building_image>map</building_image>
 	</Building>
+	<Building>
+		<location_id>11</location_id>
+		<location_name>Br. Connon Hall</location_name>
+		<location_description>COA Office</location_description>
+		<location_icon_name>connon4</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>connon1,connon2,connon3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>12</location_id>
+		<location_name>Velasco Hall</location_name>
+		<location_description>Home of Engineers</location_description>
+		<location_icon_name>velasco3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>velasco1,velasco2,velasco3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>13</location_id>
+		<location_name>Br. John Hall</location_name>
+		<location_description>Home of offices</location_description>
+		<location_icon_name>velasco3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>velasco1,velasco2,velasco3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>14</location_id>
+		<location_name>Br. Bloemen Hall</location_name>
+		<location_description>Zaide</location_description>
+		<location_icon_name>velasco3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>velasco1,velasco2,velasco3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Location>
+		<location_id>15</location_id>
+		<location_name>Faculty Building</location_name>
+		<location_description>Home of the teachers</location_description>
+		<location_icon_name>faculty3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>faculty1,faculty2,faculty4</location_images>
+		<building_image>map</building_image>
+	</Location>
 </Building-list>

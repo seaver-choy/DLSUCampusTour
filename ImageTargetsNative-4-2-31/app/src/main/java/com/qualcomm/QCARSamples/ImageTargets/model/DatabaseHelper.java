@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -209,7 +211,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         List<Building> buildingList = this.getAllBuildings();
         locationList.addAll(buildingList);
 
-        String selectQuery = "SELECT * FROM " + TABLE_LOCATION;
+        String selectQuery = "SELECT * FROM " + TABLE_LOCATION + " ORDER BY " + KEY_LOCATION_NAME;
         Log.e(LOG, selectQuery);
 
         SQLiteDatabase db = this.getReadableDatabase();
@@ -232,6 +234,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 locationList.add(tl);
             } while (c.moveToNext());
         }
+
+        Collections.sort(locationList, new Comparator<Location>(){
+            public int compare(Location l1, Location l2) {
+                return l1.getName().compareToIgnoreCase(l2.getName());
+            }
+        });
 
         return locationList;
     }
@@ -409,7 +417,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public List<Building> getAllBuildings() {
         List<Building> buildingList = new ArrayList<Building>();
-        String selectQuery = "SELECT * FROM " + TABLE_BUILDING + ", " + TABLE_LOCATION + " WHERE " + KEY_BUILDING_LOCATION_ID + " = " + KEY_ID;
+        String selectQuery = "SELECT * FROM " + TABLE_BUILDING + ", " + TABLE_LOCATION + " WHERE " + KEY_BUILDING_LOCATION_ID + " = " + KEY_ID + " ORDER BY " + KEY_LOCATION_NAME;
 
         Log.e(LOG, selectQuery);
 

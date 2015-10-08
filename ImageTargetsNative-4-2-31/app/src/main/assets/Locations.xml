@@ -1,11 +1,99 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Location-list>
 	<Location>
-		<location_id>11</location_id>
-		<location_name>NetCentric</location_name>
-		<location_description>Land of Developers</location_description>
-		<location_icon_name>gox1</location_icon_name>
+		<location_id>16</location_id>
+		<location_name>The Learning Commons</location_name>
+		<location_description>The De La Salle University Libraries primarily supports the institution's instructional, curricular, research, and extension programs through organized, relevant, and fast delivery of information services.
+Academic libraries, as the resource centers of excellence in information, should aim at assisting the nation in producing professional, skilled and trained manpower by providing timely and instant access to various formats of information in any part of the country and of the world.
+
+
+
+Contact Information
+De La Salle University Libraries
+2401 Taft Avenue
+1004 Manila, Philippines
+Tel. Nos: (632) 524-8835;
+(632) 536-0244 (direct lines/telefax nos.)
+(632) 524-4611 loc 600 (trunk line)
+
+Email : library@dlsu.edu.ph</location_description>
+		<location_icon_name>thelearningcommons1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>netcentric1,netcentric2,netcentric3</location_images>
+		<location_images>thelearningcommons2,thelearningcommons3,thelearningcommons5</location_images>
+	</Location>
+	<Location>
+		<location_id>17</location_id>
+		<location_name>Amphitheater</location_name>
+		<location_description>It's the amphitheater.</location_description>
+		<location_icon_name>amphitheatre3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>amphitheatre1,amphitheatre2,amphitheatre4</location_images>
+	</Location>
+	<Location>
+		<location_id>18</location_id>
+		<location_name>Museum</location_name>
+		<location_description>History
+The Museum at De La Salle University-Manila is a university-art museum with a collection of Philippine modern art generously donated by the heirs of Wili and Doreen Fernandez. Prominent artists, ten of them National Artist for Visual Arts, have works in The Museum, namely, Fernando Amorsolo, Ang Kiukok, Carlos "Botong" Francisco, Jose Joya, Cesar Legaspi, Arturo Luz, Vicente Manansala, J. Elizalde Navarro, H.R. Ocampo, Bencab, Anita Magsaysay-Ho, Manuel Rodriguez, Sr., Mauro Malang, among others.
+
+The extensive compendium of art was borne out of the couple's passion for art which motivated them to build an enviable private collection known as the Wili and Doreen Fernandez Art Collection. The collection boasts of rare drawings of "Botong" Francisco, Manansala, Amorsolo and Bencab. There are also sculptures by Arturo Luz, Solomon Saprid and Eduardo Castrillo. The art collection is displayed in a program of rotating exhibitions to showcase all artworks in the collection - based on various themes, artists, or artistic style. Artists, not from the collection, are also invited to exhibit their artworks at the hallway gallery of The Museum.
+
+The Museum supports the University's objective to raise the cultural and artistic consciousness of the members of the community.
+
+The Donors
+
+The couple, Wili and Doreen Fernandez, share a great passion for art which motivated them to build the art collection. Wili and Doreen were respected for their expertise in their chosen industries.
+
+Wili Fernandez was an interior designer and was among the founding members of the Philippine Institute of Interior Design. He was also an acclaimed world-class interior designer known for his innate aesthetic sense and impeccable taste for good design.
+
+Doreen Gamboa-Fernandez was a teacher, journalist, writer and historian specializing in literary, theater, and culinary history. She was a renowned food critic and best known for her sharp and insightful writings in her column in the Philippine Daily Inquirer.
+
+Contact Information
+
+The Museum at De La Salle University-Manila
+2401 Taft Avenue
+1004 Manila, Philippines
+
+Rizalina "Lalyn" D. Buncab
+Museum Curator
+buncabr@dlsu.edu.ph
+
+Phone: 524-4611 local 368
+Fax: 521-9094</location_description>
+		<location_icon_name>museum2</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>museum1,museum2,museum3</location_images>
+	</Location>
+	<Location>
+		<location_id>19</location_id>
+		<location_name>Marian Quadrangle</location_name>
+		<location_description>It's the Marian Quadrangle.</location_description>
+		<location_icon_name>marianquadrangle3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>marianquadrangle5,marianquadrangle4,marianquadrangle1</location_images>
+	</Location>
+	<Location>
+		<location_id>20</location_id>
+		<location_name>Yuchengco Auditorium</location_name>
+		<location_description>On the top levels of the building is the Teresa G. Yuchengco Auditorium, a 3-storey auditorium that can seat up to 1,100 persons. It was named in honor of the late wife of Ambassador Yuchengco. The auditorium is fully equipped with state-of-the-art light and sound systems that further enhances the programs and events. A two-level lobby could be found outside the auditorium for simple cocktails or gathering areas during intermissions. Graduation rites of the College of Business and Economics, Cultural Arts Office-sponsored activities, and the Annual Academic Recognition Rites are held in the auditorium. Several plays, concerts and ceremonies have also been held in the auditorium since its completion.
+The auditorium features a traditional proscenium stage as well as an orchestra pit. The backstage features comfort rooms as well as access to the building's freight elevator. Dressing rooms are found on the sixth floor, access to which is facilitated through internal stairwells. During large performances, classrooms are also employed as dressing rooms.</location_description>
+		<location_icon_name>yuchengcoaud2</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>yuchengcoaud1,yuchengcoaud2,yuchengcoaud1</location_images>
+	</Location>
+	<Location>
+		<location_id>21</location_id>
+		<location_name>Br. Andrew Auditorium</location_name>
+		<location_description>The Br. Andrew Gonzalez Hall also houses a small theater, which supplements the larger ones on campus such as the Teresa Yuchengco Auditorium and the William Shaw Little Theater. The theater was initially named in recognition of Br. Andrew's mother, Rosario Arnedo Gonzalez, and the mother of Eduardo G. Fajardo, Natividad Galang-Fajardo.[6] It was thus agreed that the theater be named Doña Rosario Arnedo Gonzalez-Natividad Galang Fajardo Theater. The administration eventually found this name to be too long and agreed to find a more suitable name. The DLSU Student Council is held a theater naming contest among the undergraduate students. The theater was eventually named as the Natividad Fajardo-Rosario Gonzalez Auditorium.[7]</location_description>
+		<location_icon_name>andrew2</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>andrew1,andrew2,andrew3</location_images>
+	</Location>
+	<Location>
+		<location_id>22</location_id>
+		<location_name>William Shaw Little Theater</location_name>
+		<location_description>It's the little theater in William Hall.</location_description>
+		<location_icon_name>williamtheater</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>williamhall2,williamtheater,williamhall2</location_images>
 	</Location>
 </Location-list>
