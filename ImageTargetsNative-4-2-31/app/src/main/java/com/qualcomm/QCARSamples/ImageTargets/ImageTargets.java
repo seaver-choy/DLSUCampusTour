@@ -52,14 +52,11 @@ import android.widget.Toast;
 import com.qualcomm.QCAR.QCAR;
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
 import com.qualcomm.QCARSamples.ImageTargets.model.Target;
-import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenu;
-import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuGroup;
-import com.qualcomm.QCARSamples.ImageTargets.ui.SampleAppMenu.SampleAppMenuInterface;
 import com.qualcomm.vuforia.Vuforia;
 
 
 /** The main activity for the ImageTargets sample. */
-public class ImageTargets extends Activity implements SampleAppMenuInterface
+public class ImageTargets extends Activity
 {
     // Focus mode constants:
     private static final int FOCUS_MODE_NORMAL = 0;
@@ -141,8 +138,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     // Detects the double tap gesture for launching the Camera menu
     private GestureDetector mGestureDetector;
-    
-    private SampleAppMenu mSampleAppMenu;
     
     // Contextual Menu Options for Camera Flash - Autofocus
     private boolean mFlash = false;
@@ -782,13 +777,6 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
                     mContAutofocus = true;
                 }
                 
-                if( mSampleAppMenu == null)
-                {
-                    mSampleAppMenu = new SampleAppMenu(this, this, "Image Targets",
-                        mGlView, mUILayout, null);
-                    setSampleAppMenuSettings();
-                }
-                
                 break;
             
             default:
@@ -1003,7 +991,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         return false;
     }
     
-    
+    /*
     public boolean onTouchEvent(MotionEvent event)
     {
         // Process the Gestures
@@ -1012,7 +1000,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         return mGestureDetector.onTouchEvent(event);
     }
-    
+    */
     /**
      * Process Tap event for autofocus
      */
@@ -1057,6 +1045,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
     
     
     // This method sets the menu's settings
+    /*
     private void setSampleAppMenuSettings()
     {
         SampleAppMenuGroup group;
@@ -1102,8 +1091,8 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         mSampleAppMenu.attachMenu();
     }
-    
-    
+    */
+    /*
     @Override
     public boolean menuProcess(int command)
     {
@@ -1231,7 +1220,7 @@ public class ImageTargets extends Activity implements SampleAppMenuInterface
         
         return result;
     }
-
+*/
 
     private void showToast(String text)
     {

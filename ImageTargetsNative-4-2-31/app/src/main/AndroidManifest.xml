@@ -94,10 +94,6 @@
         </activity>
 
         <!-- About Screen Activity -->
-        <activity
-            android:name=".AboutScreen"
-            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
-            android:screenOrientation="portrait" />
 
         <!-- ImageTargets Activity -->
         <activity
