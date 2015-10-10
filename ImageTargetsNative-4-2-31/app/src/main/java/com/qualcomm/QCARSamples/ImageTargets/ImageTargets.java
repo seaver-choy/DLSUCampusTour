@@ -51,6 +51,7 @@ import android.widget.Toast;
 
 import com.qualcomm.QCAR.QCAR;
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
+import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 import com.qualcomm.QCARSamples.ImageTargets.model.Target;
 import com.qualcomm.vuforia.Vuforia;
 
@@ -392,7 +393,7 @@ public class ImageTargets extends Activity
         updateApplicationStatus(APPSTATUS_INIT_APP);
         
         mIsDroidDevice = android.os.Build.MODEL.toLowerCase().startsWith(
-            "droid");
+                "droid");
         
     }
     
@@ -414,19 +415,9 @@ public class ImageTargets extends Activity
                 //loads the textures
                 mTextures.add(Texture.loadTextureFromApk(allTargets[i], getAssets()));
             }
-        }else
-        {
+        }else {
             Log.e("ERROR", "Failed to load target images.");
         }
-
-//        mTextures.add(Texture.loadTextureFromApk("Text.png",
-//            getAssets()));
-//        mTextures.add(Texture.loadTextureFromApk("TextureTeapotBlue.png",
-//                getAssets()));
-//        mTextures.add(Texture.loadTextureFromApk("TextureTeapotRed.png",
-//                getAssets()));
-//        mTextures
-//            .add(Texture.loadTextureFromApk("Buildings.jpeg", getAssets()));
     }
     
     
@@ -854,7 +845,6 @@ public class ImageTargets extends Activity
         fake = (TextView) findViewById(R.id.faketext);
 
         fake.setRotation(90);
-
         border.setVisibility(View.GONE);
         fake.setVisibility(View.GONE);
         isDisplayed = false;
@@ -1234,22 +1224,25 @@ public class ImageTargets extends Activity
 
     public void showDialogBox(final String s)
     {
-        Log.e("TAG", "Will display " + s);
-
-        List<Target> targets = databaseHelper.getAllTargets();
-
-        for(int i = 0; i < targets.size(); i++)
+        Log.e("TAG", "Found target " + s);
+        int i = 0;
+        final List<Target> targets = databaseHelper.getAllTargets();
+        for(i = 0; i < targets.size(); i++)
         {
-            if(targets.get(i).getTargetName().equalsIgnoreCase(s))
+            if(targets.get(i).getTargetName().equalsIgnoreCase(s)) {
                 databaseHelper.changeLocationToVisited(targets.get(i).getLocID());
+                break;
+            }
         }
-
+        final int temp = i;
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
+                Location l = databaseHelper.getLocation(targets.get(temp).getLocID());
                 border.setVisibility(View.VISIBLE);
                 fake.setVisibility(View.VISIBLE);
-                fake.setText("This is the target named " + s);
+                fake.setText("Congratulations! You have unlocked the location " + l.getName() + ". " +
+                        "You can view more details about " + l.getName() + " in the locations list.");
             }
         });
     }

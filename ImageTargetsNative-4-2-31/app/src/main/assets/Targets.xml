@@ -114,4 +114,22 @@
 		<target_image_name>arrowtarget.jpg</target_image_name>
 		<target_location_id>15</target_location_id>
 	</Target>
+	<Target>
+		<target_id>20</target_id>
+		<target_name>Faculty</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>14</target_location_id>
+	</Target>
+	<Target>
+		<target_id>21</target_id>
+		<target_name>Connon</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>11</target_location_id>
+	</Target>
+	<Target>
+		<target_id>22</target_id>
+		<target_name>Bloemen</target_name>
+		<target_image_name>arrowtarget.jpg</target_image_name>
+		<target_location_id>13</target_location_id>
+	</Target>
 </Target-list>

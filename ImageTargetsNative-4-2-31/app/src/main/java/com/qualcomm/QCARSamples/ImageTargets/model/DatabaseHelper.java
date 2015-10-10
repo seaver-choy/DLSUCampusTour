@@ -132,23 +132,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    public void initializeDatabase()
-    {
-        Building tempBuilding = new Building("Gokongwei", "Land of College of Computer Science", "gox1", false, "leaves2");
-        this.createBuilding(tempBuilding);
-        tempBuilding = new Building("Yuchengco", "Land of Economics", "pink_trees", false, "leaves1");
-        this.createBuilding(tempBuilding);
-        tempBuilding = new Building("Henry Sy Sr. Hall", "Land of Books", "pink_trees", false, "pattern");
-        this.createBuilding(tempBuilding);
-
-        Target tempTarget = new Target(1 , "chips", "Text.png");
-        this.createTarget(tempTarget);
-        tempTarget = new Target(2, "stones", "TextureTeapotBlue.png");
-        this.createTarget(tempTarget);
-        tempTarget = new Target(3, "tarmac", "TextureTeapotBrass.png");
-        this.createTarget(tempTarget);
-    }
-
     public void initializeDatabaseFromXML()
     {
         Location locations[] = SitesXMLPullParser.getLocations(this.getContext());
@@ -200,7 +183,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
         tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
         tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
-
+        c.close();
         return tl;
     }
     
@@ -240,7 +223,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 return l1.getName().compareToIgnoreCase(l2.getName());
             }
         });
-
+        c.close();
         return locationList;
     }
 
@@ -303,7 +286,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 targetList.add(tl);
             } while (c.moveToNext());
         }
-
+        c.close();
         return targetList;
     }
 
@@ -325,7 +308,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         tl.setImageName((c.getString(c.getColumnIndex(KEY_IMAGE_NAME))));
         tl.setTargetName(c.getString(c.getColumnIndex(KEY_TARGET_NAME)));
         tl.setLocID(c.getInt((c.getColumnIndex(KEY_LOCATION_ID))));
-
+        c.close();
         return tl;
     }
 
@@ -344,7 +327,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 targetNames.add(c.getString(c.getColumnIndex(KEY_TARGET_NAME)));
             } while (c.moveToNext());
         }
-
+        c.close();
         return targetNames.toArray(new String[targetNames.size()]);
     }
 
@@ -363,7 +346,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 imageNames.add(c.getString(c.getColumnIndex(KEY_IMAGE_NAME)));
             } while (c.moveToNext());
         }
-
+        c.close();
         return imageNames.toArray(new String[imageNames.size()]);
     }
 
@@ -440,7 +423,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 buildingList.add(tl);
             } while (c.moveToNext());
         }
-
+        c.close();
         return buildingList;
     }
 
@@ -482,7 +465,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 stepList.add(ts);
             } while (c.moveToNext());
         }
-
+        c.close();
         return stepList;
     }
 
@@ -502,7 +485,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 imageNames.add(c.getString(c.getColumnIndex(KEY_IMAGE_NAME_IMAGES)));
             }while(c.moveToNext());
             }
+        c.close();
         return imageNames.toArray(new String[imageNames.size()]);
+
         }
 
 

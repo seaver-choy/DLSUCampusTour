@@ -19,7 +19,7 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Vuforia-prebuilt
-LOCAL_SRC_FILES = ../../../build/lib/$(TARGET_ARCH_ABI)/libVuforia.so
+LOCAL_SRC_FILES = ../jnilibs/$(TARGET_ARCH_ABI)/libVuforia.so
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../../build/include
 include $(PREBUILT_SHARED_LIBRARY)
 
