@@ -1,7 +1,7 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Location-list>
 	<Location>
-		<location_id>16</location_id>
+		<location_id>18</location_id>
 		<location_name>The Learning Commons</location_name>
 		<location_description>The De La Salle University Libraries primarily supports the institution's instructional, curricular, research, and extension programs through organized, relevant, and fast delivery of information services.
 Academic libraries, as the resource centers of excellence in information, should aim at assisting the nation in producing professional, skilled and trained manpower by providing timely and instant access to various formats of information in any part of the country and of the world.
@@ -22,15 +22,7 @@ Email : library@dlsu.edu.ph</location_description>
 		<location_images>thelearningcommons2,thelearningcommons3,thelearningcommons5</location_images>
 	</Location>
 	<Location>
-		<location_id>17</location_id>
-		<location_name>Amphitheater</location_name>
-		<location_description>It's the amphitheater.</location_description>
-		<location_icon_name>amphitheatre3</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_images>amphitheatre1,amphitheatre2,amphitheatre4</location_images>
-	</Location>
-	<Location>
-		<location_id>18</location_id>
+		<location_id>19</location_id>
 		<location_name>Museum</location_name>
 		<location_description>History
 The Museum at De La Salle University-Manila is a university-art museum with a collection of Philippine modern art generously donated by the heirs of Wili and Doreen Fernandez. Prominent artists, ten of them National Artist for Visual Arts, have works in The Museum, namely, Fernando Amorsolo, Ang Kiukok, Carlos "Botong" Francisco, Jose Joya, Cesar Legaspi, Arturo Luz, Vicente Manansala, J. Elizalde Navarro, H.R. Ocampo, Bencab, Anita Magsaysay-Ho, Manuel Rodriguez, Sr., Mauro Malang, among others.
@@ -64,14 +56,6 @@ Fax: 521-9094</location_description>
 		<location_images>museum1,museum2,museum3</location_images>
 	</Location>
 	<Location>
-		<location_id>19</location_id>
-		<location_name>Marian Quadrangle</location_name>
-		<location_description>It's the Marian Quadrangle.</location_description>
-		<location_icon_name>marianquadrangle3</location_icon_name>
-		<location_hasVisited>false</location_hasVisited>
-		<location_images>marianquadrangle5,marianquadrangle4,marianquadrangle1</location_images>
-	</Location>
-	<Location>
 		<location_id>20</location_id>
 		<location_name>Yuchengco Auditorium</location_name>
 		<location_description>On the top levels of the building is the Teresa G. Yuchengco Auditorium, a 3-storey auditorium that can seat up to 1,100 persons. It was named in honor of the late wife of Ambassador Yuchengco. The auditorium is fully equipped with state-of-the-art light and sound systems that further enhances the programs and events. A two-level lobby could be found outside the auditorium for simple cocktails or gathering areas during intermissions. Graduation rites of the College of Business and Economics, Cultural Arts Office-sponsored activities, and the Annual Academic Recognition Rites are held in the auditorium. Several plays, concerts and ceremonies have also been held in the auditorium since its completion.
@@ -91,7 +75,7 @@ The auditorium features a traditional proscenium stage as well as an orchestra p
 	<Location>
 		<location_id>22</location_id>
 		<location_name>William Shaw Little Theater</location_name>
-		<location_description>It's the little theater in William Hall.</location_description>
+		<location_description>A mini theater donated by of the William J. Shaw Foundation, Inc., that serves as a venue for stage productions, awarding ceremonies, school programs and various gatherings.</location_description>
 		<location_icon_name>williamtheater</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>williamhall2,williamtheater,williamhall2</location_images>
