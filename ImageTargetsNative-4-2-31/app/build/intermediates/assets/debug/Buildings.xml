@@ -2,66 +2,239 @@
 <Building-list>
 	<Building>
 		<location_id>1</location_id>
-		<location_name>Gokongwei</location_name>
-		<location_description>Land of CCS</location_description>
+		<location_name>Gokongwei Hall</location_name>
+		<location_description>Background
+A four storey building named after John Gokongwei, one of the people who funded its construction.
+
+1st Floor
+Intellect Seminar Room (ISR, G101)
+-	A venue for lectures and seminars
+CCS Dean and Vice-Dean’s Office/CCS Administrative Offices (G102)
+Computer Science Faculty Room
+CCS Department Chair Office
+-	Computer Technology Chair: Mr. Clement Y. Ong
+-	Information Technology Chair: Oliver A. Malabanan
+-	Software Technology Chair: Ethel C. Ong
+CCS Research
+-	Director : Ms. Charibeth K. Cheng
+Office of External Affairs
+-	Director: Federico C. Gonzales
+Mini Canteen
+Computer Room, Auxiliary Room, Lockers
+CCS Consulting and Education Center (G103)
+-	Offers short courses for computer related subjects
+CEC Training Center (G103a and G103b)
+CCS Conference Room B (G104)
+Computer Education Center (G108)
+Computer Education Center (G108)
+-	A continuing non-degree and professional services organization that is intended to provide, at par with other institutions, up-to-date and world-class education, training and consulting solutions to different industries
+Student’s Nook (G110)
+-	Office of the Computer Studies Assembly (CSA) and La Salle Computer Society (LSCS)
+Bro. Rafael Donato FSC Study Area
+-Blessed on July 31, 2007. Its construction was funded by the university and DLSU-PUSO.
+
+2nd Floor
+Classrooms for lecture (G201-213)
+-	Equipped with LCD projectors for lectures and presentation
+
+3rd Floor
+Multimedia Classroom (G301)
+Computer Laboratory (G302a and 302b) (UNDER RENOVATION)
+-	Runs on both Microsoft Windows and Linux Operating Systems
+-	Computers have installed software such as Java SDK Standard Edition, JCreator, Microsoft SQL, Microsoft Visual Studio, MySQL, Control Center, Netbeans 3.5.1, Oracle -  ORA 9, Adobe Reader, DJGPP, Blue J, Microsoft Office 2003, MS Visual Studio.NET, Open Office, Statistica, MS Visio 2003
+Stockroom (G303)
+Computer Laboratory (G304a, G304b)
+-	G304a has 23 units (Pentium 3, 3GHz, 512 RAM, 40GB HDD, Optical Mouse)
+-	G304b has 44 units (Pentium 3, 3GHz, 512 RAM, 40GB HDD, Optical Mouse)
+-	Computers have installed software such as MS Office 2003, Microsoft Visual Studio.NET, MySQL, Netbeans, Arcview
+ITC Technology Operations and Support (TOS) (G305)
+ITC Technology Infrastructure Management (TIM) (G305)
+Systems Administrations Office (G306)
+-	Head: Allan U. Tee
+Computer Facilities and Operations Office and Help Desk (G305-G307)
+-	Head: Noel C. Castillo
+Quality Assurance Office (G308)
+-	Head: Christine C. Lucero
+Information Systems and Technology Center, Systems Management Office, Process Review and Improvement Office (G308)
+-	Director: Bryan Co
+-	It supervises, coordinates and controls the IT environmental scanning for administrative applicability in the university
+Data Administration Office, Documentations Office (G309)
+-	Head: Florinda D. Tamonan
+Documentations Office (G309)
+-	Head: Francis Mark D. Santos (On professional leave)
+-	Acting Head: Albert Anthony D. Gavino
+Lockers
+
+4th Floor
+Classroom (G401)
+-	Equipped with a television set and projector
+Center for Emphatic Human-Computer Interactions (CEHCI) (G402)
+Center for Networking and Information Security (CNIS) (G403)
+Computer Laboratory (G404-G405)
+Advance Research Institute for Informatics, Computing and Networking (AdRIC) (G406)
+Datacraft-DLSU-CCS Cooperative Research Center (G406)
+-	A recognized Microsoft Innovation Center(MIC)
+Computer Technology Electronics and Microprocessors Lab (G407)
+Computer Technology Research and Development Lab (G408)
+Center for Language Technologies (CeLT)(G409)
+Center for Information and Communication Technology for Development (CITeD)(G410)
+Learning Innovation Center (G411)
+Lasallian Formation and Development Room (G412)
+-	This room serves as the office of the students who manage formdev.
+
+Trivia
+-	CCS was at the Miguel Building until it was transferred to Gokongwei Hall
+-	Gokongwei Hall was formerly called as the Information Technology Learning Center (INTELLECT)
+-	Those who wish to have their gadget(s) configured to access the Wi-Fi connection in the campus should visit the ITC office situated at the 3rd floor
+</location_description>
+
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>gox1,netcentric1,netcentric2</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>gox2,gox3,gox4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>2</location_id>
-		<location_name>Yuchengco</location_name>
-		<location_description>Land of Economics</location_description>
-		<location_icon_name>yuch</location_icon_name>
+		<location_name>Yuchengco Hall</location_name>
+		<location_description>The Don Enrique T. Yuchengco Hall (Building code: Y; also as Yuchengco Hall and Yuch), formerly the Central Administration Building, is a nine-storey neoclassical building located within the campus of De La Salle University in the district of Malate in the city of Manila. It was built on the former location of the Br. Athanasius Gym (now the Enrique Razon Sports Center) in the year 2000 to house the central administrative offices of the university. Former university president Br. Rolando Dizon FSC referred to the building as the "nerve center of the university as well as the hub of university activities with its theater and teleconference rooms." A special feature of the building is the controlled central computer for building automation, particularly in the air-conditioning and fire protection systems. The building has an art gallery on the second floor and a three-storey state-of-the-art auditorium on top. It was completed in the year 2002 and inaugurated on August 15 of the same year. Since its completion, the Yuchengco Hall has been featured on the background design of the University's ID cards.
+
+			The building was constructed through the assistance of Ambassador Alfonso Yuchengco, Philippine Permanent Representative to the United Nations and Chairman of the Yuchengco Center. The building was named the Don Enrique T. Yuchengco Hall in honor of his father. The building was previously used by the College of Education; the College has since moved to the Br. Andrew Gonzalez Hall.</location_description>
+		<location_icon_name>yuchengco4</location_icon_name>
         <location_hasVisited>false</location_hasVisited>
-        <location_images>powermac,yuch,powermac</location_images>
-		<building_image>leaves2</building_image>
+        <location_images>yuchengco1,yuchengco2,yuchengco3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>3</location_id>
-		<location_name>Henry Sy Sr.</location_name>
-		<location_description>Library</location_description>
+		<location_name>Henry Sy Sr. Hall</location_name>
+		<location_description>Construction of the Henry Sy Sr. Hall began on December 2, 2010 as part of the university's Centennial Renewal Plan, a project that aims to construct and renovate facilities inside the campus. A 15-floor building, it replaced DLSU's football field with plans for completion by December 2012. It is estimated to cost ₱1.4 billion (US$32.5 million). In line with this, DLSU entered an eight-year agreement with the Philippine Sports Commission. Under the contract, DLSU will fund the ₱7.4 million (US$171,000) renovation of the Rizal Memorial Track and Football Stadium. DLSU will get to use the facilities in return.</location_description>
 		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>henrysy1,henrysy2,henrysy1</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>henrysy2,henrysy3,henrysy4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>4</location_id>
-		<location_name>La Salle Hall</location_name>
-		<location_description>Land of Lasallians</location_description>
+		<location_name>St. La Salle Hall</location_name>
+		<location_description>The St. La Salle Hall (also known as the LS Building) is an H-shaped four-storey structure built in the neoclassical style in the Philippines. It faces Taft Avenue in the area of Malate in Manila. The building, designed by Tomás Mapúa, was built from 1920 to 1924 to serve as the new campus of De La Salle College (now De La Salle University) due to the lack of space of the previous campus in Paco, Manila, and to accommodate its increasing student population. It served as the grade school and high school building back when the college was still offering those levels.
+
+			Originally built as a three-storey structure, a fourth level was added in the 1990s for the residence of the De La Salle Brothers. The ground floor houses the College of Business. Meanwhile, the second floor of the St La Salle Hall houses the Chapel of the Most Blessed Sacrament, as well as the office of the De La Salle Alumni Association in the south wing.
+
+			The structure was severely damaged during the liberation of Manila in World War II. Numerous civilians took refuge in the building for protection. Restoration of the building after the war took two years and cost ₱246,883 (US$5,720). Retrofitting has undergone in the building since January 2011, and is planned to be completed by 2012.
+
+			The LaSallian, the official student newspaper of the university, identifies it as "DLSU's most historic building." It is the only Philippine structure featured in the book 1001 Buildings You Must See Before You Die: The World’s Architectural Masterpieces published by Quintessence Editions Ltd. in 2007.</location_description>
 		<location_icon_name>lasallehall1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>lasallehall1,lasallehall1,lasallehall1</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>lasallehall2,lasallehall3,lasallehall4</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>5</location_id>
-		<location_name>Br. Andrew Building</location_name>
-		<location_description>Land of Minors, Froshes, Offices</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_name>Br. Andrew Gonzalez Hall</location_name>
+		<location_description>The Br. Andrew Gonzalez Hall (Building code: A; also known as Gen Ed Building or "A" Building) is a 20 storey academic complex designed by Philip H. Recto Architects for De La Salle University. It is located on a 1,700-square-meter lot between Taft Avenue and Fidel Reyes St. and in front of the Enrique M. Razon Sports Center. Rising to a height of 90 meters, it is said to be the highest educational structure in the Philippines. The building houses the General Education Department, the College of Education and the Asia-Pacific Center for Teachers’ Education and Development (ACTED). The building was formerly referred to as the GE/CED/ACTED Building before being named in honor of Br. Andrew Gonzalez FSC on September 28, 2005. The building was formally inaugurated on March 1, 2007 in celebration of Br. Andrew's 67th birthday. The building was opened for use in May 2006 for the first trimester despite not being completely finished at the time.
+
+			Eduardo G. Fajardo, chairman of the Natividad Galang-Fajardo Foundation, Inc., contributed a significant amount for the construction of the building. Born to a poor family, Fajaro credits his success to education, and contributed various material and buildings to different schools. </location_description>
+		<location_icon_name>andrew2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>andrew1,andrew2,andrew3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>6</location_id>
 		<location_name>Science and Technology Research Center</location_name>
-		<location_description>Land of Research</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_description>Background
+Constructed in 1994, it houses most of the research laboratories of the department and some of the most expensive scientific equipment in the entire University. This world-class structure has several well-furnished research facilities for student and faculty use.
+
+The STRC was donated by the Department of Science and Technology and the World Bank. Only DLSU and the University of the Philippines have received such donations.
+
+Parking Lot (for faculty use only)
+Operating hours of STRC is from 6:00 am until 10pm.
+
+1st Floor
+GenSet room (STRC101)
+Structural Testing Lab (STRC102)
+Civil engineering research laboratory (STRC103)
+Structural Testing Lab (STRC104-106)
+ME Mechatronics Lab (STRC105)
+Energy and Conversion and Process Control Laboratory / ChE Catalysis lab / ChE energy laboratory (STRC107)
+Control Instrumentations office (STRC108)
+Micro processing Development, computer network &#038; PCB development (STRC109)
+Digital Signal Processing laboratory (STRC110)
+DLSU- Intel microelectronics Laboratory (STRC111)
+ECE research coordinator office (STRC112)
+X-ray machine room (STRC113)
+ECE lab coordinators office / General Communications and Microwave laboratory (STRC114)
+RFA Nechoic Chamber (STRC116)
+Acoustic &#038; Broadcasting laboratory (STRC116)
+
+2nd floor
+Molecular biology unit Laboratory (MBU) (STRC201-205)
+Plant systematics research room (STRC202)
+Zoology / Parasitology Research Laboratory (STRC204)
+Workroom, Research room (STRC206)
+Sterilization room (STRC207)
+Ecology research Lab (STRC208)
+Molecular biology (STR209-213)
+Molecular biology instrument room (STRC210)
+Tissue Culture (STRC212)
+Aseptic Room, Process Stimulation Laboratory (STRC214)
+ChE instrumentation room (STRC215)
+Biochemical process (STRC216)
+ARRPET (Asian Regional Research program on environmental technology) National Research Institute on Industrial and Hazardous Wastes (STRC217)
+Ergonomics &#038; product design laboratory (STRC218)
+Environmental engineering research laboratory / ChE instrumentation room /ChE environmental laboratory (STRC219)
+CESDR (Center for OR/MS) – Center for lean system &#038; management (STRC221)
+
+3rd Floor
+EE Room
+Chemistry Department Computational Chemistry Lab (STRC301)
+Chromatography Room (STRC302)
+Chemistry Department Biochemistry Lab 1 (STRC303)
+Chemistry Department General and Inorganic Chemistry Lab 1 (STRC304, STRC306)
+Chemistry Department Organic Synthesis Lab (STRC305)
+Chemistry Department Biochemistry Lab 2 (STRC307)
+Chemistry Department Stock Room, Inner Stockroom (STRC308)
+Cell and Tissue Culture Room (MBU Censer) (STRC309)
+Chemistry Department General/Inorganic Chemistry Lab 2 (STRC310)
+Surface Physics Lab (STRC311)
+Medical Physics Lab with Radiation Area (STRC312, STRC314)
+Lidar, Optics, and Laser Lab (STRC313)
+Solid State Physics Characterization Lab (STRC315)
+Computer Lab Math Department (STRC316, STRC318)
+Solid State Physics Fabrication Lab (STRC317)
+Solid State Physics High Vacuum Lab (STRC319)
+
+4th Floor
+Staff Room (STRC401)
+Biology Room (STRC402)
+Faculty Lounge (STRC403)
+Biology Lab (STRC404)
+Instrument Room and Research Room (STRC405)
+Biology Laboratory Room (STRC406)
+Biology Laboratory Room (STRC407)
+Biology Laboratory Room (STRC408)
+Biology Laboratory Room (STRC409)
+Lecture Room (STRC410)
+Biology Laboratory Room (STRC411)
+Conference Room (STRC412)
+Solid State Physics Furnace Lab (STRC413)
+Electronics and Instrumentation Lab (STRC414)
+Equipment Storage
+Mach. Room
+</location_description>
+		<location_icon_name>strc3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>strc1,strc2,strc3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>7</location_id>
-		<location_name>Enrique Razon Building</location_name>
+		<location_name>Enrique Razon Sports Center</location_name>
 		<location_description>Land of Sports</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>razon3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>razon1,razon2,razon3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>8</location_id>
@@ -167,8 +340,8 @@ Houses some labs for the College of engineering because it was an engineering bu
 		</location_description>
 		<location_icon_name>stmiguel</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>pattern1</building_image>
+        <location_images>stmiguel,stmiguel,stmiguel</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>9</location_id>
@@ -270,10 +443,10 @@ In Oct. 6, 2006, all of the Science and Mathematics programs have been granted t
 In front of SJ hall is the SJ walk, called the conscious walk, because of all the people sitting in the benches and staring at you when you walk there
 There are preserved fetuses, snakes, and the like placed on a container displayed on the 6th floor of the building
 		</location_description>
-		<location_icon_name>stjoseph</location_icon_name>
+		<location_icon_name>stjoseph3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>stjoseph1,stjoseph2,stjoseph3</location_images>
+		<building_image>map</building_image>
 	</Building>
 	<Building>
 		<location_id>10</location_id>
@@ -331,9 +504,234 @@ Religious Studies Department (W703)
 - Chair: Dr. Luis C. Sembrano
 - Vice Chair: Mr. Lysander P. Rivera
 		</location_description>
-		<location_icon_name>pink_trees</location_icon_name>
+		<location_icon_name>williamhall3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-        <location_images>pink_trees,leaves1,pink_trees</location_images>
-		<building_image>leaves1</building_image>
+        <location_images>williamhall1,williamtheater,williamhall2</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>11</location_id>
+		<location_name>Br. Connon Hall</location_name>
+		<location_description>Br. Gabriel Connon Hall
+
+Background
+Also known as the Students Personnel Services Building, it houses the offices that cater solely to the needs of the students.
+
+1st Floor
+University Clinic (SPS 103)
+●	Medical Officer: Dr. Lily Ann H. Cabuling
+●	Opens Monday to Friday: 7:30 AM– 9:30 PM; Saturday: 7:00 AM – 7:00 PM
+Bookstore (SPS 101)
+●	MTO International Production Mobilizer Inc.
+●	Opens Monday to Thursday: 7:30 am to 7:00 pm; Friday &#038; Saturday: 8:00 am to 5:00 pm
+●	Officer-in-charge: Ms. Gigi de Jesus
+Waldo Perfecto Seminar Room (SPS 102)
+●	Named after the former, assistant Vice President. It can accommodate 157 people
+●	Equipped with a projector and a PA system
+DLSU Multipurpose Student Cooperative (SCoop)
+●	Offers services such as black and white printing, colored printing, acetate printing, tarpaulin printing, I.D. printing, membership card printing, and ring-binding; selling of basic school supplies (small and large test booklets, plastic folders, 10-column worksheets) at affordable prices.
+●	Opens Monday &#038;Tuesday ; Thursday and Friday 10am-5:00pm
+
+2nd Floor
+●	Br. Connon Conference Room (SPS 201)
+●	OCCS Conference Room
+●	Student Discipline Formation Office Lost and Found Section
+
+3rd Floor
+Student Affairs Office (SPS 301B)
+●	Through its different offices, they provide a comprehensive student services program which assists in the development of Lasallian Achievers for God and Country.
+●	Office Hours: 8:00am – 12:00pm and 1:00pm – 5:00pm
+Office of the Dean of Student Affairs (DSA)
+●	Dean: Ms. Fritzie Ian P. De Vera
+Office of Student Leadership Involvement Formation and Empowerment (Student L.I.F.E) (SPS 301A)
+●	Director: Ms. Evelyn Lopez-Esparaggo
+●	Takes charge of ensuring smooth and well-balanced implementation of co-curricular and extra-curricular activities of the different student groups under the Student Council and the Council of Student Organizations. It also encourages student involvement and helps orient freshmen, graduate school learners, and international students on University life.
+Student Affairs Office Conference Room (SPS 301C)
+Student Council Office/ University Student Government (SPS 302)
+●	Seeks to promote the promotion of student’s rights and welfare by providing representation in various University bodies, creating programs and developing legislation.
+Debate Society / COMELEC
+Office of Career and Counseling Services (OCCS) (SPS 304)
+●	Director: Dr. Susana A. Estanislao
+●	Services and programs: Individual or group interviews, counseling, crisis intervention, psychological assessment, consultation, research and evaluation, supervised site practicum and internship, job fairs, etc.
+
+4th Floor
+Center for Social Concern and Action (COSCA) (SPS 401)
+●	Director: Ma. Lourdes F. Melegrito
+●	This office is involved in the social development work both in urban and rural community. It is the social arm of DLSU established in 1983-1984.
+Council of Student Organizations (CSO) (SPS 402)
+Green Media Group / Student Artist Managers (SPS 403)
+Cultural Arts Office (CAO, SPS 403-404)
+●	Director: Mrs. Jill Soberano-Samodio
+●	Dedicates itself in promoting a well-balanced non formal education of culture and the arts to the Lasallian community. It consists of the Green Media Group/GMG (production staff), the Student Artist Managers/SAMs (administrative staff) and 8 performing groups: the DLSU Chorale, De La Salle Innersoul, Lasallian Youth Orchestra, Harlequin Theatre Guild, La Salle Dance Company Street, Contemporary and Folk.Green
+Green and White Yearbook Distribution Office (SPS 405)
+
+5th Floor
+Student Media Office (SPS 501)
+●	Director: Mr. Randy Torrecampo
+●	Handles the management and publication of various material independently published by students. These include: The Lasallian, Ang pahayagang Plaridel, the Malate Literary folio and Green &#038; White.
+Ang Pahayagang Plaridel / La Sallian (SPS 502)
+Malate Literary Folio / Green &#038; White (SPS 503)
+DLSU Chamber Ensemble / DLSU Chorale (SPS 504)
+Harlequin Theatre Guild / De La Salle Innersoul (SPS 506)
+La Salle Dance Company Street / La Salle Dance Company Jazz (SPS 507)
+</location_description>
+		<location_icon_name>connon4</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>connon1,connon2,connon3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>12</location_id>
+		<location_name>Velasco Hall</location_name>
+		<location_description>Background
+Constructed under the engineering education of Educational Development Projects Implementing Task Force and partially financed by Asian Development Bank and Development Bank of the Philippines, this building was inaugurated on November 14, 1981.
+
+It is dedicated to the memory of Urbano J. Velasco, writer and journalist, and Amparo Zamora, the parents of Geronimo Velasco, an alumnus of DLSU.
+
+1st Floor
+ChE Process Control Research Laboratory/Instructional Laboratory (V101A)
+Computer Aided Three dimensional Interactive Application (CATIA) Laboratory (V101 Mezzanine)
+ChEUnit Operations Laboratory (V102)
+-	Refrigeration and Air Conditioning Laboratory
+-	Chemical Engineering Laboratory
+-	UOL Stockroom
+Computer Laboratory (V103)
+MEM Student Research (V104)
+Machine Shop (V105)
+-	Machine Shop Stockroom
+MEM Department/ Computer Numerical Control Laboratory (CNC)/ Computer Integrated Manufacturing Laboratory (V106)
+Graduate School Lounge (V107)
+MEM Lab (V108)
+Faculty Research Lab (V109)
+Robotics Laboratory (V110)
+COE Dean and Vice Dean’s Office (V151 Mezzanine)
+Computer Aided Design/Computer Aided Manufacturing Laboratory (CAD-CAM) (V153)
+Engineering Graduate School Division (V157 Mezzanine)
+
+2nd Floor
+College of Engineering Faculty Room (V201)
+-	With Faculty Lounge and Consultation Department
+Classrooms with Projectors (V202-V206, V209)
+Shell Companies in the Philippines Audio Visual Room (V207)
+-	This AVR was inaugurated on September 30, 2008.
+Computer Laboratory (V208 A and B)
+Computer Aided Drafting Design Laboratory/Solidworks CAD/CAE Laboratory (V211 A&#038;B)
+
+3rd Floor
+Computer Laboratory (V301)
+ECE Storeroom (V302)
+Digital Electronics Laboratory (V303A)
+Analog Electronics Laboratory (V303B)
+-	Micro Electronics Research Laboratory
+Classrooms with Projectors (V304-V309)
+Network Laboratory (V310)
+Hardware Laboratory (V311)
+Software Laboratory (V312)
+Computer Engineering Laboratory Stockroom (V313)
+Integrated Industrial Engineering Laboratory/IE integrated Laboratory (V314)
+
+4th Floor
+Interfacing and Networking Laboratory/Network Laboratory (V401A)
+Switching Devices Laboratory (V401B)
+Digital Communications Laboratory (V402)
+ECE Storeroom (V403)
+Analog Communications Laboratory (V404)
+Classrooms with Projectors (V405-V407)
+Engineering Chemistry Laboratory Coordinator and Instrumentation Room (V408)
+Analytical / Organic Chemistry Laboratory (V409)
+Chemistry Stockroom (V410A)
+Instrumentations Room (V410B)
+Chemical Engineering Research Laboratory (V411)
+General Chemistry Laboratory (V413 and V414)
+Graphing/Drafting Room (V415)
+
+5th Floor
+Classrooms with Projectors (V501-V503)
+ECE Broadcasting Room/Green Giant 87.5 FM (V504B)
+Radio Studio (V504)
+Operations Research and Simulation Laboratory (V505)
+Physics Room, Information Systems Laboratory (V506)
+Structural Laboratory (V507)
+Classrooms with Projectors (V508-V509)
+Tokyo Tech Office (Philippines) (V510)
+-	This office was established by the De La Salle University-Manila and Tokyo Institute of Technology on September 29, 2005, to mark the enduring collaboration between these institutions to promote academic linkage which benefits education, research, and human resource development in the Philippines.
+Biomedical Instrumentation and Informatics Laboratory
+MEM Metrology Room (V512)
+Civil Engineering Drafting Room (V513)
+
+6th Floor
+Observatory
+-	DLSU has its own observatory used to monitor weather patterns and other meteorological data.
+
+Trivia:
+-	A former hospital
+-	Velasco Building has a Globe Cell Site
+-	La Salle is the only school in the Philippines which has a Coordinate Measuring Machine, which is housed by the College of Engineering.
+-	The first title of “Emeritus” was given to a dean of the College of Engineering, Dean Gutierrez
+-	In 1985, the College of Engineering was announced as one of the top 10 research universities in Asia, along with the University of the Philippines. It is the 2nd Research College.
+-	The first lady dean from the College of Engineering is Dean Puertollano
+-	The Green Giant radio station on the 5th floor of this building started broadcasting in August 2008. It is managed by student organizations: ECES and TeamComm
+-	The area of the benches opposite the building is called the Falling Coconuts due to the appearance of the trees around it.
+-	Geronimo Velasco was the former President of the Philippine National Oil company and Minister of Energy
+		</location_description>
+		<location_icon_name>velasco3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>velasco1,velasco2,velasco3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>13</location_id>
+		<location_name>Br. Bloemen Hall</location_name>
+		<location_description>Br. Alphonsus Bloemen Hall houses the Z2 Cafe, one of the university's many cafeterias, food stands, and the radio booth of Green Giant FM.
+
+Named after Br. Alphonsus Bloemen, a La Salle Brother.</location_description>
+		<location_icon_name>velasco3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>velasco1,velasco2,velasco3</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>14</location_id>
+		<location_name>Faculty Building</location_name>
+		<location_description>Background
+Situated behind St. Joseph Building, the structure was built in 1985 through a generous gift from the Office of American Schools and Hospitals Abroad, under the sponsorship of the Christian Brothers Conference, Illinois, alumni and benefactors. Being a four-storey fully air-conditioned building, the University Library endeavors to provide access to other library collections within Metro Manila that will support the instructional, research, and other bibliographical needs of both students and faculty through its inter-library services, which involve short term loans and document delivery (Consortia).
+
+An additional service that the library provides is the webliography which makes available electronic bibliographies of websites, web pages and web documents such as: DLSU Faculty Webliography, Philippine Biographical Webliographies and Topics Webliography
+		</location_description>
+		<location_icon_name>faculty3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>faculty1,faculty2,faculty4</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>15</location_id>
+		<location_name>Amphitheater</location_name>
+		<location_description>-	A lot of concerts and presentations are often conducted here during the University Break (U-Break).
+-	University Break: Friday 2:40pm – 4:40pm
+		</location_description>
+		<location_icon_name>amphitheatre3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>amphitheatre1,amphitheatre2,amphitheatre4</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>16</location_id>
+		<location_name>Marian Quadrangle</location_name>
+		<location_description>-	Located near the Fallen Brother’s Garden between the LS and SPS buildings. This grassy but well-maintained area has a shrine devoted to the Blessed Virgin Mary.
+-	Used for small events such as food fest, DLSU Pep Squad tryouts, and games of organizations.
+		</location_description>
+		<location_icon_name>marianquadrangle3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>marianquadrangle5,marianquadrangle4,marianquadrangle1</location_images>
+		<building_image>map</building_image>
+	</Building>
+	<Building>
+		<location_id>17</location_id>
+		<location_name>Mutien Marie Hall</location_name>
+		<location_description>-	Mainly used as classrooms by the Engineering students and ROTC students.</location_description>
+		<location_icon_name>mutienmarie3</location_icon_name>
+		<location_hasVisited>false</location_hasVisited>
+		<location_images>mutienmarie3,mutienmarie2,mutienmarie1</location_images>
+		<building_image>map</building_image>
 	</Building>
 </Building-list>

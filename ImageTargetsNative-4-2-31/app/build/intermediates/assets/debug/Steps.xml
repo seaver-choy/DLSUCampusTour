@@ -1,45 +1,115 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <Step-list>
 	<Step>
-		<location_id>11</location_id>
+		<location_id>18</location_id>
 		<step_number>1</step_number>
-		<step_description>Locate the entrance</step_description>
-		<step_picture_name>netcentric1</step_picture_name>
-		<step_title>1. Find the entrance!</step_title>
+		<step_description>Proceed to Henry Sy Sr. Hall.</step_description>
+		<step_picture_name>henrysy1</step_picture_name>
+		<step_title>1. Go to Henry Sy!</step_title>
 	</Step>
 	<Step>
-		<location_id>11</location_id>
+		<location_id>18</location_id>
 		<step_number>2</step_number>
-		<step_description>As you enter the building, right in front of you are the stairs take it to the top floor of the building (4th floor)</step_description>
-		<step_picture_name>netcentric2</step_picture_name>
-		<step_title>2. Find the stairs!</step_title>
+		<step_description>Go to the sixth floor of Henry Sy using the escalator.</step_description>
+		<step_picture_name>thelearningcommons7</step_picture_name>
+		<step_title>2. You can also use the elevator!</step_title>
 	</Step>
     <Step>
-        <location_id>11</location_id>
+        <location_id>18</location_id>
         <step_number>3</step_number>
-        <step_description>The stair should look something like this keep taking it up</step_description>
-        <step_picture_name>netcentric3</step_picture_name>
-        <step_title>3. Up the stairs!</step_title>
+        <step_description>Once you reach sixth floor, go to the guard, and see this majestic sign.</step_description>
+        <step_picture_name>thelearningcommons1</step_picture_name>
+        <step_title>3. Guard will check you!</step_title>
     </Step>
     <Step>
-        <location_id>11</location_id>
+        <location_id>18</location_id>
         <step_number>4</step_number>
-        <step_description>You're at the top floor when you see this</step_description>
-        <step_picture_name>netcentric4</step_picture_name>
-        <step_title>4. Fourth floor!</step_title>
+        <step_description>Proceed to floors 7-13 and visit any part of the Library!</step_description>
+        <step_picture_name>thelearningcommons6</step_picture_name>
+        <step_title>4. You're here!</step_title>
     </Step>
     <Step>
-        <location_id>11</location_id>
-        <step_number>5</step_number>
-        <step_description>Keep following the hallwa</step_description>
-        <step_picture_name>netcentric5</step_picture_name>
-        <step_title>5. Hallway!</step_title>
+        <location_id>19</location_id>
+        <step_number>1</step_number>
+        <step_description>Proceed to Yuchengco Hall.</step_description>
+        <step_picture_name>yuchengco4</step_picture_name>
+        <step_title>1. See those majestic pillars?</step_title>
     </Step>
     <Step>
-        <location_id>11</location_id>
-        <step_number>6</step_number>
-        <step_description>The entrance to netcentric should look like this.. good job!</step_description>
-        <step_picture_name>netcentric6</step_picture_name>
-        <step_title>6. You're here!!</step_title>
+        <location_id>19</location_id>
+        <step_number>2</step_number>
+        <step_description>Look for these stairs.</step_description>
+        <step_picture_name>museum1</step_picture_name>
+        <step_title>2. Climb up those stairs</step_title>
+    </Step>
+    <Step>
+        <location_id>19</location_id>
+        <step_number>3</step_number>
+        <step_description>That's the entrance!</step_description>
+        <step_picture_name>museum2</step_picture_name>
+        <step_title>3. You're here!</step_title>
+    </Step>
+    <Step>
+        <location_id>20</location_id>
+        <step_number>1</step_number>
+        <step_description>Proceed to Yuchengco Hall.</step_description>
+        <step_picture_name>yuchengco4</step_picture_name>
+        <step_title>1. Go to Yuchengco Hall!</step_title>
+    </Step>
+    <Step>
+        <location_id>20</location_id>
+        <step_number>2</step_number>
+        <step_description>Use the elevator to go to the 7th floor.</step_description>
+        <step_picture_name>yuchengco2</step_picture_name>
+        <step_title>2. Elevator to 7th Floor!</step_title>
+    </Step>
+    <Step>
+    <location_id>20</location_id>
+    <step_number>3</step_number>
+    <step_description>Welcome to Yuchengco Auditorium.</step_description>
+    <step_picture_name>yuchengcoaud2</step_picture_name>
+    <step_title>3. You should see this, and you're here!</step_title>
+    </Step>
+    <Step>
+        <location_id>21</location_id>
+        <step_number>1</step_number>
+        <step_description>Proceed to Br. Andrew Gonzalez Hall.</step_description>
+        <step_picture_name>andrew2</step_picture_name>
+        <step_title>1. Go to Br. Andrew!</step_title>
+    </Step>
+    <Step>
+        <location_id>21</location_id>
+        <step_number>2</step_number>
+        <step_description>Use the elevator to 19th floor.</step_description>
+        <step_picture_name>andrew1</step_picture_name>
+        <step_title>2. Go up high!</step_title>
+    </Step>
+    <Step>
+        <location_id>21</location_id>
+        <step_number>3</step_number>
+        <step_description>Welcome to the Br. Andrew Auditorium.</step_description>
+        <step_picture_name>andrew3</step_picture_name>
+        <step_title>3. You're here!</step_title>
+    </Step>
+    <Step>
+        <location_id>22</location_id>
+        <step_number>1</step_number>
+        <step_description>Proceed to William Hall.</step_description>
+        <step_picture_name>williamhall3</step_picture_name>
+        <step_title>1. Go to William Hall!</step_title>
+    </Step>
+    <Step>
+        <location_id>22</location_id>
+        <step_number>2</step_number>
+        <step_description>You should see this from a far.</step_description>
+        <step_picture_name>williamhall2</step_picture_name>
+        <step_title>2. Just walk a bit more.</step_title>
+    </Step>
+    <Step>
+        <location_id>22</location_id>
+        <step_number>3</step_number>
+        <step_description>Enjoy the theater!</step_description>
+        <step_picture_name>williamtheater</step_picture_name>
+        <step_title>3. You're here!</step_title>
     </Step>
 </Step-list>

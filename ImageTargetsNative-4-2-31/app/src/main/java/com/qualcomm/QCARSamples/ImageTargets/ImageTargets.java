@@ -1241,7 +1241,7 @@ public class ImageTargets extends Activity
                 Location l = databaseHelper.getLocation(targets.get(temp).getLocID());
                 border.setVisibility(View.VISIBLE);
                 fake.setVisibility(View.VISIBLE);
-                fake.setText("Congratulations! You have unlocked the location " + l.getName() + ". " +
+                fake.setText("Congratulations! You have unlocked the  location " + l.getName() + ". " +
                         "You can view more details about " + l.getName() + " in the locations list.");
             }
         });
