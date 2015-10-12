@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="myarray" >
+    <item>@drawable/welcome1</item>
+    <item>@drawable/mainmenu1</item>
+    <item>@drawable/camera1</item>
+    <item>@drawable/poster1</item>
+    <item>@drawable/locationlist1</item>
+    <item>@drawable/map1</item>
+    <item>@drawable/map2</item>
+    <item>@drawable/direstions1</item>
+    <item>@drawable/locationlist2</item>
+    <item>@drawable/locationdetails</item>
+    <item>@drawable/closingslide</item>
+    <item>@drawable/lastslide</item>
+    </integer-array>
+</resources>

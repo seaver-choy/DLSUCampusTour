@@ -16,7 +16,7 @@ public class TutorialScreen extends Activity {
     private CustomPagerAdapter mCustomPagerAdapter;
     private ViewPager mViewPager;
     private Intent i;
-    Handler handler = new Handler();
+    Handler handler;
 
 
     @Override
@@ -26,7 +26,7 @@ public class TutorialScreen extends Activity {
         mCustomPagerAdapter = new CustomPagerAdapter(this);
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mCustomPagerAdapter);
-
+        handler = new Handler();
 
        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
            @Override

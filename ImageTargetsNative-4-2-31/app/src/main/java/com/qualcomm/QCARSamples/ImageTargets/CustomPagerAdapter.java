@@ -1,6 +1,8 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,31 +20,24 @@ import android.widget.LinearLayout;
         LayoutInflater mLayoutInflater;
         View itemView;
         ImageView imageView;
+        TypedArray mResources;
+        int count;
+        int[] ids;
 
-        int[] mResources = {
-                R.drawable.welcome1,
-                R.drawable.mainmenu1,
-                R.drawable.camera1,
-                R.drawable.poster1,
-                R.drawable.locationlist1,
-                R.drawable.map1,
-                R.drawable.map2,
-                R.drawable.direstions1,
-                R.drawable.locationlist2,
-                R.drawable.locationdetails,
-                R.drawable.closingslide,
-                R.drawable.lastslide
-        };
-
-        public CustomPagerAdapter(Context context) {
+    public CustomPagerAdapter(Context context) {
             mContext = context;
             mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            mResources = mContext.getResources().obtainTypedArray(R.array.myarray);
+            count = mResources.length();
+            ids = new int[count];
+            for(int i=0;i<ids.length;i++) {
+                ids[i] = mResources.getResourceId(i, 0);
+            }
         }
 
         @Override
         public int getCount() {
-
-            return mResources.length;
+            return mResources.length();
         }
 
         @Override
@@ -54,7 +49,7 @@ import android.widget.LinearLayout;
         public Object instantiateItem(ViewGroup container, int position) {
             itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
             imageView = (ImageView) itemView.findViewById(R.id.imageView);
-            imageView.setImageResource(mResources[position]);
+            imageView.setImageResource(ids[position]);
 
             container.addView(itemView);
 

@@ -32,7 +32,7 @@
 	</Target>
 	<Target>
 		<target_id>6</target_id>
-		<target_name>velasco</target_name>
+		<target_name>Velasco</target_name>
 		<target_image_name>arrowtarget.jpg</target_image_name>
 		<target_location_id>12</target_location_id>
 	</Target>
