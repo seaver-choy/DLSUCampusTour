@@ -97,7 +97,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
 
     @Override
     public void itemClicked(View view, int position) {
-        startActivity(new Intent(this, ViewDetails.class));
+        startActivity(new Intent(this, TestHorizontalActivity.class));
     }
 
     public void onBackPressed()

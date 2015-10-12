@@ -103,7 +103,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             public void onClick(View v) {
 
                 if(currentLoc.isHasVisited() == true) {
-                    Intent intent = new Intent(context, ViewDetails.class);
+                    Intent intent = new Intent(context, TestHorizontalActivity.class);
                     intent.putExtra("description", locationData.get(position).getDescription());
                     intent.putExtra("name", locationData.get(position).getName());
 
@@ -184,7 +184,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         @Override
         public void onClick(View v) {
 
-            Intent intent = new Intent(context, ViewDetails.class);
+            Intent intent = new Intent(context, TestHorizontalActivity.class);
             intent.putExtra("description", "TANGINA MO");
             Log.e("TAG", "TANGINA MO");
 
