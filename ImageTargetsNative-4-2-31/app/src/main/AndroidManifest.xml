@@ -132,6 +132,14 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity
+            android:name= ".TestHorizontalActivity"
+            android:label= "Location Details"
+            android:parentActivityName=".location_cardview"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+        </activity>
+
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
