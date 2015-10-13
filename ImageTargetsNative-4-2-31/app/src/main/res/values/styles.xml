@@ -29,4 +29,9 @@
         <item name="android:textColor">#1A8200</item>
     </style>
 
+    <style name="layout_alert"  parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#006F04</item>
+        <item name="android:textColorPrimary">#00A405</item>
+        <item name="android:colorAccent">#00DC07</item>
+    </style>
 </resources>

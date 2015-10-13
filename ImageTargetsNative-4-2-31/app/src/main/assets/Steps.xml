@@ -81,14 +81,14 @@
         <location_id>21</location_id>
         <step_number>2</step_number>
         <step_description>Use the elevator to 19th floor.</step_description>
-        <step_picture_name>andrew1</step_picture_name>
+        <step_picture_name>andrewaud2</step_picture_name>
         <step_title>2. Go up high!</step_title>
     </Step>
     <Step>
         <location_id>21</location_id>
         <step_number>3</step_number>
         <step_description>Welcome to the Br. Andrew Auditorium.</step_description>
-        <step_picture_name>andrew3</step_picture_name>
+        <step_picture_name>andrewaud4</step_picture_name>
         <step_title>3. You're here!</step_title>
     </Step>
     <Step>

@@ -60,9 +60,9 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         //LOOK AT THIS FOR THE LOCK BUTTON ITS PSEUDOCODE
 
 
-            if(currentLoc.isHasVisited() == true){
-                 holder.btn_lock.setVisibility(View.GONE);
-            }
+        if(currentLoc.isHasVisited() == true){
+            holder.btn_lock.setVisibility(View.GONE);
+        }
 
 
 
@@ -72,23 +72,23 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
 //                if(currentLoc.isHasVisited() == true){
 
-                    if(currentLoc instanceof Building)
-                    {
-                        Building building = (Building) currentLoc;
-                        Log.e("ImageName", building.getMapImage());
-                        int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
-                        building.setMapIcon(icon);
-                        Intent intent = new Intent(context, map.class);
-                        intent.putExtra("mapIcon", building.getMapIcon());
-                        context.startActivity(intent);
-                    }
-                    else
-                    {
-                        Intent intent = new Intent(context, directions.class);
-                        Log.e("loc_id", currentLoc.getLocId() + "");
-                        intent.putExtra("location_id", currentLoc.getLocId());
-                        context.startActivity(intent);
-                    }
+                if(currentLoc instanceof Building)
+                {
+                    Building building = (Building) currentLoc;
+                    Log.e("ImageName", building.getMapImage());
+                    int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
+                    building.setMapIcon(icon);
+                    Intent intent = new Intent(context, map.class);
+                    intent.putExtra("mapIcon", building.getMapIcon());
+                    context.startActivity(intent);
+                }
+                else
+                {
+                    Intent intent = new Intent(context, directions.class);
+                    Log.e("loc_id", currentLoc.getLocId() + "");
+                    intent.putExtra("location_id", currentLoc.getLocId());
+                    context.startActivity(intent);
+                }
 //                }
 
 //                else
@@ -120,35 +120,9 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                     context.startActivity(intent);
                 }
 
-                else {
+                else
+                    showAlert();
 
-                    AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        context    );
-
-                   // new ContextThemeWrapper(context, R.style.AboutDialog)
-
-                    // set title
-                    alertDialogBuilder.setTitle("LOCATION LOCKED");
-
-                    // set dialog message
-                    alertDialogBuilder
-                            .setMessage("Please press the get location button instead.")
-                            .setCancelable(false)
-                            .setPositiveButton("OK",new DialogInterface.OnClickListener() {
-                                public void onClick(DialogInterface dialog,int id) {
-                                    // if this button is clicked, close
-                                    // current activity
-                                    dialog.cancel();
-                                }
-                            });
-
-                    // create alert dialog
-                    AlertDialog alertDialog = alertDialogBuilder.create();
-
-                    // show it
-                    alertDialog.show();
-
-                }
             }
         });
     }
@@ -201,6 +175,31 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         public void itemClicked(View view, int position);
     }
 
+    public void showAlert(){
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
+                context, R.style.layout_alert);
+
+        // set title
+        alertDialogBuilder.setTitle("LOCATION LOCKED");
+
+        // set dialog message
+        alertDialogBuilder
+                .setMessage("Please press the get location button instead.")
+                .setCancelable(false)
+                .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog,int id) {
+                        // if this button is clicked, close
+                        // current activity
+                        dialog.cancel();
+                    }
+                });
+
+        // create alert dialog
+        AlertDialog alertDialog = alertDialogBuilder.create();
+
+        // show it
+        alertDialog.show();
+    }
 
 
 }

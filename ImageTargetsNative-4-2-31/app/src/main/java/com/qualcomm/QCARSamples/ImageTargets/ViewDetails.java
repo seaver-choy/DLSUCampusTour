@@ -44,7 +44,7 @@ public class ViewDetails extends ActionBarActivity{
                 width);
         setContentView(R.layout.activity_view_details);
 
-        linearLayout = (LinearLayout) findViewById(R.id.linearLay);
+        /*linearLayout = (LinearLayout) findViewById(R.id.linearLay);*/
         linearLayout.addView(horizontalScrollView);
         LinearLayout container = new LinearLayout(this);
         container.setLayoutParams(new LinearLayout.LayoutParams(width, height));

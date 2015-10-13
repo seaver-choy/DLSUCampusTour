@@ -685,9 +685,9 @@ Trivia:
 		<location_description>Br. Alphonsus Bloemen Hall houses the Z2 Cafe, one of the university's many cafeterias, food stands, and the radio booth of Green Giant FM.
 
 Named after Br. Alphonsus Bloemen, a La Salle Brother.</location_description>
-		<location_icon_name>velasco3</location_icon_name>
+		<location_icon_name>bloemen3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-		<location_images>velasco1,velasco2,velasco3</location_images>
+		<location_images>bloemen1,bloemen2,bloemen4</location_images>
 		<building_image>map</building_image>
 	</Building>
 	<Building>

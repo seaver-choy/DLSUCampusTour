@@ -68,9 +68,9 @@ The auditorium features a traditional proscenium stage as well as an orchestra p
 		<location_id>21</location_id>
 		<location_name>Br. Andrew Auditorium</location_name>
 		<location_description>The Br. Andrew Gonzalez Hall also houses a small theater, which supplements the larger ones on campus such as the Teresa Yuchengco Auditorium and the William Shaw Little Theater. The theater was initially named in recognition of Br. Andrew's mother, Rosario Arnedo Gonzalez, and the mother of Eduardo G. Fajardo, Natividad Galang-Fajardo.[6] It was thus agreed that the theater be named Doña Rosario Arnedo Gonzalez-Natividad Galang Fajardo Theater. The administration eventually found this name to be too long and agreed to find a more suitable name. The DLSU Student Council is held a theater naming contest among the undergraduate students. The theater was eventually named as the Natividad Fajardo-Rosario Gonzalez Auditorium.[7]</location_description>
-		<location_icon_name>andrew2</location_icon_name>
+		<location_icon_name>andrewaud3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-		<location_images>andrew1,andrew2,andrew3</location_images>
+		<location_images>andrewaud1,andrewaud3,andrewaud4</location_images>
 	</Location>
 	<Location>
 		<location_id>22</location_id>
