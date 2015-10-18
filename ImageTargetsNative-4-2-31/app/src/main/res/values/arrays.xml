@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer-array name="myarray" >
+    <integer-array name="tutorial_images" >
     <item>@drawable/welcome1</item>
     <item>@drawable/mainmenu1</item>
     <item>@drawable/camera1</item>

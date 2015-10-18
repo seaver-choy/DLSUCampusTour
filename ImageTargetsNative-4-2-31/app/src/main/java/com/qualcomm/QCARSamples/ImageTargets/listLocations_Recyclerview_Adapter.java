@@ -4,6 +4,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.internal.view.ContextThemeWrapper;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -182,12 +184,15 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         // set title
         alertDialogBuilder.setTitle("LOCATION LOCKED");
 
+
+
+
         // set dialog message
         alertDialogBuilder
                 .setMessage("Please press the get location button instead.")
                 .setCancelable(false)
-                .setPositiveButton("OK",new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int id) {
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
                         // if this button is clicked, close
                         // current activity
                         dialog.cancel();
@@ -196,9 +201,15 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
 
         // create alert dialog
         AlertDialog alertDialog = alertDialogBuilder.create();
+        //alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
         // show it
         alertDialog.show();
+
+        int titleDividerId = context.getResources().getIdentifier("titleDivider", "id", "android");
+        View titleDivider = alertDialog.findViewById(titleDividerId);
+        if (titleDivider != null)
+            titleDivider.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
     }
 
 

@@ -33,7 +33,7 @@ public class TutorialScreen extends Activity {
            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
                Log.i("pager", mViewPager.getCurrentItem() + "");
 
-               if(mViewPager.getCurrentItem() == 11)
+               if(mViewPager.getCurrentItem() == mCustomPagerAdapter.getCount() - 1)
                {
                    handler.postDelayed(new Runnable() {
                        @Override

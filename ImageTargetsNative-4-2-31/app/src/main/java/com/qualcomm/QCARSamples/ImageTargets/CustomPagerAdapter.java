@@ -27,7 +27,7 @@ import android.widget.LinearLayout;
     public CustomPagerAdapter(Context context) {
             mContext = context;
             mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            mResources = mContext.getResources().obtainTypedArray(R.array.myarray);
+            mResources = mContext.getResources().obtainTypedArray(R.array.tutorial_images);
             count = mResources.length();
             ids = new int[count];
             for(int i=0;i<ids.length;i++) {
