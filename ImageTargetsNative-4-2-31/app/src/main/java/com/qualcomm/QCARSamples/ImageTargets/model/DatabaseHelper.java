@@ -55,7 +55,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     // BUILDING Table - column names
     private static final String KEY_BUILDING_LOCATION_ID = "location_id";
-    private static final String KEY_BUILDING_MAP_IMAGE = "building_image";
+    private static final String KEY_BUILDING_MAP_IMAGE = "building_map";
 
     // STEP Table - column names
     private static final String KEY_STEP_LOCATION_ID = "location_id";

@@ -28,7 +28,7 @@ public class SitesXMLPullParser {
 
     //Building keys
     private static final String KEY_BUILDING = "Building";
-    private static final String KEY_BUILDING_MAP_IMAGE = "building_image";
+    private static final String KEY_BUILDING_MAP_IMAGE = "building_map";
 
     //Target keys
     private static final String KEY_TARGET = "Target";

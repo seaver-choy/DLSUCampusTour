@@ -36,8 +36,7 @@
                     android:layout_width="800dp"
                     android:layout_height="460dp"
                     android:id="@+id/imageView5"
-                    android:padding="3dp"
-                    android:src="@drawable/pink_trees" />
+                    android:padding="3dp" />
 
                 <ImageView
                     android:layout_width="800dp"

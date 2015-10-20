@@ -91,7 +91,7 @@ Trivia
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>gox2,gox3,gox4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>2</location_id>
@@ -102,7 +102,7 @@ Trivia
 		<location_icon_name>yuchengco4</location_icon_name>
         <location_hasVisited>false</location_hasVisited>
         <location_images>yuchengco1,yuchengco2,yuchengco3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>3</location_id>
@@ -111,7 +111,7 @@ Trivia
 		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>henrysy2,henrysy3,henrysy4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>4</location_id>
@@ -126,7 +126,7 @@ Trivia
 		<location_icon_name>lasallehall1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>lasallehall2,lasallehall3,lasallehall4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>5</location_id>
@@ -137,7 +137,7 @@ Trivia
 		<location_icon_name>andrew2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>andrew1,andrew2,andrew3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>6</location_id>
@@ -225,7 +225,7 @@ Mach. Room
 		<location_icon_name>strc3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>strc1,strc2,strc3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>7</location_id>
@@ -234,7 +234,7 @@ Mach. Room
 		<location_icon_name>razon3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>razon1,razon2,razon3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>8</location_id>
@@ -341,7 +341,7 @@ Houses some labs for the College of engineering because it was an engineering bu
 		<location_icon_name>stmiguel</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>stmiguel,stmiguel,stmiguel</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>9</location_id>
@@ -446,7 +446,7 @@ There are preserved fetuses, snakes, and the like placed on a container displaye
 		<location_icon_name>stjoseph3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>stjoseph1,stjoseph2,stjoseph3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>10</location_id>
@@ -507,7 +507,7 @@ Religious Studies Department (W703)
 		<location_icon_name>williamhall3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>williamhall1,williamtheater,williamhall2</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>11</location_id>
@@ -578,7 +578,7 @@ La Salle Dance Company Street / La Salle Dance Company Jazz (SPS 507)
 		<location_icon_name>connon4</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>connon1,connon2,connon3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>12</location_id>
@@ -677,7 +677,7 @@ Trivia:
 		<location_icon_name>velasco3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>velasco1,velasco2,velasco3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>13</location_id>
@@ -688,7 +688,7 @@ Named after Br. Alphonsus Bloemen, a La Salle Brother.</location_description>
 		<location_icon_name>bloemen3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>bloemen1,bloemen2,bloemen4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>14</location_id>
@@ -701,7 +701,7 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>faculty3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>faculty1,faculty2,faculty4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>15</location_id>
@@ -712,7 +712,7 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>amphitheatre3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>amphitheatre1,amphitheatre2,amphitheatre4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>16</location_id>
@@ -723,7 +723,7 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>marianquadrangle3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>marianquadrangle5,marianquadrangle4,marianquadrangle1</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>17</location_id>
@@ -732,6 +732,6 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>mutienmarie3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>mutienmarie3,mutienmarie2,mutienmarie1</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 </Building-list>
