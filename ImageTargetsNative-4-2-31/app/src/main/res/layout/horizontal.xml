@@ -4,7 +4,7 @@
     android:orientation="vertical" android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="@drawable/background">
-    <LinearLayout android:orientation="vertical" android:layout_height="300dp"
+    <LinearLayout android:orientation="vertical" android:layout_height="240dp"
         android:layout_width="match_parent"
         android:id="@+id/layer">
     </LinearLayout>

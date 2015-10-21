@@ -53,7 +53,7 @@ public class TestHorizontalActivity extends ActionBarActivity {
         LinearLayout container = new LinearLayout(this);
         container.setLayoutParams(new LinearLayout.LayoutParams(width, height));
         // container.setHeight(height);
-
+/*
         ImageView textView = new ImageView(this);
         textView.setImageResource(imageIcons.get(0).intValue());
         container.addView(textView);
@@ -67,7 +67,35 @@ public class TestHorizontalActivity extends ActionBarActivity {
 
         textView2.setImageResource(imageIcons.get(2).intValue());
         container.addView(textView2);
+*/
 
+        TextView textView = new TextView(this);
+        textView.setWidth(width);
+        textView.setHeight(height / 2);
+        textView.setGravity(Gravity.CENTER);
+        textView.setBackgroundResource(imageIcons.get(0).intValue());
+        textView.setMinimumWidth(width);
+        textView.setMaxWidth(width);
+        container.addView(textView);
+
+        textView = new TextView(this);
+        textView.setWidth(width);
+        textView.setHeight(height / 2);
+        textView.setGravity(Gravity.CENTER);
+        textView.setBackgroundResource(imageIcons.get(1).intValue());
+        textView.setMinimumWidth(width);
+        textView.setMaxWidth(width);
+        container.addView(textView);
+
+        textView = new TextView(this);
+        textView.setWidth(width);
+        textView.setHeight(height / 2);
+        textView.setGravity(Gravity.CENTER);
+        textView.setBackgroundResource(imageIcons.get(2).intValue());
+        textView.setMinimumWidth(width);
+        textView.setMaxWidth(width);
+
+        container.addView(textView);
         horizontalScrollView.addView(container);
     }
 
