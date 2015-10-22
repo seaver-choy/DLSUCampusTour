@@ -141,11 +141,11 @@ public class ImageTargets extends Activity
     private GestureDetector mGestureDetector;
     
     // Contextual Menu Options for Camera Flash - Autofocus
-    private boolean mFlash = false;
+    //private boolean mFlash = false;
     private boolean mContAutofocus = false;
-    private boolean mExtendedTracking = false;
+    //private boolean mExtendedTracking = false;
     
-    private View mFlashOptionView;
+    //private View mFlashOptionView;
     
     private RelativeLayout mUILayout;
     
@@ -234,13 +234,13 @@ public class ImageTargets extends Activity
             }
         }
         
-        
+
         protected void onProgressUpdate(Integer... values)
         {
             // Do something with the progress value "values[0]", e.g. update
             // splash screen, progress bar, etc.
         }
-        
+
         
         protected void onPostExecute(Boolean result)
         {
@@ -385,7 +385,7 @@ public class ImageTargets extends Activity
         
         // Configure Vuforia to use OpenGL ES 2.0
         mVuforiaFlags = QCAR.GL_20;
-        
+
         // Creates the GestureDetector listener for processing double tap
         mGestureDetector = new GestureDetector(this, new GestureListener());
         
@@ -553,6 +553,7 @@ public class ImageTargets extends Activity
         }
         
         // Turn off the flash
+        /*
         if (mFlashOptionView != null && mFlash)
         {
             // OnCheckedChangeListener is called upon changing the checked state
@@ -564,7 +565,7 @@ public class ImageTargets extends Activity
                 ((CheckBox) mFlashOptionView).setChecked(false);
             }
         }
-        
+        */
         if (mAppStatus == APPSTATUS_CAMERA_RUNNING)
         {
             updateApplicationStatus(APPSTATUS_CAMERA_STOPPED);
@@ -951,14 +952,14 @@ public class ImageTargets extends Activity
     {
         return mTextures.size();
     }
-    
+
     
     /** Returns the texture object at the specified index. */
     public Texture getTexture(int i)
     {
         return mTextures.elementAt(i);
     }
-    
+
     
     /** A helper for loading native libraries stored in "libs/armeabi*". */
     public static boolean loadLibrary(String nLibName)
@@ -1001,22 +1002,22 @@ public class ImageTargets extends Activity
         {
             return true;
         }
-        
-        
+
+
         public boolean onSingleTapUp(MotionEvent e)
         {
             // Calls the Autofocus Native Method
             autofocus();
-            
+
             // Triggering manual auto focus disables continuous
             // autofocus
             mContAutofocus = false;
-            
+
             return true;
         }
-        
+
     }
-    
+
     final static int CMD_BACK = -1;
     final static int CMD_EXTENDED_TRACKING = 1;
     final static int CMD_AUTOFOCUS = 2;
@@ -1025,14 +1026,14 @@ public class ImageTargets extends Activity
     final static int CMD_CAMERA_REAR = 5;
     final static int CMD_DATASET_STONES_AND_CHIPS_DATASET = 6;
     final static int CMD_DATASET_TARMAC_DATASET = 7;
-    
+
     final static int STONES_AND_CHIPS_DATASET_ID = 0;
     final static int TARMAC_DATASET_ID = 1;
-    
+
     final static int CAMERA_DEFAULT = 0;
     final static int CAMERA_BACK = 1;
     final static int CAMERA_FRONT = 2;
-    
+
     
     // This method sets the menu's settings
     /*
