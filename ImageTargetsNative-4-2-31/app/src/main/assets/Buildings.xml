@@ -107,7 +107,9 @@ Trivia
 	<Building>
 		<location_id>3</location_id>
 		<location_name>Henry Sy Sr. Hall</location_name>
-		<location_description>Construction of the Henry Sy Sr. Hall began on December 2, 2010 as part of the university's Centennial Renewal Plan, a project that aims to construct and renovate facilities inside the campus. A 15-floor building, it replaced DLSU's football field with plans for completion by December 2012. It is estimated to cost ₱1.4 billion (US$32.5 million). In line with this, DLSU entered an eight-year agreement with the Philippine Sports Commission. Under the contract, DLSU will fund the ₱7.4 million (US$171,000) renovation of the Rizal Memorial Track and Football Stadium. DLSU will get to use the facilities in return.</location_description>
+		<location_description>Construction of the Henry Sy Sr. Hall began on December 2, 2010 as part of the university's Centennial Renewal Plan, a project that aims to construct and renovate facilities inside the campus. A 15-floor building, it replaced DLSU's football field with plans for completion by December 2012. Because DLSU will be limited to Razon for sports complex, they went into agreement to pay a handsome amount of money to Rizal Memorial Stadium to be able to use it.
+
+Henry Sy Sr. Hall currently houses Office of the University Registrar on the second floor. On the third floor, it houses the Scholarships office. On the fourth floor, there is a multi- purpose hall that can be used for different functions. On the fifth floor, it has other offices. From sixth floor to thirteenth floor, the Learning Commons can be found there. The Learning Commons acts as a library for the students. </location_description>
 		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>henrysy2,henrysy3,henrysy4</location_images>
@@ -240,11 +242,6 @@ Mach. Room
 		<location_id>8</location_id>
 		<location_name>St. Miguel Hall</location_name>
 		<location_description>
-Dean:
-Dr. Dominador F. Bombongan, Jr.
-Vice Dean:
-Dr. Feorillo Petronillo Demeterio III
-
 Background
 Constructed on 1969, Miguel Hall was named after one of the three Lasallian Brothers-Saints – St. Miguel Francisco Febres Cordero of Ecuador, canonized by the Servant of God Pope John Paul II.
 
@@ -347,11 +344,6 @@ Houses some labs for the College of engineering because it was an engineering bu
 		<location_id>9</location_id>
 		<location_name>St. Joseph Hall</location_name>
 		<location_description>
-Dean:
-Dr. Arlene A. Pascacio
-Vice Dean:
-Dr. Derrick Ethelbhert C. Yu
-
 Background
 More popularly known as SJ, this building houses the different laboratories commonly used by students in their experiments.
 
@@ -693,10 +685,16 @@ Named after Br. Alphonsus Bloemen, a La Salle Brother.</location_description>
 	<Building>
 		<location_id>14</location_id>
 		<location_name>Faculty Building</location_name>
-		<location_description>Background
+		<location_description>History
 Situated behind St. Joseph Building, the structure was built in 1985 through a generous gift from the Office of American Schools and Hospitals Abroad, under the sponsorship of the Christian Brothers Conference, Illinois, alumni and benefactors. Being a four-storey fully air-conditioned building, the University Library endeavors to provide access to other library collections within Metro Manila that will support the instructional, research, and other bibliographical needs of both students and faculty through its inter-library services, which involve short term loans and document delivery (Consortia).
 
 An additional service that the library provides is the webliography which makes available electronic bibliographies of websites, web pages and web documents such as: DLSU Faculty Webliography, Philippine Biographical Webliographies and Topics Webliography
+
+Now, it is known as the Faculty Building. Different departments are stationed there. Such as:
+Philosophy Department
+Filipino Department
+Business Department
+Students may come here to talk to their teachers as well as pass their requirements.
 		</location_description>
 		<location_icon_name>faculty3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
@@ -728,7 +726,8 @@ An additional service that the library provides is the webliography which makes 
 	<Building>
 		<location_id>17</location_id>
 		<location_name>Mutien Marie Hall</location_name>
-		<location_description>-	Mainly used as classrooms by the Engineering students and ROTC students.</location_description>
+		<location_description>-	Mainly used as classrooms by the Engineering students and ROTC students.
+- Used by DLSU Harlequin Theatre Guild for rehearsals and the Haunted Hall.</location_description>
 		<location_icon_name>mutienmarie3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>mutienmarie3,mutienmarie2,mutienmarie1</location_images>
