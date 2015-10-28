@@ -18,7 +18,6 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ViewFlipper;
@@ -32,23 +31,10 @@ public class ViewDetails extends ActionBarActivity{
     String s = null;
     String name = null;
     ArrayList<Integer> imageIcons = null;
-    private LinearLayout linearLayout;
-    private CustomHorizontalScrollView horizontalScrollView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        int width = getWindowManager().getDefaultDisplay().getWidth();
-        int height = getWindowManager().getDefaultDisplay().getHeight();
-        horizontalScrollView = new CustomHorizontalScrollView(this, 3,
-                width);
         setContentView(R.layout.activity_view_details);
-
-        /*linearLayout = (LinearLayout) findViewById(R.id.linearLay);*/
-        linearLayout.addView(horizontalScrollView);
-        LinearLayout container = new LinearLayout(this);
-        container.setLayoutParams(new LinearLayout.LayoutParams(width, height));
-
 
         ActionBar bar = getSupportActionBar();
         bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#009f3c")));
@@ -59,8 +45,6 @@ public class ViewDetails extends ActionBarActivity{
         ImageView imageView4 = (ImageView) findViewById(R.id.imageView4);
         ImageView imageView5 = (ImageView) findViewById(R.id.imageView5);
         ImageView imageView6 = (ImageView) findViewById(R.id.imageView6);
-
-
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             s = (String) extras.getString("description");
@@ -73,9 +57,6 @@ public class ViewDetails extends ActionBarActivity{
         imageView4.setImageResource(imageIcons.get(0).intValue());
         imageView5.setImageResource(imageIcons.get(1).intValue());
         imageView6.setImageResource(imageIcons.get(2).intValue());
-        container.addView(imageView4);
 
-        horizontalScrollView.addView(container);
     }
-
 }

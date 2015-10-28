@@ -62,8 +62,11 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         //LOOK AT THIS FOR THE LOCK BUTTON ITS PSEUDOCODE
 
 
-        if(currentLoc.isHasVisited() == true){
-            holder.btn_lock.setVisibility(View.GONE);
+        if(currentLoc.isHasVisited()){
+            holder.btn_lock.setVisibility(View.INVISIBLE);
+            Log.e("LOCKBUTTON",currentLoc.getName() + " is named unlocked");
+        }else{
+            holder.btn_lock.setVisibility(View.VISIBLE);
         }
 
 
@@ -105,7 +108,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
             public void onClick(View v) {
 
                 if(currentLoc.isHasVisited() == true) {
-                    Intent intent = new Intent(context, TestHorizontalActivity.class);
+                    Intent intent = new Intent(context, ViewDetails.class);
                     intent.putExtra("description", locationData.get(position).getDescription());
                     intent.putExtra("name", locationData.get(position).getName());
 
@@ -160,7 +163,7 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
         @Override
         public void onClick(View v) {
 
-            Intent intent = new Intent(context, TestHorizontalActivity.class);
+            Intent intent = new Intent(context, ViewDetails.class);
             intent.putExtra("description", "TANGINA MO");
             Log.e("TAG", "TANGINA MO");
 
