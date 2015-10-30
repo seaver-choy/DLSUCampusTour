@@ -1,3 +1,4 @@
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +17,7 @@
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="500dp"
+            android:layout_height="480dp"
             android:id="@+id/horizontalScrollView" >
 
             <LinearLayout
@@ -36,8 +37,7 @@
                     android:layout_width="800dp"
                     android:layout_height="460dp"
                     android:id="@+id/imageView5"
-                    android:padding="3dp"
-                    android:src="@drawable/pink_trees" />
+                    android:padding="3dp" />
 
                 <ImageView
                     android:layout_width="800dp"
@@ -47,6 +47,14 @@
                     android:src="@drawable/gox1" />
             </LinearLayout>
         </HorizontalScrollView>
+        <View android:id="@+id/separator"
+            android:background="#ffffff"
+            android:layout_width = "fill_parent"
+            android:layout_height="3dip"
+            android:layout_centerVertical ="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15px"
+            />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,4 +77,4 @@ Gokongwei Building"
 
     </LinearLayout>
 
-</ScrollView><!-- From: file:/C:/Users/Goldwin/Documents/TEMP2/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout-xlarge/activity_view_details.xml -->
+</ScrollView><!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout-xlarge/activity_view_details.xml -->

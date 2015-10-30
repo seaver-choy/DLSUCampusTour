@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="Razon" size="75.000000 52.5000000" />
+    <ImageTarget name="Gokongwei" size="75.000000 52.5000000" />
+    <ImageTarget name="Yuchengco" size="75.000000 52.5000000" />
     <ImageTarget name="Velasco" size="75.000000 52.5000000" />
     <ImageTarget name="Bloemen" size="75.000000 52.5000000" />
     <ImageTarget name="Connon" size="75.000000 52.5000000" />
@@ -8,18 +11,15 @@
     <ImageTarget name="William" size="75.000000 52.5000000" />
     <ImageTarget name="YuchengcoMuseum" size="75.000000 52.5000000" />
     <ImageTarget name="YuchengcoAuditorium" size="75.000000 52.5000000" />
-    <ImageTarget name="Yuchengco" size="75.000000 52.5000000" />
     <ImageTarget name="WilliamAuditorium" size="75.000000 52.5000000" />
     <ImageTarget name="STRC" size="75.000000 52.5000000" />
     <ImageTarget name="StMiguel" size="75.000000 52.5000000" />
     <ImageTarget name="StJoseph" size="75.000000 52.5000000" />
-    <ImageTarget name="Razon" size="75.000000 52.5000000" />
     <ImageTarget name="MutienMarie" size="75.000000 52.5000000" />
     <ImageTarget name="MarianQuadrangle" size="75.000000 52.5000000" />
     <ImageTarget name="Library" size="75.000000 52.5000000" />
     <ImageTarget name="LasalleHall" size="75.000000 52.5000000" />
     <ImageTarget name="HenrySy" size="75.000000 52.5000000" />
-    <ImageTarget name="Gokongwei" size="75.000000 52.5000000" />
     <ImageTarget name="BrAndrewAuditorium" size="75.000000 52.5000000" />
     <ImageTarget name="BrAndrew" size="75.000000 52.5000000" />
     <ImageTarget name="Amphitheater" size="75.000000 52.5000000" />

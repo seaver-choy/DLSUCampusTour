@@ -132,6 +132,13 @@
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.qualcomm.QCARSamples.ImageTargets.TestHorizontalActivity"
+            android:label="Location Details"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
 
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />

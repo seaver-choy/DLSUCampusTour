@@ -66,6 +66,7 @@ public class ImageTargets extends Activity
     // Camera buttons
     private ImageButton listbutton;
     private ImageButton freezebutton;
+    private ImageButton morebutton;
 
 
     private ImageView border;
@@ -844,9 +845,11 @@ public class ImageTargets extends Activity
 
         border = (ImageView) findViewById(R.id.borderimage);
         fake = (TextView) findViewById(R.id.faketext);
+        morebutton = (ImageButton) findViewById(R.id.morebutton);
 
         fake.setRotation(90);
         border.setVisibility(View.GONE);
+        morebutton.setVisibility(View.GONE);
         fake.setVisibility(View.GONE);
         isDisplayed = false;
 
@@ -1242,6 +1245,7 @@ public class ImageTargets extends Activity
                 Location l = databaseHelper.getLocation(targets.get(temp).getLocID());
                 border.setVisibility(View.VISIBLE);
                 fake.setVisibility(View.VISIBLE);
+                morebutton.setVisibility(View.VISIBLE);
                 fake.setText("Congratulations! You have unlocked the  location " + l.getName() + ". " +
                         "You can view more details about " + l.getName() + " in the locations list.");
             }

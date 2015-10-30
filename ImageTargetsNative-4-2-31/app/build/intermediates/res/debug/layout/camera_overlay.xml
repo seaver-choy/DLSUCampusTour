@@ -66,5 +66,17 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="80dp"
+        android:id="@+id/morebutton"
+        android:src="@drawable/moreicon"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignBottom="@+id/borderimage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
 
-</RelativeLayout><!-- From: file:/C:/Users/Goldwin/Documents/TEMP2/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/camera_overlay.xml -->
+
+</RelativeLayout><!-- From: file:/C:/Users/Goldwin/Documents/Temp%20folder%20for%20campustour/DLSUCampusTour/ImageTargetsNative-4-2-31/app/src/main/res/layout/camera_overlay.xml -->

@@ -2,39 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-b022c7db5a6533a8e5748238bdfa4d6cfff8ed27.jar" />
-    </item>
-    <item
-        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-965a7833e518484b522fec2f82be2e6c30f148a3.jar" />
-    </item>
-    <item
-        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="dc574f68d5776268181756e656458f20604240af">
-        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-9deb0371fc3c427a4a18429b62cfe5c9ead8465f.jar" />
-    </item>
-    <item
-        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-53e333120392d09196e96809d477bcb0e34cf6a0.jar" />
-    </item>
-    <item
-        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-236b81a831f3b886660b8f736874502a8aeac4e8.jar" />
+        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-fec98b572acd32e44f71ddf6c13a61e7bec24261.jar" />
     </item>
     <item
         jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
@@ -44,18 +16,46 @@
         <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-98a8ad7dfbd3cfe907f0074905747052c9237b45.jar" />
     </item>
     <item
-        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
+        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-236b81a831f3b886660b8f736874502a8aeac4e8.jar" />
+    </item>
+    <item
+        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\src\main\java\Vuforia.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc574f68d5776268181756e656458f20604240af">
+        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\Vuforia-9deb0371fc3c427a4a18429b62cfe5c9ead8465f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
+        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-b022c7db5a6533a8e5748238bdfa4d6cfff8ed27.jar" />
+    </item>
+    <item
+        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\libs\internal_impl-22.1.1.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-fec98b572acd32e44f71ddf6c13a61e7bec24261.jar" />
+        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-53e333120392d09196e96809d477bcb0e34cf6a0.jar" />
     </item>
     <item
-        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-640bdb16b9bab498316104648091538ead8a1c15.jar" />
+        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-03ada82e525446924b62a89cef4ffafffe37ef84.jar" />
+    </item>
+    <item
+        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-ac4979fda824cc8bad56c6a59d62a8e869c24c89.jar" />
     </item>
     <item
         jar="C:\Users\Goldwin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
@@ -72,13 +72,6 @@
         <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-2d0f33abfebc1aa5a3f3f8d945e54bf664477244.jar" />
     </item>
     <item
-        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-03ada82e525446924b62a89cef4ffafffe37ef84.jar" />
-    </item>
-    <item
         jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -86,11 +79,18 @@
         <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-79ad83a92077f8884b9fbc59514ea520dfeb37ec.jar" />
     </item>
     <item
-        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jar="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-ac4979fda824cc8bad56c6a59d62a8e869c24c89.jar" />
+        <dex dex="C:\Users\Goldwin\Documents\Temp folder for campustour\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-965a7833e518484b522fec2f82be2e6c30f148a3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="C:\Users\Goldwin\Documents\TEMP2\DLSUCampusTour\ImageTargetsNative-4-2-31\app\build\intermediates\pre-dexed\debug\classes-640bdb16b9bab498316104648091538ead8a1c15.jar" />
     </item>
 
 </items>

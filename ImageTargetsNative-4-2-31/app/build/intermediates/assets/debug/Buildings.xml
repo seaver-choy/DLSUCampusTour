@@ -91,7 +91,7 @@ Trivia
 		<location_icon_name>gox1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>gox2,gox3,gox4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>2</location_id>
@@ -102,16 +102,60 @@ Trivia
 		<location_icon_name>yuchengco4</location_icon_name>
         <location_hasVisited>false</location_hasVisited>
         <location_images>yuchengco1,yuchengco2,yuchengco3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>3</location_id>
 		<location_name>Henry Sy Sr. Hall</location_name>
-		<location_description>Construction of the Henry Sy Sr. Hall began on December 2, 2010 as part of the university's Centennial Renewal Plan, a project that aims to construct and renovate facilities inside the campus. A 15-floor building, it replaced DLSU's football field with plans for completion by December 2012. It is estimated to cost ₱1.4 billion (US$32.5 million). In line with this, DLSU entered an eight-year agreement with the Philippine Sports Commission. Under the contract, DLSU will fund the ₱7.4 million (US$171,000) renovation of the Rizal Memorial Track and Football Stadium. DLSU will get to use the facilities in return.</location_description>
+		<location_description>Background
+			Construction of the Henry Sy Sr. Hall began on December 2, 2010 as part of the university's Centennial Renewal Plan, a project that aims to construct and renovate facilities inside the campus. A 15-floor building, it replaced DLSU's football field with plans for completion by December 2012. Because DLSU will be limited to Razon for sports complex, they went into agreement to pay a handsome amount of money to Rizal Memorial Stadium to be able to use it.
+
+Henry Sy Sr. Hall(HSSH) houses different offices such as:
+		Second Floor
+			Accounting(Student Accounts Extension Office)
+			Admissions and Scholarships Office
+			Enrollment Services Hub- Help Desk
+			Office of University Registrar
+
+		Third Floor
+			Office of the Secretary of Associate Vice Chancellor for Faculty Resources and Development
+			Br. Alfred Shields FSC Ocean Research Center
+			Food Institute
+			Institutional and Evaluation Office
+			Personnel Management Office
+			University Research Coordination Office
+			Vice Chancellor of Academics
+			Vice Chancellor for Research and Innovation
+
+		Fourth Floor
+			CHED PHERNet Sustainability Studies Program
+			Institutional and Evaluation Office
+
+		Fifth Floor
+			Libraries, Systems Services Section
+
+		From the sixth floor to thirteenth floor, it houses the library A.K.A. The Learning Commons
+
+		Fourteenth Floor
+			Associate Vice Chancellor for Academic Affairs (AVCAA)
+			Associate Vice President for Enrollment Services (AVPES)
+			Associate Vice President for Facilities Management (AVPFM)
+			Associate Vice President for Information Resource Management (AVPIRM)
+			External Relations and Internationalization Office
+			Former President
+			International Quality Assurance Office
+			Legal Counsel
+			National and Internal Quality Assurance Office
+			Office of President and Chancellor
+			Risk Management, Compliance and Audit Office
+			Security and Safety Office, HSSH Receptionist
+			Strategic Management
+			Vice President for Administration
+		</location_description>
 		<location_icon_name>henrysy1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>henrysy2,henrysy3,henrysy4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>4</location_id>
@@ -126,7 +170,7 @@ Trivia
 		<location_icon_name>lasallehall1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>lasallehall2,lasallehall3,lasallehall4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>5</location_id>
@@ -137,7 +181,7 @@ Trivia
 		<location_icon_name>andrew2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>andrew1,andrew2,andrew3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>6</location_id>
@@ -225,26 +269,30 @@ Mach. Room
 		<location_icon_name>strc3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>strc1,strc2,strc3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>7</location_id>
 		<location_name>Enrique Razon Sports Center</location_name>
-		<location_description>Land of Sports</location_description>
+		<location_description>The Enrique M. Razon Sports Center (Building code E; also called Sports Complex, Sports Center, or Sports Building) of De La Salle University is a ten-storey neoclassical building that was built in 1998 to replace the old Brother Lucian Athanasius FSC Gym that was demolished in 2000 to give way for the construction of the Yuchengco Hall. The Sports Complex stands on a 3,155 square meter lot located at the corner of Fidel Reyes St.(formerly named Agno Street) and Noli streets.
+
+			The building was originally known as the Brother Athanasius Sports Complex, named after Br. Lucian Athanasius, a past president of De La Salle College Manila. In January 2003, the university received a P50 million donation from its alumnus Enrique Razon, Jr. for sports development, which included funds for scholarships and improvement of physical facilities. From the total amount, P25 million was used to fully equip and air-condition the 9th floor gymnasium of the PE and Sports Complex, P20 million was allotted for athletic scholarships, and P5 million was used for a sports solidarity fund. The building was renamed in February 2003 as the Enrique M. Razon Sports Center after the late father of Razon who was an alumnus and athlete of De La Salle.
+
+Facilities
+			The nine-storey building is served by three passenger elevators that are located by the entrance. The ground floor houses the clinic and an Olympic-size swimming pool as well as its complementing locker rooms and shower areas. The second floor houses a bookstore, a canteen, as well as a balcony area for swimming pool spectators.
+
+			The third to sixth floors of the building are parking areas that can accommodate 345 cars, with room for 700 once hydraulic lifts are installed. The third floor parking area is reserved for faculty members only. The seventh floor houses the basketball, volleyball, and table tennis courts, the offices and lounge area of the Physical Education Department of the College of Education, and a classroom. The 8th floor houses classrooms, dance and martial arts studio, and a track and field oval/balcony area for the 7th floor.
+
+			The tenth-floor gymnasium can be accessed only through stairs and houses another set of classrooms, dance studios, martial arts dojo, as well as a weight training gym.. Recently all the La Salle Green Archers championship banners and the retired numbers of Lim Eng Beng (#14, basketball), Manilla Santos (#14, volleyball), Ren-Ren Ritualo (#4, basketball) and Kurt Bachmann (#33, basketball) were raised to the rafters on this gym.</location_description>
 		<location_icon_name>razon3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>razon1,razon2,razon3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>8</location_id>
 		<location_name>St. Miguel Hall</location_name>
 		<location_description>
-Dean:
-Dr. Dominador F. Bombongan, Jr.
-Vice Dean:
-Dr. Feorillo Petronillo Demeterio III
-
 Background
 Constructed on 1969, Miguel Hall was named after one of the three Lasallian Brothers-Saints – St. Miguel Francisco Febres Cordero of Ecuador, canonized by the Servant of God Pope John Paul II.
 
@@ -341,17 +389,12 @@ Houses some labs for the College of engineering because it was an engineering bu
 		<location_icon_name>stmiguel</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>stmiguel,stmiguel,stmiguel</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>9</location_id>
 		<location_name>St. Joseph Hall</location_name>
 		<location_description>
-Dean:
-Dr. Arlene A. Pascacio
-Vice Dean:
-Dr. Derrick Ethelbhert C. Yu
-
 Background
 More popularly known as SJ, this building houses the different laboratories commonly used by students in their experiments.
 
@@ -446,7 +489,7 @@ There are preserved fetuses, snakes, and the like placed on a container displaye
 		<location_icon_name>stjoseph3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>stjoseph1,stjoseph2,stjoseph3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>10</location_id>
@@ -507,7 +550,7 @@ Religious Studies Department (W703)
 		<location_icon_name>williamhall3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
         <location_images>williamhall1,williamtheater,williamhall2</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>11</location_id>
@@ -533,9 +576,11 @@ DLSU Multipurpose Student Cooperative (SCoop)
 ●	Opens Monday &#038;Tuesday ; Thursday and Friday 10am-5:00pm
 
 2nd Floor
-●	Br. Connon Conference Room (SPS 201)
-●	OCCS Conference Room
-●	Student Discipline Formation Office Lost and Found Section
+Br. Connon Conference Room (SPS 201)
+OCCS Conference Room (SPS 203)
+Center for Social Concern and Action (COSCA) (SPS 201)
+●	Director: Ma. Lourdes F. Melegrito
+●	This office is involved in the social development work both in urban and rural community. It is the social arm of DLSU established in 1983-1984.
 
 3rd Floor
 Student Affairs Office (SPS 301B)
@@ -550,14 +595,9 @@ Student Affairs Office Conference Room (SPS 301C)
 Student Council Office/ University Student Government (SPS 302)
 ●	Seeks to promote the promotion of student’s rights and welfare by providing representation in various University bodies, creating programs and developing legislation.
 Debate Society / COMELEC
-Office of Career and Counseling Services (OCCS) (SPS 304)
-●	Director: Dr. Susana A. Estanislao
-●	Services and programs: Individual or group interviews, counseling, crisis intervention, psychological assessment, consultation, research and evaluation, supervised site practicum and internship, job fairs, etc.
+The LaSallian(SPS 303C)
 
 4th Floor
-Center for Social Concern and Action (COSCA) (SPS 401)
-●	Director: Ma. Lourdes F. Melegrito
-●	This office is involved in the social development work both in urban and rural community. It is the social arm of DLSU established in 1983-1984.
 Council of Student Organizations (CSO) (SPS 402)
 Green Media Group / Student Artist Managers (SPS 403)
 Cultural Arts Office (CAO, SPS 403-404)
@@ -578,7 +618,7 @@ La Salle Dance Company Street / La Salle Dance Company Jazz (SPS 507)
 		<location_icon_name>connon4</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>connon1,connon2,connon3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>12</location_id>
@@ -677,7 +717,7 @@ Trivia:
 		<location_icon_name>velasco3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>velasco1,velasco2,velasco3</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>13</location_id>
@@ -685,23 +725,49 @@ Trivia:
 		<location_description>Br. Alphonsus Bloemen Hall houses the Z2 Cafe, one of the university's many cafeterias, food stands, and the radio booth of Green Giant FM.
 
 Named after Br. Alphonsus Bloemen, a La Salle Brother.</location_description>
-		<location_icon_name>velasco3</location_icon_name>
+		<location_icon_name>bloemen3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
-		<location_images>velasco1,velasco2,velasco3</location_images>
-		<building_image>map</building_image>
+		<location_images>bloemen1,bloemen2,bloemen4</location_images>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>14</location_id>
-		<location_name>Faculty Building</location_name>
-		<location_description>Background
-Situated behind St. Joseph Building, the structure was built in 1985 through a generous gift from the Office of American Schools and Hospitals Abroad, under the sponsorship of the Christian Brothers Conference, Illinois, alumni and benefactors. Being a four-storey fully air-conditioned building, the University Library endeavors to provide access to other library collections within Metro Manila that will support the instructional, research, and other bibliographical needs of both students and faculty through its inter-library services, which involve short term loans and document delivery (Consortia).
+		<location_name>Faculty Center</location_name>
+		<location_description>History
+Situated behind St. Joseph Building, the structure was built in 1985 through a generous gift from the Office of American Schools and Hospitals Abroad, under the sponsorship of the Christian Brothers Conference, Illinois, alumni and benefactors. Being a four-storey fully air-conditioned building before Henry Sy Sr. Hall, the Faculty Center was a University Library that endeavors to provide access to other library collections within Metro Manila that will support the instructional, research, and other bibliographical needs of both students and faculty through its inter-library services, which involve short term loans and document delivery (Consortia).
 
-An additional service that the library provides is the webliography which makes available electronic bibliographies of websites, web pages and web documents such as: DLSU Faculty Webliography, Philippine Biographical Webliographies and Topics Webliography
+Now, it is known as the Faculty Center. Different departments are stationed there. Such as:
+1st Floor
+	Accountancy Department
+	Center for Professional Development in Business
+	College of Liberal Studies Department
+	Management and Organization Department
+	Ramon V. del Rosario College of Business Department
+2nd Floor
+	Behavioral Sciences Department
+	Commercial Law Department
+	Decision Sciences and Innovation Department
+	Financial Management Department
+	Math and Statistics Computer Laboratory
+3rd Floor
+	Communication Department
+	Filipino Department
+	History Department
+	Literature Department
+	Theology and Religious Education Department
+4th Floor
+	Behavioral Sciences Department
+	International Studies Department
+	Philosophy Department
+	Political Science Department
+	Psychology Department
+
+Students may come here to talk to their teachers as well as pass their requirements. There are discussion rooms which teachers can use to communicate with their thesis advisees as well as for grade consultation day.
 		</location_description>
 		<location_icon_name>faculty3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>faculty1,faculty2,faculty4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>15</location_id>
@@ -712,7 +778,7 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>amphitheatre3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>amphitheatre1,amphitheatre2,amphitheatre4</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>16</location_id>
@@ -723,15 +789,16 @@ An additional service that the library provides is the webliography which makes 
 		<location_icon_name>marianquadrangle3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>marianquadrangle5,marianquadrangle4,marianquadrangle1</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 	<Building>
 		<location_id>17</location_id>
 		<location_name>Mutien Marie Hall</location_name>
-		<location_description>-	Mainly used as classrooms by the Engineering students and ROTC students.</location_description>
+		<location_description>-	Mainly used as classrooms by the Engineering students and ROTC students.
+- Used by DLSU Harlequin Theatre Guild for rehearsals and the Haunted Hall.</location_description>
 		<location_icon_name>mutienmarie3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>mutienmarie3,mutienmarie2,mutienmarie1</location_images>
-		<building_image>map</building_image>
+		<building_map>map</building_map>
 	</Building>
 </Building-list>

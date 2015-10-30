@@ -161,6 +161,18 @@ ADDED from AndroidManifest.xml:128:9
 		ADDED from AndroidManifest.xml:131:13
 	android:name
 		ADDED from AndroidManifest.xml:129:13
+activity#com.qualcomm.QCARSamples.ImageTargets.TestHorizontalActivity
+ADDED from AndroidManifest.xml:135:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:139:13
+	android:label
+		ADDED from AndroidManifest.xml:137:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:138:13
+	android:theme
+		ADDED from AndroidManifest.xml:140:13
+	android:name
+		ADDED from AndroidManifest.xml:136:13
 activity#android.support.v7.widget.TestActivity
 ADDED from com.android.support:recyclerview-v7:21.0.3:18:9
 	android:label
