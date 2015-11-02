@@ -1,5 +1,9 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
+/*
+CLASS IS MADE FOR IMAGE SNAPPING IN VIEW DETAILS.
+ */
+
 import android.app.Activity;
 import android.app.Notification;
 import android.graphics.Color;

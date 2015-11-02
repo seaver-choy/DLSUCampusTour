@@ -20,18 +20,11 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.AssetManager;
 import android.content.res.Configuration;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Rect;
-import android.hardware.Camera;
-import android.hardware.Camera.CameraInfo;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
-import android.text.TextPaint;
-import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -40,13 +33,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
-import android.view.animation.TranslateAnimation;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -895,7 +884,7 @@ public class ImageTargets extends Activity
 
 
                 //listbutton.setVisibility(View.GONE);
-                Intent openListLocation = new Intent(getApplicationContext(),location_cardview.class);
+                Intent openListLocation = new Intent(getApplicationContext(),LocationCardView.class);
                 openListLocation.putExtra("FROM ACTIVITY", "camera");
                 finish();
                 startActivity(openListLocation);
@@ -1295,7 +1284,7 @@ public class ImageTargets extends Activity
          String previous = i.getStringExtra("FROM ACTIVITY");
 
 //        if(previous.equals("locationlist"))
-//          this.startActivity(new Intent(this, listLocations_Recyclerview_Adapter.class));
+//          this.startActivity(new Intent(this, ListLocationsViewRecyclerViewAdapter.class));
 //
 //        else if (previous.equals("mainmenu"))
             this.startActivity(new Intent(this, ActivitySplashScreen.class));

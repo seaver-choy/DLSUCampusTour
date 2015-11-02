@@ -102,7 +102,7 @@
             android:parentActivityName=".ActivitySplashScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".location_cardview"
+            android:name=".LocationCardView"
             android:label="Location List"
 
             android:theme="@style/Theme.AppCompat" >
@@ -110,19 +110,19 @@
         <activity
             android:name=".ViewDetails"
             android:label="Location Details"
-            android:parentActivityName=".location_cardview"
+            android:parentActivityName=".LocationCardView"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
-            android:name=".map"
+            android:name=".Map"
             android:label="Campus Map"
-            android:parentActivityName=".location_cardview"
+            android:parentActivityName=".LocationCardView"
             android:theme="@style/Theme.AppCompat"
             android:screenOrientation="sensor"/>
         <activity
-            android:name=".directions"
+            android:name=".Directions"
             android:label="Directions"
-            android:parentActivityName=".location_cardview"
+            android:parentActivityName=".LocationCardView"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
@@ -135,7 +135,7 @@
         <activity
             android:name= ".TestHorizontalActivity"
             android:label= "Location Details"
-            android:parentActivityName=".location_cardview"
+            android:parentActivityName=".LocationCardView"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat">
         </activity>

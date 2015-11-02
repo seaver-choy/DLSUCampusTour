@@ -1,5 +1,9 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
+/*
+CLASS IS MADE FOR IMAGE SNAPPING IN VIEW DETAILS.
+ */
+
 import android.content.Context;
 import android.view.GestureDetector;
 import android.view.MotionEvent;

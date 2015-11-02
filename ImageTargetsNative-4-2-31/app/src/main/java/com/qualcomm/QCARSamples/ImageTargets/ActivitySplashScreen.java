@@ -8,13 +8,10 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
@@ -22,11 +19,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
-import android.support.v7.app.ActionBarActivity;
-import android.support.v7.widget.LinearLayoutManager;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
-import com.qualcomm.QCARSamples.ImageTargets.model.Target;
 
 
 public class ActivitySplashScreen extends Activity
@@ -101,7 +95,7 @@ public class ActivitySplashScreen extends Activity
         mlocations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i = new Intent(getBaseContext(), location_cardview.class);
+                i = new Intent(getBaseContext(), LocationCardView.class);
                 i.putExtra("FROM ACTIVITY", "mainmenu");
                 startActivity(i);
 

@@ -13,17 +13,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.DatabaseHelper;
-import com.qualcomm.QCARSamples.ImageTargets.model.Location;
 import com.qualcomm.QCARSamples.ImageTargets.model.Step;
 
-import java.util.ArrayList;
 import java.util.List;
 
 
-public class directions extends ActionBarActivity {
+public class Directions extends ActionBarActivity {
 
     private RecyclerView recyclerView;
-    private directions_stepsAdapter adapter;
+    private DirectionsStepAdapter adapter;
     private DatabaseHelper databaseHelper;
 
     @Override
@@ -33,7 +31,7 @@ public class directions extends ActionBarActivity {
 
         databaseHelper = DatabaseHelper.getInstance(this);
         recyclerView = (RecyclerView) findViewById(R.id.locations_recyclerview);
-        adapter = new directions_stepsAdapter(this,getData());
+        adapter = new DirectionsStepAdapter(this,getData());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 

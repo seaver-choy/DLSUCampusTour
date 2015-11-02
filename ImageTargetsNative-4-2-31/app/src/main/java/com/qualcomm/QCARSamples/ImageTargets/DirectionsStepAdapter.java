@@ -17,11 +17,11 @@ import java.util.List;
 /**
  * Created by Interns on 6/10/2015.
  */
-public class directions_stepsAdapter extends RecyclerView.Adapter<directions_stepsAdapter.directionsVH>{
+public class DirectionsStepAdapter extends RecyclerView.Adapter<DirectionsStepAdapter.directionsVH>{
     private LayoutInflater inflater;
     List<Step> directionsData = Collections.emptyList();
 
-    public  directions_stepsAdapter(Context context,List<Step> directionsData){
+    public DirectionsStepAdapter(Context context, List<Step> directionsData){
         inflater = LayoutInflater.from(context);
         this.directionsData = directionsData;
     }

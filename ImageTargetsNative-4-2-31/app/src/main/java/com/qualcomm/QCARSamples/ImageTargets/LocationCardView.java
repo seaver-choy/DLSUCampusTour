@@ -1,7 +1,6 @@
 package com.qualcomm.QCARSamples.ImageTargets;
 
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,8 +10,6 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.text.Html;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,9 +21,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class location_cardview extends ActionBarActivity implements listLocations_Recyclerview_Adapter.ClickListener{
+public class LocationCardView extends ActionBarActivity implements ListLocationsRecyclerViewAdapter.ClickListener{
     private RecyclerView recyclerView;
-    private listLocations_Recyclerview_Adapter adapter;
+    private ListLocationsRecyclerViewAdapter adapter;
     private DatabaseHelper databaseHelper;
     private List<Location> locations;
 
@@ -39,7 +36,7 @@ public class location_cardview extends ActionBarActivity implements listLocation
         locations = databaseHelper.getAllLocations();
 
         recyclerView = (RecyclerView) findViewById(R.id.locations_recyclerview);
-        adapter = new listLocations_Recyclerview_Adapter(this, getIconData());
+        adapter = new ListLocationsRecyclerViewAdapter(this, getIconData());
         adapter.setClickListener(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

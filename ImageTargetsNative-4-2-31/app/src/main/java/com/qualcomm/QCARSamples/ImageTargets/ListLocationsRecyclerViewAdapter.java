@@ -6,17 +6,14 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
-import android.support.v7.internal.view.ContextThemeWrapper;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.qualcomm.QCARSamples.ImageTargets.model.Building;
 import com.qualcomm.QCARSamples.ImageTargets.model.Location;
@@ -29,13 +26,13 @@ import java.util.List;
 /**
  * Created by Interns on 5/29/2015.
  */
-public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<listLocations_Recyclerview_Adapter.myViewHolder> {
+public class ListLocationsRecyclerViewAdapter extends RecyclerView.Adapter<ListLocationsRecyclerViewAdapter.myViewHolder> {
     private LayoutInflater inflater;
     List<Location> locationData = Collections.emptyList();
     Context context;
     ClickListener clickListener;
 
-    public listLocations_Recyclerview_Adapter(Context context, List<Location> locationData) {
+    public ListLocationsRecyclerViewAdapter(Context context, List<Location> locationData) {
         inflater = LayoutInflater.from(context);
         this.locationData = locationData;
         this.context = context;
@@ -83,13 +80,13 @@ public class listLocations_Recyclerview_Adapter extends RecyclerView.Adapter<lis
                     Log.e("ImageName", building.getMapImage());
                     int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
                     building.setMapIcon(icon);
-                    Intent intent = new Intent(context, map.class);
+                    Intent intent = new Intent(context, Map.class);
                     intent.putExtra("mapIcon", building.getMapIcon());
                     context.startActivity(intent);
                 }
                 else
                 {
-                    Intent intent = new Intent(context, directions.class);
+                    Intent intent = new Intent(context, Directions.class);
                     Log.e("loc_id", currentLoc.getLocId() + "");
                     intent.putExtra("location_id", currentLoc.getLocId());
                     context.startActivity(intent);
