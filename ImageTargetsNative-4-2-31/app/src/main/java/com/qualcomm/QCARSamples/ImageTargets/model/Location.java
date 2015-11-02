@@ -1,6 +1,9 @@
 package com.qualcomm.QCARSamples.ImageTargets.model;
 
+import android.content.Context;
 import android.util.Log;
+
+import java.util.ArrayList;
 
 /**
  * Created by Interns on 5/29/2015.
@@ -8,6 +11,7 @@ import android.util.Log;
 public class Location {
     private String name;
     private String description;
+    private String shortDescription;
     private String icon_name;
     private int loc_id;
     private boolean hasVisited;
@@ -15,29 +19,28 @@ public class Location {
     private String[] imageNames = null;
     private Integer[] imageIcons = null;
 
-    public Location(int loc_id, String name, String description, String icon_name, boolean hasVisited)
+    public Location(int loc_id, String name, String description, String icon_name, boolean hasVisited, String shortDescription)
     {
         this.loc_id = loc_id;
         this.name = name;
         this.description = description;
         this.icon_name = icon_name;
         this.hasVisited = hasVisited;
+        this.shortDescription = shortDescription;
     }
 
-    public Location(String name, String description, String icon_name, boolean hasVisited)
+    public Location(String name, String description, String icon_name, boolean hasVisited, String shortDescription)
     {
         this.name = name;
         this.description = description;
         this.icon_name = icon_name;
         this.hasVisited = hasVisited;
+        this.shortDescription = shortDescription;
     }
 
     public Location()
     {
     }
-
-
-
 
 
     //Setters
@@ -73,6 +76,22 @@ public class Location {
         this.imageIcons = imageIcons;
     }
 
+    public void setImageIcons(Context context) {
+        String[] imageNames = this.getImageNames();
+        ArrayList<Integer> imageIconsList = new ArrayList<Integer>();
+        for(int x = 0; x < imageNames.length;x++){
+            int imageIcon = context.getResources().getIdentifier(imageNames[x], "drawable", context.getPackageName());
+            imageIconsList.add(imageIcon);
+        }
+
+        this.setImageIcons(imageIconsList.toArray(new Integer[imageIconsList.size()]));
+    }
+
+    public void setShortDescription(String shortDescription)
+    {
+        this.shortDescription = shortDescription;
+    }
+
     //Getters
     public String getName() {
         return name;
@@ -106,6 +125,10 @@ public class Location {
         return imageIcons;
     }
 
+    public String getShortDescription()
+    {
+        return this.shortDescription;
+    }
     @Override
     public boolean equals(Object object)
     {

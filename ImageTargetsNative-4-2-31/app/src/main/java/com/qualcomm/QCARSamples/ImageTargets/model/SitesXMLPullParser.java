@@ -25,6 +25,7 @@ public class SitesXMLPullParser {
     private static final String KEY_LOCATION_ICON_NAME = "location_icon_name";
     private static final String KEY_LOCATION_HASVISITED = "location_hasVisited";
     private static final String KEY_LOCATION_IMAGES = "location_images";
+    private static final String KEY_LOCATION_SHORTDESCRIPTION = "location_shortDescription";
 
     //Building keys
     private static final String KEY_BUILDING = "Building";
@@ -111,9 +112,12 @@ public class SitesXMLPullParser {
                             }
                             else currLocation.setHasVisited(false);
                         } else if (tagname.equalsIgnoreCase(KEY_LOCATION_IMAGES)) {
-                            Log.e("TAG", currText);
+                            //Log.e("TAG", currText);
                             String[] imageNames = currText.split(",");
                             currLocation.setImageNames(imageNames);
+                        } else if (tagname.equalsIgnoreCase(KEY_LOCATION_SHORTDESCRIPTION)) {
+                            // if </location_shortDescription> use setShortDescription() on currLocation
+                            currLocation.setShortDescription(currText);
                         }
                         break;
 
@@ -199,6 +203,9 @@ public class SitesXMLPullParser {
                             Log.e("TAG", currText);
                             String[] imageNames = currText.split(",");
                             currBuilding.setImageNames(imageNames);
+                        }else if (tagname.equalsIgnoreCase(KEY_LOCATION_SHORTDESCRIPTION)) {
+                            // if </location_shortDescription> use setShortDescription() on currLocation
+                            currBuilding.setShortDescription(currText);
                         } else if (tagname.equalsIgnoreCase(KEY_BUILDING_MAP_IMAGE)) {
                             currBuilding.setMapImage(currText);
                         }

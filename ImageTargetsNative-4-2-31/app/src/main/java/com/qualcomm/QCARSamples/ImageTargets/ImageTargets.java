@@ -8,6 +8,7 @@ and other countries. Trademarks of QUALCOMM Incorporated are used with permissio
 package com.qualcomm.QCARSamples.ImageTargets;
 
 import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
@@ -1242,12 +1243,35 @@ public class ImageTargets extends Activity
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                Location l = databaseHelper.getLocation(targets.get(temp).getLocID());
+                final Location l = databaseHelper.getLocation(targets.get(temp).getLocID());
                 border.setVisibility(View.VISIBLE);
                 fake.setVisibility(View.VISIBLE);
                 morebutton.setVisibility(View.VISIBLE);
-                fake.setText("Congratulations! You have unlocked the  location " + l.getName() + ". " +
-                        "You can view more details about " + l.getName() + " in the locations list.");
+
+                morebutton.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v){
+                        Context context = getApplicationContext();
+                        Intent intent = new Intent(context, ViewDetails.class);
+                        intent.putExtra("description", l.getDescription());
+                        intent.putExtra("name", l.getName());
+
+                        ArrayList<Integer> imageIconsList = new ArrayList<Integer>();
+                        Integer[] imageIcons = l.getImageIcons();
+
+                        for(int i = 0; i < imageIcons.length; i++)
+                        {
+                            imageIconsList.add(imageIcons[i]);
+                        }
+
+                        intent.putIntegerArrayListExtra("imageIcons", imageIconsList);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(intent);
+                    }
+                });
+                fake.setText("Welcome to " + l.getName() + "! " +
+                        l.getName() + " " + l.getShortDescription() + " To view more details, click the button below.");
             }
         });
     }
@@ -1259,6 +1283,7 @@ public class ImageTargets extends Activity
             public void run() {
                     border.setVisibility(View.GONE);
                     fake.setVisibility(View.GONE);
+                    morebutton.setVisibility(View.GONE);
             }
         });
     }
@@ -1278,6 +1303,4 @@ public class ImageTargets extends Activity
 
         return;
     }
-
-
 }

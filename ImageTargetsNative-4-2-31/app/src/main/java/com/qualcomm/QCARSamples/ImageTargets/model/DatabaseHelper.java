@@ -43,6 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_HAS_VISITED = "hasVisited";
     private static final String KEY_DESCRIPTION = "location_description";
     private static final String KEY_ICON_NAME = "icon_name";
+    private static final String KEY_SHORTDESCRIPTION = "location_shortDescription";
 
     // TARGETS Table - column names
     private static final String KEY_TARGET_NAME = "target_name";
@@ -69,7 +70,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String CREATE_TABLE_LOCATION = "CREATE TABLE "
             + TABLE_LOCATION + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_LOCATION_NAME
             + " TEXT," + KEY_HAS_VISITED + " INTEGER," + KEY_DESCRIPTION
-            + " TEXT," + KEY_ICON_NAME +" TEXT" + ")";
+            + " TEXT," + KEY_ICON_NAME +" TEXT," + KEY_SHORTDESCRIPTION + " TEXT" + ")";
 
     // targets table create statement
     private static final String CREATE_TABLE_TARGET = "CREATE TABLE " + TABLE_TARGET
@@ -163,6 +164,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
 
     }
+
     //CRUD of location
     public Location getLocation(int loc_id) {
         SQLiteDatabase db = this.getReadableDatabase();
@@ -183,6 +185,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         tl.setIconName(c.getString(c.getColumnIndex(KEY_ICON_NAME)));
         tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
         tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
+        tl.setShortDescription(c.getString(c.getColumnIndex(KEY_SHORTDESCRIPTION)));
+        tl.setImageNames(this.getImagesOfLocation(tl.getLocId()));
+        tl.setImageIcons(this.getContext());
         c.close();
         return tl;
     }
@@ -211,6 +216,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
                 tl.setImageNames(this.getImagesOfLocation(tl.getLocId()));
+                tl.setImageIcons(this.getContext());
+                tl.setShortDescription(c.getString(c.getColumnIndex(KEY_SHORTDESCRIPTION)));
 
                 // adding to todo list
                 if(!locationList.contains(tl))
@@ -236,6 +243,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DESCRIPTION, location.getDescription());
         values.put(KEY_HAS_VISITED, location.isHasVisited());
         values.put(KEY_ICON_NAME, location.getIconName());
+        values.put(KEY_SHORTDESCRIPTION, location.getShortDescription());
 
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
@@ -376,6 +384,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_DESCRIPTION, building.getDescription());
         values.put(KEY_HAS_VISITED, building.isHasVisited());
         values.put(KEY_ICON_NAME, building.getIconName());
+        values.put(KEY_SHORTDESCRIPTION, building.getShortDescription());
 
         // insert row
         long tag_id = db.insert(TABLE_LOCATION, null, values);
@@ -417,6 +426,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 tl.setName(c.getString(c.getColumnIndex(KEY_LOCATION_NAME)));
                 tl.setHasVisited(c.getInt(c.getColumnIndex(KEY_HAS_VISITED)) == 1);
                 tl.setMapImage(c.getString(c.getColumnIndex(KEY_BUILDING_MAP_IMAGE)));
+                tl.setShortDescription(c.getString(c.getColumnIndex(KEY_SHORTDESCRIPTION)));
 
                 tl.setImageNames(this.getImagesOfLocation(tl.getLocId()));
                 // adding to todo list
