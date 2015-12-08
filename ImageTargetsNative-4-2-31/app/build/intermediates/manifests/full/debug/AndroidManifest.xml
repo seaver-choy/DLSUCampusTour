@@ -104,26 +104,26 @@
             android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.ActivitySplashScreen"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:name="com.qualcomm.QCARSamples.ImageTargets.LocationCardView"
             android:label="Location List"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.ViewDetails"
             android:label="Location Details"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.LocationCardView"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.map"
             android:label="Campus Map"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.LocationCardView"
             android:screenOrientation="sensor"
             android:theme="@style/Theme.AppCompat" />
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.directions"
             android:label="Directions"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.LocationCardView"
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
@@ -135,7 +135,7 @@
         <activity
             android:name="com.qualcomm.QCARSamples.ImageTargets.TestHorizontalActivity"
             android:label="Location Details"
-            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.location_cardview"
+            android:parentActivityName="com.qualcomm.QCARSamples.ImageTargets.LocationCardView"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat" >
         </activity>

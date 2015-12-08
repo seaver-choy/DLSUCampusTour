@@ -11,6 +11,7 @@
     <item>@drawable/direstions1</item>
     <item>@drawable/locationlist2</item>
     <item>@drawable/locationdetails</item>
+    <item>@drawable/about</item>
     <item>@drawable/closingslide</item>
     <item>@drawable/lastslide</item>
     </integer-array>

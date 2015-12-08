@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.LinearLayoutManager;
@@ -47,6 +48,7 @@ public class LocationCardView extends ActionBarActivity implements ListLocations
         //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
+
     }
 
     public List<Location> getIconData(){
@@ -73,7 +75,9 @@ public class LocationCardView extends ActionBarActivity implements ListLocations
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-     //   getMenuInflater().inflate(R.menu.menu_location_cardview, menu);
+        getMenuInflater().inflate(R.menu.menu_location_cardview, menu);
+
+
         return true;
     }
 
@@ -83,11 +87,23 @@ public class LocationCardView extends ActionBarActivity implements ListLocations
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        Intent i = getIntent();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
+
+        else if (id == R.id.home){
+            this.startActivity(new Intent(this, ActivitySplashScreen.class));
+        }
+
+        else if (id == R.id.camera){
+            this.startActivity(new Intent(this, ImageTargets.class));
+        }
+
+
+            //NavUtils.navigateUpTo(this, new Intent(this, ActivitySplashScreen.class));
 
         return super.onOptionsItemSelected(item);
     }

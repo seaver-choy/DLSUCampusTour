@@ -80,13 +80,13 @@ public class ListLocationsRecyclerViewAdapter extends RecyclerView.Adapter<ListL
                     Log.e("ImageName", building.getMapImage());
                     int icon = context.getResources().getIdentifier(building.getMapImage(), "drawable", context.getPackageName());
                     building.setMapIcon(icon);
-                    Intent intent = new Intent(context, Map.class);
+                    Intent intent = new Intent(context, map.class);
                     intent.putExtra("mapIcon", building.getMapIcon());
                     context.startActivity(intent);
                 }
                 else
                 {
-                    Intent intent = new Intent(context, Directions.class);
+                    Intent intent = new Intent(context, directions.class);
                     Log.e("loc_id", currentLoc.getLocId() + "");
                     intent.putExtra("location_id", currentLoc.getLocId());
                     context.startActivity(intent);

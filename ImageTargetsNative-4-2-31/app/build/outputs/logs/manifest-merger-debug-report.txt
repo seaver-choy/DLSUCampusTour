@@ -111,7 +111,7 @@ ADDED from AndroidManifest.xml:99:9
 		ADDED from AndroidManifest.xml:101:13
 	android:name
 		ADDED from AndroidManifest.xml:100:13
-activity#com.qualcomm.QCARSamples.ImageTargets.location_cardview
+activity#com.qualcomm.QCARSamples.ImageTargets.LocationCardView
 ADDED from AndroidManifest.xml:104:9
 	android:label
 		ADDED from AndroidManifest.xml:106:13

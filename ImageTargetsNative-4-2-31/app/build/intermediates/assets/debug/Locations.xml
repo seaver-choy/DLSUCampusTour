@@ -20,6 +20,7 @@ Email : library@dlsu.edu.ph</location_description>
 		<location_icon_name>thelearningcommons1</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>thelearningcommons2,thelearningcommons3,thelearningcommons5</location_images>
+		<location_shortDescription>is used for learning and discussions of ideas.</location_shortDescription>
 	</Location>
 	<Location>
 		<location_id>19</location_id>
@@ -54,6 +55,7 @@ Fax: 521-9094</location_description>
 		<location_icon_name>museum2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>museum1,museum2,museum3</location_images>
+		<location_shortDescription>is the site for appreciating sculptures and paintings.</location_shortDescription>
 	</Location>
 	<Location>
 		<location_id>20</location_id>
@@ -63,6 +65,7 @@ The auditorium features a traditional proscenium stage as well as an orchestra p
 		<location_icon_name>yuchengcoaud2</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>yuchengcoaud1,yuchengcoaud2,yuchengcoaud1</location_images>
+		<location_shortDescription>is a 1,100 seater made for stage theatrics.</location_shortDescription>
 	</Location>
 	<Location>
 		<location_id>21</location_id>
@@ -71,6 +74,7 @@ The auditorium features a traditional proscenium stage as well as an orchestra p
 		<location_icon_name>andrewaud3</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>andrewaud1,andrewaud3,andrewaud4</location_images>
+		<location_shortDescription>is made for short seminars and organizational activities.</location_shortDescription>
 	</Location>
 	<Location>
 		<location_id>22</location_id>
@@ -79,5 +83,6 @@ The auditorium features a traditional proscenium stage as well as an orchestra p
 		<location_icon_name>williamtheater</location_icon_name>
 		<location_hasVisited>false</location_hasVisited>
 		<location_images>williamhall2,williamtheater,williamhall2</location_images>
+		<location_shortDescription>is an area for the lovers and patrons of art.</location_shortDescription>
 	</Location>
 </Location-list>

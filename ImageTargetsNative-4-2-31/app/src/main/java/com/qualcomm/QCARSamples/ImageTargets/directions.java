@@ -18,7 +18,7 @@ import com.qualcomm.QCARSamples.ImageTargets.model.Step;
 import java.util.List;
 
 
-public class Directions extends ActionBarActivity {
+public class directions extends ActionBarActivity {
 
     private RecyclerView recyclerView;
     private DirectionsStepAdapter adapter;

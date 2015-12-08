@@ -114,13 +114,13 @@
             android:theme="@style/Theme.AppCompat" >
         </activity>
         <activity
-            android:name=".Map"
+            android:name=".map"
             android:label="Campus Map"
             android:parentActivityName=".LocationCardView"
             android:theme="@style/Theme.AppCompat"
             android:screenOrientation="sensor"/>
         <activity
-            android:name=".Directions"
+            android:name=".directions"
             android:label="Directions"
             android:parentActivityName=".LocationCardView"
             android:theme="@style/Theme.AppCompat" >
